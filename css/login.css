@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient-body: linear-gradient(to bottom, #B72E2E, #7D0A0A);
+    --gradient-bg-login: linear-gradient(to bottom, #F4C098, #FCF4EB);
+}
+
+body{
+    height: 100dvh;
+    background-image: var(--gradient-body);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font: normal 16px Arial;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms{
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-image: var(--gradient-bg-login);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#logo{
+    width: 60%;
+}
+
