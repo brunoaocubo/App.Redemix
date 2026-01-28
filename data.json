@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "u": "admin", 
+            "p": "123", 
+            "s": "Desenvolvimento - TI"
+        },
+        {
+            "id": 2,
+            "u": "admin2", 
+            "p": "456", 
+            "s": "Controladoria"
+        },
+        {
+            "id": 3,
+            "u": "admin3", 
+            "p": "789", 
+            "s": "Contabilidade"
+        }
+    ] 
+}

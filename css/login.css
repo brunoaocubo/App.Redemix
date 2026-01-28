@@ -5,15 +5,20 @@
 }
 
 :root{
-    
-    /*Gradients*/
-    --gradient-body: linear-gradient(to bottom, #B72E2E, #7D0A0A);
-    --gradient-bg-login: linear-gradient(to bottom, #fff7ef 30%, #faa55f);
+    --text-label: rgba(0, 0, 0, 0.750);
 
     /*Shadows*/
     --shadow-forms: 5px 5px 10px rgba(0, 0, 0, 0.600);
     --shadow-container-input: 5px 5px 10px darkred;
     --shadow-submit: 3px 3px 5px rgba(146, 1, 1, 0.8);
+
+    /*Border*/
+    --border-input: 2px solid darkred;
+
+    /*Gradients*/
+    --gradient-body: linear-gradient(to bottom, #B72E2E, #7D0A0A);
+    --gradient-bg-login: linear-gradient(to bottom, #fff7ef 30%, #faa55f);
+    --gradient-button-login: linear-gradient(to bottom, rgba(224, 6, 6, 0.801), rgb(134, 10, 10));
 }
 
 body{
@@ -39,20 +44,28 @@ body{
     flex-flow: column;
     align-items: center;
     justify-content: flex-start;
-    height: 430px;
+    height: 450px;
     width: 320px;
     padding: 20px 30px;
     border-radius: 15px;
+    box-shadow: var(--shadow-forms);
     background-image: var(--gradient-bg-login);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: var(--shadow-forms);
 }
 
 #logo{
     width: 90%;
     margin-bottom: 20px;
+}
+
+.errormessage{
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+    align-self: flex-start;
+    padding-bottom: 5px;
 }
 
 .container-input{
@@ -70,19 +83,19 @@ body{
 .label-login{
     font-weight: 700;
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.750);
+    color: var(--text-label);
 }
 
 .input-login{
+    padding: 3px;
     border: none;
-    border-bottom: 2px solid darkred;
+    border-bottom: var(--border-input);
     background-color: transparent;
     outline: none;
-    padding: 3px;
     font-weight: bold;
 }
 
-.submit{
+#submit{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -90,7 +103,7 @@ body{
     padding: 15px;
     margin-top: 10px;
     border: none;
-    background-image: linear-gradient(to bottom, rgba(224, 6, 6, 0.801), rgb(134, 10, 10));
+    background-image: var(--gradient-button-login);
     color: #f8d0a2;
     text-transform: uppercase;
     font-size: 1em;
@@ -100,7 +113,7 @@ body{
     cursor: pointer;
 }
 
-.submit span{
+#submit span{
     padding-right: 5px;
 }
 
@@ -110,4 +123,29 @@ body{
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+#container-loading[data-isloading="false"]{
+    display: none;
+}
+
+#container-loading[data-isloading="true"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+#loading{
+    font-size: 35pt;
+    font-weight: bolder;
+    color: #BF3131;
+    animation: loading linear infinite;
+    animation-duration: 1s;
+}
+
+@keyframes loading{
+    100% {transform: rotate(360deg);}
 }
