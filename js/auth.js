@@ -34,7 +34,7 @@ const auth = (result) => {
         message.textContent = "Por favor preencha todos os campos."
         return;
     }
-    startLoading()
+    StatusLoading(true)
     const user = result.users.find(element => element.u === u && element.p === p)
     
     setTimeout(() => {
@@ -51,19 +51,20 @@ const auth = (result) => {
     }, 2000)
 }
 
-const startLoading = () =>{
-    if(loading.getAttribute('data-isloading') === 'false'){
+const StatusLoading = (bool) =>{
+    if(bool){
         loading.dataset.isloading = true
         submit.disabled = true
+    }
+    else{
+        loading.dataset.isloading = false
+        submit.disabled = false    
     }
 }
 
 inputs.forEach((input) => {
     input.addEventListener('keydown', () => {
-        if(loading.getAttribute('data-isloading') === 'true'){
-            loading.dataset.isloading = false
-            submit.disabled = false     
-        }
+        StatusLoading(false)
     })
 })
 
