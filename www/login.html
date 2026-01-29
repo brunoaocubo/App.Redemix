@@ -6,13 +6,14 @@
     <title>Login</title>
     <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=all"/>
 </head>
 <body>
     <section class="container">
         <form action="#" method="dialog" id="forms">
             <img src="../imagens/redemix.png" alt="Logomarca Redemix" id="logo">
-            <span id="erro_user" class="errormessage">Erro: Usuário não informado.</span>
+            <span id="message" data-success="false"></span>
             <p class="container-input">
                 <label for="user" class="label-login">Usuário: </label>
                 <br>
@@ -21,10 +22,10 @@
             <p class="container-input">
                 <label for="password" class="label-login">Senha:</label>
                 <br>
-                <input type="password" id="password" class="input-login" aria-invalid="true" aria-errormessage="err1">
+                <input type="password" id="password" class="input-login">
             </p>
             <button type="submit" id="submit"><span class="material-symbols-outlined">lock</span> Login</button>
-            <div id="container-loading" data-isloading="false">
+            <div id="container-loading" data-isloading='false'>
                 <span id="loading" class="material-symbols-outlined">cached</span>
             </div>
         </form>
