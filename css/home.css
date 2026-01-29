@@ -1,0 +1,24 @@
+body{
+    padding: 10px;
+}
+#nav-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-image: var(--gradient-bg-login);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#home{
+    margin-bottom: 30px;
+}
+.icon{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}

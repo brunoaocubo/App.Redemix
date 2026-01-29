@@ -3,23 +3,26 @@
         {
             "id": 1,
             "name": "Bruno Carvalho",
+            "fullname": "Bruno Tiago Santos de Carvalho",
             "u": "admin", 
             "p": "123", 
-            "s": "Desenvolvimento - TI"
+            "sector": 1
         },
         {
             "id": 2,
-            "name": "Paola Oliveira",
+            "name": "Paola Bracho",
+            "fullname": "Paola Montaner de Bracho",
             "u": "admin2", 
             "p": "456", 
-            "s": "Controladoria"
+            "sector": 2
         },
         {
             "id": 3,
             "name": "Nazaré Esteves",
+            "fullname": "Maria de Nazaré Esteves Tedesco",
             "u": "admin3", 
             "p": "789", 
-            "s": "Contabilidade"
+            "sector": 3
         }
     ]
 }

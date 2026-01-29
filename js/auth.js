@@ -41,7 +41,7 @@ const auth = (result) => {
         if(user){
             message.textContent = `Login realizado com sucesso. Seja, bem-vindo ${user.name}!`
             message.dataset.success = true
-            document.location.assign('app.html')
+            document.location.assign('home.html')
         }
         else{
             message.textContent = `O usuário ou senha digitados estão incorretos!`

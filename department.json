@@ -1,0 +1,16 @@
+{
+    "sector": [
+        {
+            "id": 1,
+            "name": "Desenvolvimento - TI"
+        },
+        {
+            "id": 2,
+            "name": "Controladoria"
+        },
+        {
+            "id": 3,
+            "name": "Contabilidade"
+        }
+    ]
+}

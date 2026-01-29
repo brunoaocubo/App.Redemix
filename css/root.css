@@ -6,7 +6,7 @@
 
 :root{
     --text-label: rgba(0, 0, 0, 0.650);
-
+    
     /*Shadows*/
     --shadow-forms: 5px 5px 10px rgba(0, 0, 0, 0.600);
     --shadow-container-input: 5px 5px 10px darkred;
