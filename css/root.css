@@ -10,6 +10,7 @@
     --Beige200: #f8d0a2;
     --Red600: #BF3131;
     --Red900: #ff0000;
+    --Black600: rgba(0, 0, 0, 0.600);
 }
 
 /*Global References using reference default colors*/
@@ -20,7 +21,7 @@
     --text-label: rgba(0, 0, 0, 0.650);
     
     /*Shadows*/
-    --shadow-forms: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    --shadow-forms: 5px 5px 10px var(--Black600);
     --shadow-container-input: 5px 5px 10px darkred;
     --shadow-submit: 3px 3px 5px rgba(146, 1, 1, 0.8);
 

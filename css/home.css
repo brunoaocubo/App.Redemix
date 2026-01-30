@@ -1,9 +1,12 @@
 :root{ 
     --border-home-hover: 1px solid #ff000099;
+    --gradient-bg: linear-gradient(to bottom, #fff7ef, #f8bda1);
 }
 
 body{
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
 }
 
 nav{
@@ -12,9 +15,9 @@ nav{
     align-items: center;
     height: 100%;
     width: max-content;
-    padding: 10px;
+    padding: 10px 0px;
     border-radius: 8px;
-    background-image: var(--gradient-bg-login);
+    background-image: var(--gradient-bg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -22,10 +25,10 @@ nav{
 
 .icon{
     width: 32px;
-    height: 100%;
+    height: 32px;
     transition: 0.5s all linear;
 }
-.icon:hover:not(.opt){
+.icon:hover:not(.icon-opt){
     transform: scale(120%);
 }
 
@@ -40,22 +43,80 @@ nav{
 }
 
 .project-section{
+    box-sizing: border-box;
     position: relative;
-    max-height: 32px;
+    width: 100%;
+    margin: 10px;
+
+}
+.project-section:hover{
+
+    
 }
 
-.project-options{
+.project-section img{
+    display: block;
+    margin: auto;
+}
+
+.project-section > .projects-options{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 10px;
     position: absolute;
-    width: 200px;
+    width: max-content;
     height: max-content;
-    left: 130%;
-    top: 0%;
     padding: 20px;
+    top: 0%;
     border-radius: 5px;
+    box-shadow: 1px 1px 1px var(--);
     background-color: var(--color-primary);
+    transition: 0.5s all linear;
+}
+hr{
+    align-self: normal;
 }
 
-.title-options{
+.projects-options[data-isactive='true']{
+    left: 4rem;
+    pointer-events: all;
+}
+.projects-options[data-isactive='false']{
+    position: absolute;
+    transform: translateX(-999%);
+    opacity: 0%;
+    /*pointer-events: none;*/
+}
+
+.projects-options > .title-options{
     color: var(--text-seccondary);
     font-weight: bold;
+}
+
+.projects-options > .container-option{
+    display: flex;
+    align-items: center;
+}
+
+.container-option > .icon-opt{
+    margin-right: 10px;
+}
+
+.container-option > .link-opt{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;
+}
+.link-opt:hover{
+    color: var(--text-primary);
+}
+
+main{
+    width: 100dvw;
+    height: 100%;
+    padding: 20px 25px;
+    background-image: var(--gradient-bg);
+    border-radius: 8px;
 }
