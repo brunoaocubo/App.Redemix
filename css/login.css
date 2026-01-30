@@ -78,7 +78,7 @@
     margin-top: 10px;
     border: none;
     background-image: var(--gradient-button-login);
-    color: #f8d0a2;
+    color: var(--text-primary);
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 600;

@@ -1,7 +1,12 @@
+:root{ 
+    --border-home-hover: 1px solid #ff000099;
+}
+
 body{
     padding: 10px;
 }
-#nav-container{
+
+nav{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -14,11 +19,43 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
+.icon{
+    width: 32px;
+    height: 100%;
+    transition: 0.5s all linear;
+}
+.icon:hover:not(.opt){
+    transform: scale(120%);
+}
+
 #home{
     margin-bottom: 30px;
 }
-.icon{
+#home img{
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+}
+#home img:hover{
+    border: var(--border-home-hover);
+}
+
+.project-section{
+    position: relative;
+    max-height: 32px;
+}
+
+.project-options{
+    position: absolute;
+    width: 200px;
+    height: max-content;
+    left: 130%;
+    top: 0%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+}
+
+.title-options{
+    color: var(--text-seccondary);
+    font-weight: bold;
 }

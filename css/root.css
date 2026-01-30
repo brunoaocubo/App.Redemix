@@ -4,7 +4,19 @@
     box-sizing: border-box;
 }
 
+/*Default Colors*/
 :root{
+    --Beige100: #ffe9d0;
+    --Beige200: #f8d0a2;
+    --Red600: #BF3131;
+    --Red900: #ff0000;
+}
+
+/*Global References using reference default colors*/
+:root{
+    --text-primary: var(--Beige200);
+    --text-seccondary: var(--Beige100);
+    --color-primary: var(--Red600);
     --text-label: rgba(0, 0, 0, 0.650);
     
     /*Shadows*/
