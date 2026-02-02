@@ -1,5 +1,6 @@
 body{
     height: 100dvh;
+    background-color: darkred;
     background-image: var(--gradient-body);
     background-repeat: no-repeat;
     background-attachment: fixed;
