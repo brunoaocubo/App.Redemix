@@ -4,6 +4,7 @@
             "id": 1,
             "name": "Bruno Carvalho",
             "fullname": "Bruno Tiago Santos de Carvalho",
+            "location": "RMIX - MEZANINO",
             "u": "admin", 
             "p": "123", 
             "sector": 1
@@ -12,6 +13,7 @@
             "id": 2,
             "name": "Paola Bracho",
             "fullname": "Paola Montaner de Bracho",
+            "location": "RMIX - MEZANINO",
             "u": "admin2", 
             "p": "456", 
             "sector": 2
@@ -20,6 +22,7 @@
             "id": 3,
             "name": "Nazaré Esteves",
             "fullname": "Maria de Nazaré Esteves Tedesco",
+            "location": "RMIX - MEZANINO",
             "u": "admin3", 
             "p": "789", 
             "sector": 3

@@ -2,15 +2,15 @@
     "sector": [
         {
             "id": 1,
-            "name": "Desenvolvimento - TI"
+            "name": "DESENVOLVIMENTO - TI"
         },
         {
             "id": 2,
-            "name": "Controladoria"
+            "name": "CONTROLADORIA"
         },
         {
             "id": 3,
-            "name": "Contabilidade"
+            "name": "CONTABILIDADE"
         }
     ]
 }

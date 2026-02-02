@@ -1,6 +1,7 @@
 :root{ 
     --border-home-hover: 1px solid #ff000099;
     --gradient-bg: linear-gradient(to bottom, #fff7ef, #f8bda1);
+    --bg-card: #2f2e58;
     --text-info-user: var(--Beige150)
 }
 
@@ -88,7 +89,7 @@ hr{
     position: absolute;
     transform: translateX(-999%);
     opacity: 0%;
-    /*pointer-events: none;*/
+    pointer-events: initial;
 }
 
 .projects-options > .title-options{
@@ -133,11 +134,13 @@ main{
 }
 
 #card{
-    width: max-content;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: max-content;
     height: max-content;
     padding: 15px;
     border-radius: 10px;
-    background-color: #2f2e58;
+    background-color: var(--bg-card);
 }
 
 .info-user{
