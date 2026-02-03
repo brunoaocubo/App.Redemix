@@ -9,7 +9,7 @@ async function getData(){
         return;
     }
 
-    const url = '../data.json'
+    const url = '../users.json'
     try {
         const response = await fetch(url)
         
@@ -35,13 +35,16 @@ const auth = (result) => {
         return;
     }
     StatusLoading(true)
-    const user = result.users.find(element => element.u === u && element.p === p)
+    const user = result.find(element => element.u === u && element.p === p)
     
+    //const user = Object.values(result.users).filter(element => element.u === u && element.p === p)
+
     setTimeout(() => {
         if(user){
             message.textContent = `Login realizado com sucesso. Seja, bem-vindo ${user.name}!`
             message.dataset.success = true
             document.location.assign('home.html')
+            SaveUser(user)
         }
         else{
             message.textContent = `O usuário ou senha digitados estão incorretos!`
@@ -49,6 +52,14 @@ const auth = (result) => {
             return;
         }
     }, 2000)
+}
+
+const SaveUser = (user) => {
+    delete user.p
+    delete user.name
+
+    const userSave = JSON.stringify(user)
+    localStorage.setItem("user", userSave)
 }
 
 const StatusLoading = (bool) =>{

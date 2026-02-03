@@ -1,16 +1,33 @@
-{
-    "sector": [
-        {
-            "id": 1,
-            "name": "DESENVOLVIMENTO - TI"
-        },
-        {
-            "id": 2,
-            "name": "CONTROLADORIA"
-        },
-        {
-            "id": 3,
-            "name": "CONTABILIDADE"
-        }
-    ]
-}
+
+[
+    {
+        "id": 1,
+        "name": "TI",
+        "sections": [
+            {"id": 1, "name": "DESENVOLVIMENTO"},
+            {"id": 2, "name": "AUTOMAÇÃO"},
+            {"id": 3, "name": "INFRAESTRUTURA"},
+            {"id": 4, "name": "SISTEMAS"}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "CONTROLADORIA",
+        "sections": [
+            { "id": 1, "name": "CUSTOS"},
+            { "id": 2, "name": "ORÇAMENTO"},
+            { "id": 3, "name": "FORECAST"},
+            { "id": 4, "name": "INDICADORES"}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "CONTABILIDADE",
+        "sections": [
+            { "id": 1, "name": "CONTÁBIL" },
+            { "id": 2, "name": "FISCAL" },
+            { "id": 3, "name": "CONCILIAÇÕES" },
+            { "id": 4, "name": "FECHAMENTO" }
+        ]
+    }
+]

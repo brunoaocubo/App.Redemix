@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Bruno Carvalho",
+        "fullname": "Bruno Tiago Santos de Carvalho",
+        "email": "bruno.carvalho@redemix.com.br",
+        "tel": "(71)99274-9077",
+        "location": "RMIX - MEZANINO",
+        "u": "bruno.carvalho", 
+        "p": "123", 
+        "section": 1,
+        "department": 1
+    },
+    {
+        "id": 2,
+        "name": "Paola Bracho",
+        "fullname": "Paola Montaner de Bracho",
+        "email": "paola.bracho@redemix.com.br",
+        "tel": "",
+        "location": "RMIX - MEZANINO",
+        "u": "admin2", 
+        "p": "456", 
+        "section": 2,
+        "department": 3
+    },
+    {
+        "id": 3,
+        "name": "Nazaré Esteves",
+        "fullname": "Maria de Nazaré Esteves Tedesco",
+        "email": "nazare.esteves@redemix.com.br",
+        "tel": "",
+        "location": "RMIX - SIMÕES FILHO",
+        "u": "admin3", 
+        "p": "789", 
+        "section": 3,
+        "department": 1
+    }
+]
