@@ -1,6 +1,13 @@
 const section_icon = document.querySelectorAll('.project-section')
 let cached_data = null;
 
+/*
+fetch('/www/nav.html').then(response => response.text()).then(data => 
+    {
+        document.querySelector('#nav-placeholder').innerHTML = data
+    }
+)*/
+
 document.addEventListener('DOMContentLoaded', async () => {
     try{
         await getData()
@@ -76,17 +83,3 @@ const updateCardUser = (user, departmentData, sectionData) => {
 
     user.tel != null?telnumber.textContent = user.tel:telnumber.textContent = ""
 }
-
-section_icon.forEach((icon) => {
-    const project_options = icon.lastElementChild
-    icon.addEventListener('mouseenter', (evt) => {
-        evt.stopPropagation()
-        project_options.dataset.isactive = true
-    })
-    icon.addEventListener('mouseleave', (evt) =>{
-        evt.stopPropagation()
-        if(evt){
-            project_options.dataset.isactive = false     
-        }
-    })
-})
