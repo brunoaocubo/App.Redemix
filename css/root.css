@@ -9,21 +9,24 @@
     /*Neutral*/
     --Black0600: rgba(0, 0, 0, 0.600);
     --Red0800: rgba(139, 0, 0, 0.800);
-
+ 
     --Beige100: #ffe9d0;
     --Beige150: #f7dfa9;
     --Beige200: #f8d0a2;
     --Red600: #BF3131;
     --Red900: #ff0000;
     --Purple600: #2f2e58;
+    --Purple800: #2B2A4C;
 }
 
 /*Global References using reference pallete colors*/
 :root{
     /*TEXT COLORS*/
     --text-primary: var(--Beige200);
+    --text-primary-red: var(--Red600);
     --text-seccondary: var(--Beige100);
     --text-third: var(--Red0800);
+    --main-title: var(--Purple800);
 
     /*BACKGROUND COLORS*/
     --bg-project-options: var(--Red600);

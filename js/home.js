@@ -59,6 +59,7 @@ const checkListUsers = (departmentsData)=>{
             if(user.department === department.id && user.section === section.id)
             {
                 updateCardUser(user, department.name, section.name)
+                localStorage.setItem('departmentUser', (section.name + " " + department.name))
             }
         })
     })   
