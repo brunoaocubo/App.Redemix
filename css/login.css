@@ -1,3 +1,9 @@
+:root{
+    --gradient-bg-login: linear-gradient(to bottom, #fff7ef 30%, #faa55f);
+    --gradient-button-login: linear-gradient(to bottom, rgba(224, 6, 6, 0.801), rgb(134, 10, 10));
+    --text-label: var(--Black600);
+}
+
 .container{
     display: flex;
     flex-flow: column;
@@ -63,7 +69,7 @@
 .input-login{
     padding: 3px;
     border: none;
-    border-bottom: var(--border-input);
+    border-bottom: var(--border-bottom-input);
     background-color: transparent;
     outline: none;
     font-weight: bold;

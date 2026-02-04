@@ -1,7 +1,5 @@
 :root{ 
     --border-home-hover: 1px solid #ff000099;
-    --gradient-bg: linear-gradient(to bottom, #fff7ef, #f8bda1);
-    --bg-card: #2f2e58;
     --text-info-user: var(--Beige150)
 }
 
@@ -11,121 +9,11 @@ body{
     gap: 8px;
 }
 
-nav{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: max-content;
-    min-height: max-content;
-    height: 100%;
-    padding: 10px 0px;
-    border-radius: 8px;
-    background-image: var(--gradient-bg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.icon{
-    width: max-content;
-    height: 26px;
-    transition: 0.5s all linear;
-}
-.icon:hover:not(.icon-opt){
-    transform: scale(120%);
-}
-
-#home{
-    margin-bottom: 20px;
-}
-#home img{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-#home img:hover{
-    border: var(--border-home-hover);
-}
-
-.project-section{
-    position: relative;
-    width: 100%;
-    margin: 8px 10px;
-    box-sizing: border-box;
-}
-
-.project-section img{
-    display: block;
-    margin: auto;
-}
-
-.project-section > .projects-options{
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 20px;
-    min-width: 250px;
-    width: max-content;
-    height: max-content;
-    top: 0%;
-    border-radius: 5px;
-    background-color: var(--color-primary);
-    box-shadow: 5px 5px 10px darkred;
-    transition: 0.5s all linear;
-}
-
-hr{
-    align-self: normal;
-}
-
-.projects-options[data-isactive='true']{
-    left: 4rem;
-    pointer-events: all;
-    opacity: 100%;
-}
-.projects-options[data-isactive='false']{
-    position: absolute;
-    transform: translateX(-999%);
-    opacity: 0%;
-    pointer-events: initial;
-}
-
-.projects-options > .title-options{
-    color: var(--text-seccondary);
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-.projects-options > .container-option{
-    display: flex;
-    align-items: center;
-}
-
-.container-option > .icon-opt{
-    margin-right: 10px;
-}
-
-.container-option > .link-opt{
-    text-decoration: none;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: white;
-}
-.link-opt:hover{
-    color: var(--text-primary);
-}
-
-#exit{
-    margin-top: 5px;
-}
-
 main{
     width: 100dvw;
     height: 100%;
     padding: 20px 25px;
-    background-image: var(--gradient-bg);
+    background-image: var(--gradient-bg-main);
     border-radius: 8px;
 }
 
@@ -140,7 +28,7 @@ main{
     height: max-content;
     padding: 15px;
     border-radius: 10px;
-    background-color: var(--bg-card);
+    background-color: var(--bg-card-user);
 }
 
 .info-user{

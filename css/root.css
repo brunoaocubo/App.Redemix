@@ -4,33 +4,41 @@
     box-sizing: border-box;
 }
 
-/*Default Colors*/
+/*Pallete Colors*/
 :root{
+    /*Neutral*/
+    --Black0600: rgba(0, 0, 0, 0.600);
+    --Red0800: rgba(139, 0, 0, 0.800);
+
     --Beige100: #ffe9d0;
     --Beige150: #f7dfa9;
     --Beige200: #f8d0a2;
     --Red600: #BF3131;
     --Red900: #ff0000;
-    --Black600: rgba(0, 0, 0, 0.600);
+    --Purple600: #2f2e58;
 }
 
-/*Global References using reference default colors*/
+/*Global References using reference pallete colors*/
 :root{
+    /*TEXT COLORS*/
     --text-primary: var(--Beige200);
     --text-seccondary: var(--Beige100);
-    --color-primary: var(--Red600);
-    --text-label: rgba(0, 0, 0, 0.650);
+    --text-third: var(--Red0800);
+
+    /*BACKGROUND COLORS*/
+    --bg-project-options: var(--Red600);
+    --bg-card-user: var(--Purple600);
     
-    /*Shadows*/
-    --shadow-forms: 5px 5px 10px var(--Black600);
+    /*SHADOWS PROPRIETIES*/
+    --shadow-forms: 5px 5px 10px var(--Black0600);
     --shadow-container-input: 5px 5px 10px darkred;
     --shadow-submit: 3px 3px 5px rgba(146, 1, 1, 0.8);
 
-    /*Border*/
-    --border-input: 2px solid darkred;
+    /*BORDERS*/
+    --border-bottom-input: 2px solid var(--Red0800);
 
-    /*Gradients*/
+    /*GRADIENT COLORS - USUALLY BACKGROUND-COLOR*/
     --gradient-body: linear-gradient(to bottom, #B72E2E, #7D0A0A);
-    --gradient-bg-login: linear-gradient(to bottom, #fff7ef 30%, #faa55f);
-    --gradient-button-login: linear-gradient(to bottom, rgba(224, 6, 6, 0.801), rgb(134, 10, 10));
+    --gradient-bg-main: linear-gradient(to bottom, #fff7ef, #f8bda1);
+    --gradient-bg-nav: var(--gradient-bg-main);
 }
