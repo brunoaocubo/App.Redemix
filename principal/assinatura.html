@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Center - Assinatura</title>  
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/assign.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
-
+    <link rel="stylesheet" href="../css/nav.css">
 <body>
     <div id="nav-placeholder"></div>
     <main>
@@ -16,14 +16,51 @@
             <img src="../imagens/icons/principal_icon.svg" alt="Assinatura de Email" class="icon">
             <h2 class="title" style="display: inline;">Assinatura de Email</h2>
         </header>
-        <form action="#" method="dialog">
-            <p class="container-input">
-                <label for="name" class="label-login">Nome:</label>
-                <input type="text" id="name" class="input-login">
-            </p>
-        </form>
+            <section>
+                <div class="container-inputs">
+                    <p class="container-input">
+                        <label for="name" class="label">Nome:</label>
+                        <input type="text" id="name" class="input">
+                    </p>
+                    <p class="container-input">
+                        <label for="sector" class="label">Setor:</label>
+                        <input type="text" id="sector" class="input">
+                    </p>
+                </div>
+                <div class="container-inputs">
+                    <p class="container-input">
+                        <label for="tel" class="label">Tel:</label>
+                        <input type="text" id="tel" class="input">
+                    </p>
+                    <p class="container-input">
+                        <label for="email" class="label">E-mail:</label>
+                        <input type="text" id="email" class="input">
+                    </p>
+                </div>
+                <div id="card-assign">
+                    <div id="info-user">
+                        <p id="name">Paola Montaner Bracho</p>
+                        <p id="sector">Controladoria - Contratos</p>
+                        <p>
+                            <img src="../imagens/icons/tel_icon.svg" alt="Telefone" class="icon">
+                            <span id="tel"> 71992657780</span>
+                        </p>
+                        <p>
+                            <img src="../imagens/icons/email_icon.svg" alt="Email" class="icon">
+                            <span id="email"> paola.bracho@redemix.com.br</span>
+                        </p>
+                    </div>
+                    <div id="container-links">
+                        <img src="../imagens/qrcode-redemix.png" alt="QR Code Redemix" id="qrcode">
+                    </div>
+                </div>
+                <button id="download-card"><img src="../imagens/icons/download_icon.svg" alt="Baixar"> Baixar</button>
+            </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
    <script src="../js/navjquery.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+   <script src="../js/assign.js"></script>
 </body>
 </html>
