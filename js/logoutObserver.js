@@ -1,5 +1,4 @@
-import { dataUserLogged } from "../js/assign.js";
-
+export const dataUserLogged = JSON.parse(localStorage.getItem('user'))
 
 if(dataUserLogged != null){
     let timesInactive = 0
@@ -37,13 +36,13 @@ if(dataUserLogged != null){
     }
 
     let timeout = null
-    timeout = setInterval(NotifyInactivity, timeToLogout(5)) //Minutes
+    timeout = setInterval(NotifyInactivity, timeToLogout(10)) //Minutes
 
     document.addEventListener('click', () => {
         clearInterval(timeout)
         timeout = null
         if(timeout === null){
-            timeout = setInterval(NotifyInactivity, timeToLogout(5))
+            timeout = setInterval(NotifyInactivity, timeToLogout(10))
         }
     })
 }
@@ -51,7 +50,3 @@ else{
     window.alert('Você está desconectado, faça o login novamente!')
     document.location.href = '../www/login.html'
 }
-
-
-
-

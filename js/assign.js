@@ -1,10 +1,8 @@
-export const dataUserLogged = JSON.parse(localStorage.getItem('user'))
+import { dataUserLogged } from "../js/logoutObserver.js";
+
 const inputs = document.querySelectorAll('.input')
 const texts_card = document.querySelectorAll('.text-card-assign')
 const departmentUser = localStorage.getItem('departmentUser')
-//console.log(userData)
-
-
 
 addEventListener('DOMContentLoaded', () => {
     inputs.forEach((input) => {

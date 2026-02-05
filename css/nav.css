@@ -60,8 +60,8 @@ nav{
     border-radius: 5px;
     background-color: var(--bg-project-options);
     box-shadow: 5px 5px 10px darkred;
-    transition: 0.5s all linear;
     z-index: 1000;
+    pointer-events: all;
 }
 
 hr{
@@ -70,14 +70,12 @@ hr{
 
 .projects-options[data-isactive='true']{
     left: 4rem;
-    pointer-events: all;
-    opacity: 100%;
+    
 }
 .projects-options[data-isactive='false']{
     position: absolute;
+    transition: 0.5s;
     transform: translateX(-999%);
-    opacity: 0%;
-    pointer-events: initial;
 }
 
 .projects-options > .title-options{

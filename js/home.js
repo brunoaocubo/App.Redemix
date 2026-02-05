@@ -1,3 +1,4 @@
+import { dataUserLogged } from "./logoutObserver.js";
 const section_icon = document.querySelectorAll('.project-section')
 let cached_data = null;
 
@@ -36,14 +37,8 @@ async function getData(){
     }
 }
 
-const getUserLogin = () => {
-    let user = localStorage.getItem("user")
-    let obj = JSON.parse(user)
-    return obj;
-}
-
 const checkListUsers = (departmentsData)=>{
-    let user = getUserLogin()
+    let user = dataUserLogged
 
     departmentsData.forEach((department) => 
     {
