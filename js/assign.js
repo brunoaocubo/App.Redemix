@@ -1,15 +1,17 @@
+export const dataUserLogged = JSON.parse(localStorage.getItem('user'))
 const inputs = document.querySelectorAll('.input')
 const texts_card = document.querySelectorAll('.text-card-assign')
-const userData = JSON.parse(localStorage.getItem('user'))
 const departmentUser = localStorage.getItem('departmentUser')
 //console.log(userData)
 
+
+
 addEventListener('DOMContentLoaded', () => {
     inputs.forEach((input) => {
-        input.id === "name"?input.value = userData.fullname:null;
+        input.id === "name"?input.value = dataUserLogged.fullname:null;
         input.id === "sector"?input.value = departmentUser:null;
-        input.id === "tel"?input.value = userData.tel:null;
-        input.id === "email"?input.value = userData.email:null;
+        input.id === "tel"?input.value = dataUserLogged.tel:null;
+        input.id === "email"?input.value = dataUserLogged.email:null;
         texts_card.forEach((text) => {
             if(input.id === text.id){
                 text.textContent = ''
@@ -31,11 +33,10 @@ texts_card.forEach((text) => {
     //console.log(text.id + ":" + text.textContent)
 })
 
-
 const downloadCard = document.querySelector("#download-card")
 
 $(function() { 
-    $("#download-card").click(function() { 
+    $(downloadCard).click(function() { 
         html2canvas($("#card-assign"), {
             onrendered: function(canvas) {
                 
@@ -46,4 +47,7 @@ $(function() {
         });
     });
 });
+
+
+
 
