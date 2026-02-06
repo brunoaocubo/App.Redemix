@@ -1,33 +1,27 @@
 document.addEventListener("DOMContentLoaded", function(){
     $("#nav-placeholder").load("../www/nav.html", function(){
-        const section = document.querySelectorAll('.project-section')
+        const sections = document.querySelectorAll('.project-section')
         const options = document.querySelectorAll('.projects-options')
-        let timeout = null;
 
-        section.forEach((project) => {
-            project.addEventListener('click', function(){
-                options.forEach((options) => {
-                    options.setAttribute('data-isactive', false)
+        sections.forEach((section) => {
+            section.addEventListener('mouseenter', function(e){
+                e.stopPropagation()
+
+                options.forEach((option) => {
+                    option.setAttribute('data-isactive', false)
                 })
+                
                 const filho = $(this).find('.projects-options')
                 filho.attr('data-isactive', true)       
             })
-
-            project.addEventListener('mouseleave', function(){
-                const filho = $(this).find('.projects-options')
-                
-                timeout = setTimeout(()=>{filho.attr('data-isactive', false) }, 250)
-            })
         })
         
-        options.forEach((project) => {
-            project.addEventListener('mouseenter', function(){
-                project.setAttribute('data-isactive', true)
-                clearTimeout(timeout)
+        options.forEach((option) => {
+            option.addEventListener('mouseenter', function(){
+                setTimeout((option.setAttribute('data-isactive', true)), 500)
             })
-            project.addEventListener('mouseleave', function(){
-                setTimeout(() => {project.setAttribute('data-isactive', false)}, 500)
-                
+            option.addEventListener('mouseleave', function(){
+                setTimeout(() => {option.setAttribute('data-isactive', false)}, 500)
             })
         })
     }) 

@@ -1,6 +1,7 @@
 :root{
     --border-home-hover: 1px solid #ff000099;
 }
+
 nav{
     display: flex;
     flex-flow: column;
@@ -42,7 +43,11 @@ nav{
     position: relative;
     width: 100%;
     margin: 8px 10px;
-    box-sizing: border-box;
+}
+
+.project-section:hover{
+    border-left: 5px solid darkred;
+    margin-left: 5px;
 }
 
 .project-section img{
@@ -65,7 +70,10 @@ nav{
     background-color: var(--bg-project-options);
     box-shadow: 5px 5px 10px darkred;
     z-index: 1000;
-    pointer-events: all;
+    transform: translateX(-999%);
+    opacity: 0%;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s, pointer-events 0s;
 }
 
 hr{
@@ -73,15 +81,13 @@ hr{
 }
 
 .projects-options[data-isactive='true']{
-    left: 4rem;
-    pointer-events: initial;
-    
+    opacity: 100%;
+    transform: translateX(28%);
+    pointer-events: auto;
+    transition: opacity 1s, transform 0.5s, pointer-events 0s 2s;
 }
 .projects-options[data-isactive='false']{
-    position: absolute;
-    transition: 1s all linear;
     transform: translateX(-999%);
-    pointer-events: none;
 }
 
 .projects-options > .title-options{
