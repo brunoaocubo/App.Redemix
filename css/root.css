@@ -31,6 +31,7 @@
     /*BACKGROUND COLORS*/
     --bg-project-options: var(--Red600);
     --bg-card-user: var(--Purple600);
+    --bg-scrollbar: var(--Beige100);
     
     /*SHADOWS PROPRIETIES*/
     --shadow-forms: 5px 5px 10px var(--Black0600);

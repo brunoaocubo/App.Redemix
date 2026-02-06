@@ -1,21 +1,3 @@
-body{
-    padding: 10px;
-    display: flex;
-    gap: 8px;
-}
-
-main{
-    width: 100dvw;
-    height: 100%;
-    padding: 20px 25px;
-    background-image: var(--gradient-bg-main);
-    border-radius: 8px;
-}
-
-.main-title{
-    color: var(--main-title);
-}
-
 section{
     position: relative;
     max-width: 800px;
@@ -73,7 +55,8 @@ section{
     justify-content: space-between;
     align-items: center; 
     max-height: 150px;
-    padding: 20px 30px;
+    width: 770px;
+    padding: 15px 25px;
     background-color: white;
     border-radius: 10px;
     border: var(--border-bottom-input);

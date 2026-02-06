@@ -1,4 +1,7 @@
 body{
+    padding: 10px;
+    display: flex;
+    gap: 8px;
     height: 100dvh;
     background-color: darkred;
     background-image: var(--gradient-body);
@@ -7,4 +10,38 @@ body{
     background-size: cover;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    background: var(--bg-scrollbar);
+}
+body::-webkit-scrollbar-thumb{
+    background: darkred;
+    border-radius: 20px;
+
+}
+body::-webkit-scrollbar-corner{
+    background: rgb(248, 209, 150);
+}
+
+header{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+header .icon{
+    transform: scale(120%);
+}
+
+main{
+    width: 100dvw;
+    height: 100%;
+    padding: 20px 25px;
+    background-image: var(--gradient-bg-main);
+    border-radius: 8px;
+}
+
+.main-title{
+    color: var(--main-title);
 }

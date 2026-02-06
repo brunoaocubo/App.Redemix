@@ -9,60 +9,61 @@
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
+</head>
 <body>
     <div id="nav-placeholder"></div>
     <main>
         <header>
             <img src="../imagens/icons/principal_icon.svg" alt="Assinatura de Email" class="icon">
-            <h2 class="main-title" style="display: inline;">Assinatura de Email</h2>
+            <h2 class="main-title">Assinatura de Email</h2>
         </header>
-            <section>
-                <div class="container-inputs">
-                    <p class="container-input">
-                        <label for="name" class="label">Nome:</label>
-                        <input type="text" id="name" class="input" placeholder="SEU NOME:">
+        <section>
+            <div class="container-inputs">
+                <p class="container-input">
+                    <label for="name" class="label">Nome:</label>
+                    <input type="text" id="name" class="input" placeholder="SEU NOME:">
+                </p>
+                <p class="container-input">
+                    <label for="sector" class="label">Setor:</label>
+                    <input type="text" id="sector" class="input" placeholder="SEU SETOR:">
+                </p>
+            </div>
+            <div class="container-inputs">
+                <p class="container-input">
+                    <label for="tel" class="label">Tel:</label>
+                    <input type="text" id="tel" class="input" placeholder="SEU TELEFONE:">
+                </p>
+                <p class="container-input">
+                    <label for="email" class="label">E-mail:</label>
+                    <input type="text" id="email" class="input" placeholder="email@redemix.com.br">
+                </p>
+            </div>
+            <div id="card-assign">
+                <div id="info-user">
+                    <p id="name" class="text-card-assign">Paola Montaner Bracho</p>
+                    <p id="sector" class="text-card-assign">Controladoria - Contratos</p>
+                    <p class="container-contacts">
+                        <img src="../imagens/icons/tel_icon.svg" alt="Telefone" class="icon">
+                        <span id="tel" class="text-card-assign"> 71992657780</span>
                     </p>
-                    <p class="container-input">
-                        <label for="sector" class="label">Setor:</label>
-                        <input type="text" id="sector" class="input" placeholder="SEU SETOR:">
+                    <p class="container-contacts">
+                        <img src="../imagens/icons/email_icon.svg" alt="Email" class="icon">
+                        <span id="email" class="text-card-assign"> paola.bracho@redemix.com.br</span>
                     </p>
                 </div>
-                <div class="container-inputs">
-                    <p class="container-input">
-                        <label for="tel" class="label">Tel:</label>
-                        <input type="text" id="tel" class="input" placeholder="SEU TELEFONE:">
-                    </p>
-                    <p class="container-input">
-                        <label for="email" class="label">E-mail:</label>
-                        <input type="text" id="email" class="input" placeholder="email@redemix.com.br">
-                    </p>
+                <div id="container-links">
+                    <img src="../imagens/qrcode-redemix.png" alt="QR Code Redemix" id="qrcode">
                 </div>
-                <div id="card-assign">
-                    <div id="info-user">
-                        <p id="name" class="text-card-assign">Paola Montaner Bracho</p>
-                        <p id="sector" class="text-card-assign">Controladoria - Contratos</p>
-                        <p class="container-contacts">
-                            <img src="../imagens/icons/tel_icon.svg" alt="Telefone" class="icon">
-                            <span id="tel" class="text-card-assign"> 71992657780</span>
-                        </p>
-                        <p class="container-contacts">
-                            <img src="../imagens/icons/email_icon.svg" alt="Email" class="icon">
-                            <span id="email" class="text-card-assign"> paola.bracho@redemix.com.br</span>
-                        </p>
-                    </div>
-                    <div id="container-links">
-                        <img src="../imagens/qrcode-redemix.png" alt="QR Code Redemix" id="qrcode">
-                    </div>
-                </div>
-                <button id="download-card"><img src="../imagens/icons/download_icon.svg" alt="Baixar"> Baixar</button>
-                
-            </section>
+            </div>
+            <button id="download-card"><img src="../imagens/icons/download_icon.svg" alt="Baixar"> Baixar</button>
+            
+        </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="../js/navjquery.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-   <script type="module" src="../js/logoutObserver.js"></script>
-   <script type="module" src="../js/assign.js"></script>
+    <script src="../js/navjquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+    <script type="module" src="../js/logoutObserver.js"></script>
+    <script type="module" src="../js/assign.js"></script>
 </body>
 </html>
