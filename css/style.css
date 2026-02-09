@@ -27,17 +27,19 @@ body::-webkit-scrollbar-corner{
 header{
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
+    padding-left: 10px;
 }
 
 header .icon{
     transform: scale(120%);
+    margin-left: 5px;
 }
 
 main{
     width: 100dvw;
     height: 100%;
-    padding: 20px 25px;
+    padding: 40px 20px;
     background-image: var(--gradient-bg-main);
     border-radius: 8px;
 }
