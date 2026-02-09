@@ -12,15 +12,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body::-webkit-scrollbar{
+main::-webkit-scrollbar{
     background: var(--bg-scrollbar);
+    border-radius: 8px;
 }
-body::-webkit-scrollbar-thumb{
+main::-webkit-scrollbar-thumb{
     background: darkred;
     border-radius: 20px;
 
 }
-body::-webkit-scrollbar-corner{
+main::-webkit-scrollbar-corner{
     background: rgb(248, 209, 150);
 }
 
@@ -42,6 +43,7 @@ main{
     padding: 40px 20px;
     background-image: var(--gradient-bg-main);
     border-radius: 8px;
+    overflow-y: scroll;
 }
 
 .main-title{

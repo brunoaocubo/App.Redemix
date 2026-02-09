@@ -7,7 +7,7 @@
 
 section{
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
 }
 
 #update-labels{
@@ -28,15 +28,16 @@ section{
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
+    overflow-y: visible;
 }
 
 .card-eletronic-tag{
     display: flex;
+    flex-flow: column;
     position: relative;
     padding: 10px;
     align-items: center;
-    
-    width: 215px;
+    width: 220px;
     box-shadow: var(--shadow-card-eletronic);
     border-radius: 15px;
 }
@@ -45,12 +46,14 @@ section{
     width: 100%;
 }
 
-.title{
-    text-transform: uppercase;
-}
-.text-info{
+.text-info, .title{
     color: var(--text-info);
     font-size: 14px;
+    text-transform: uppercase;
+}
+
+.text-info strong{
+    text-transform: capitalize;
 }
 
 .icon-info{
@@ -58,3 +61,21 @@ section{
     right: 0%;
     margin-right: 10px;
 }
+
+.link-painel{
+    color: var(--text-third);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.link-painel:hover{
+    text-decoration: underline;
+    background-color: var(--text-third);
+    color: white;
+}
+
+
+/*CONTAINER - STATUS*/
+
