@@ -22,19 +22,69 @@
             <article class="card-eletronic-tag">
                 <div class="infos">
                     <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
+                    <p class="title">Loja</p>
                     <br>
-                    <p class="text-info"><strong>Cod.:</strong> 108</p>
-                    <p class="text-info"><strong>Nome:</strong> Alphaville</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
+                    <p class="text-info label">Cod.: 
+                        <span class="text-info result">108</span>
+                    </p>
+                    <p class="text-info label">Nome: <span class="result">Alphaville</span></p>
+                    <p class="text-info label">Pricer: <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
                 </div>
                 <div class="container-status">
                     <hr>
-                    <div class="main-status"></div>
+                    <div class="main-status hide">
+                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon">
+                        <div class="content">
+                            <p class="title">Servidor</p>
+                            <br>
+                            <p class="text-info label">Nome: <span class="result"></span></p>
+                            <p class="text-info label">Ip: <span class="result"></span></p>
+                            <p class="text-info label">Dominio: <span class="result"></span></p>
+                            <p class="text-info label">Última Atualização: <span class="result"></span></p>
+                            <p class="text-info label">Duração: <span class="result"></span></p>
+                        </div>
+                    </div>
                     <hr>
-                    <div class="main-status"></div>
+                    <div class="main-status">
+                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon">
+                        <div class="content">
+                            <p class="title">Arquivo</p>
+                            <br>
+                            <p class="text-info label">Nome: <span class="result"></span></p>
+                            <p class="text-info label">Tamanho: <span class="result"></span></p>
+                            <p class="text-info label">Gerado: <span class="result"></span></p>
+                        </div>
+                    </div>
                     <hr>
-                    <div class="main-status"></div>
+                    <div class="main-status">
+                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon">
+                        <div class="content">
+                            <p class="title">Serviços</p>
+                            <br>
+                            <p class="text-info label">Nome: <span class="result"></span></p>
+                            <p class="text-info label">Status: <span class="result"></span></p>
+                            <p class="text-info label">Nome: <span class="result"></span></p>
+                            <p class="text-info label">Status: <span class="result"></span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="main-status container-logs">
+                        <div class="content">
+                            <p class="title">LOGS - UPDATE_PRICER</p>
+                            <br>
+                            <p class="time-start">dd/MM/yyyy 00:00:00</p>
+                            <div class="log-update-pricer">
+                                <p class="title">Atualização de Etiqueta</p>
+                                <p>Verificando se pasta já está mapeada.</p>
+
+                            </div>
+                            <div class="log-pricer-status">
+                                <p class="title">Pricer_Status</p>
+
+                            </div>
+
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </article>
@@ -203,6 +253,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/navjquery.js"></script>
     <script type="module" src="../js/logoutObserver.js"></script>
-    <script src="../js/eletroniclabels.js"></script>
+    <script src="../js/pricer.js"></script>
 </body>
 </html>

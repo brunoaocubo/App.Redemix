@@ -37,9 +37,22 @@ section{
     position: relative;
     padding: 10px;
     align-items: center;
-    width: 220px;
+    min-width: 220px;
+    height: max-content;
     box-shadow: var(--shadow-card-eletronic);
     border-radius: 15px;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+.label, .title{
+    font-weight: bold;
+}
+
+.result{
+    font-weight: normal;
 }
 
 .infos{
@@ -49,11 +62,6 @@ section{
 .text-info, .title{
     color: var(--text-info);
     font-size: 14px;
-    text-transform: uppercase;
-}
-
-.text-info strong{
-    text-transform: capitalize;
 }
 
 .icon-info{
@@ -78,4 +86,14 @@ section{
 
 
 /*CONTAINER - STATUS*/
+.container-status{
+    width: 100%;
+}
 
+.container-status hr{
+    margin: 10px 0px;
+}
+
+.main-status{
+    display: flex;
+}
