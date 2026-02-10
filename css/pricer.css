@@ -24,14 +24,14 @@ section{
     background-color: var(--update-tags);
 }
 
-#container-card-eletronic{
+#container-cards{
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
     overflow-y: visible;
 }
 
-.card-eletronic-tag{
+.card-pricer{
     display: flex;
     flex-flow: column;
     position: relative;
@@ -43,31 +43,33 @@ section{
     border-radius: 15px;
 }
 
-.title{
-    text-transform: uppercase;
+.card-pricer[data-isactive="true"]{
+    outline: 3px solid green;
 }
 
-.label, .title{
-    font-weight: bold;
-}
-
-.result{
-    font-weight: normal;
-}
-
-.infos{
+.section-infos{
     width: 100%;
-}
-
-.text-info, .title{
-    color: var(--text-info);
-    font-size: 14px;
 }
 
 .icon-info{
     position: absolute;
-    right: 0%;
-    margin-right: 10px;
+    right: 10px;
+}
+
+.label, .title{
+    color: var(--text-info);
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-normal{
+    font-weight: normal;
+    text-transform: normal;
 }
 
 .link-painel{
@@ -86,14 +88,20 @@ section{
 
 
 /*CONTAINER - STATUS*/
-.container-status{
+
+.card-pricer > div{
     width: 100%;
 }
 
-.container-status hr{
+hr{
     margin: 10px 0px;
 }
 
-.main-status{
+.status{
     display: flex;
+    flex-flow: row;
+}
+
+.icon-status{
+    margin-right: 10px;
 }

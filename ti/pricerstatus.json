@@ -1,0 +1,42 @@
+[
+    {
+        "loja": "108",
+        "server_status":
+        {
+            "server_name": "SRVALPHA",
+            "ip": "",
+            "domain": "",
+            "last_update": "",
+            "duration_update": ""
+        },
+        "archive_status": 
+        {
+            "archive_name": "",
+            "size": "",
+            "created": ""
+        },
+        "services_status":
+        [
+            {
+                "service_name": "",
+                "status": ""
+            },
+            {
+                "service_name": "",
+                "status": ""
+            }
+        ],
+        "logs":
+        {
+            "log_update_pricer":
+            {
+                "title": ""
+            }
+        }
+    },
+    {
+        "loja": "116"
+    }
+    
+]
+

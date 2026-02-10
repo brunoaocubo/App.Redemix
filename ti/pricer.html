@@ -18,237 +18,79 @@
             <h2 class="main-title">Etiquetas Eletrônicas</h2>
         </header>   
         <button id="update-labels">Pricer</button>
-        <section id="container-card-eletronic">
-            <article class="card-eletronic-tag">
-                <div class="infos">
+        <div id="container-cards">
+            <article class="card-pricer" data-isactive="true">
+                <section class="section-infos">
                     <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
                     <p class="title">Loja</p>
-                    <br>
-                    <p class="text-info label">Cod.: 
-                        <span class="text-info result">108</span>
-                    </p>
-                    <p class="text-info label">Nome: <span class="result">Alphaville</span></p>
-                    <p class="text-info label">Pricer: <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-                <div class="container-status">
+                    <p class="label">Cod.: <span class="text-normal">108</span></p>
+                    <p class="label">Nome: <span class="text-normal">Alphaville</span></p>
+                    <p class="label">Pricer: <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
+                </section>
+                
+                <div>
                     <hr>
-                    <div class="main-status hide">
-                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon">
+
+                    <section class="status" id="container_status_server">
+                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon icon-status">
                         <div class="content">
                             <p class="title">Servidor</p>
-                            <br>
-                            <p class="text-info label">Nome: <span class="result"></span></p>
-                            <p class="text-info label">Ip: <span class="result"></span></p>
-                            <p class="text-info label">Dominio: <span class="result"></span></p>
-                            <p class="text-info label">Última Atualização: <span class="result"></span></p>
-                            <p class="text-info label">Duração: <span class="result"></span></p>
+                            <p class="label">Nome:
+                                <span class="text-normal" id="server_name">SRVETQ...</span>
+                            </p>
+                            <p class="label">Ip:
+                                <span class="text-normal" id="ip">xxx.xxx.xx.xx</span>
+                            </p>
+                            <p class="label">Domínio:
+                                <span class="text-normal" id="domain">EMPRESA</span>
+                            </p>
+                            <p class="label">Última Atualização:
+                                <span class="text-normal" id="last_update">ter dd/MM/yyyy 00:00:00</span>
+                            </p>
+                            <p class="label">Duração:
+                                <span class="text-normal" id="duration_update">00:00:00</span>
+                            </p>
                         </div>
-                    </div>
+                    </section>
+
                     <hr>
-                    <div class="main-status">
-                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon">
+
+                    <section class="status" id="container_status_archive">
+                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon icon-status">
                         <div class="content">
                             <p class="title">Arquivo</p>
-                            <br>
-                            <p class="text-info label">Nome: <span class="result"></span></p>
-                            <p class="text-info label">Tamanho: <span class="result"></span></p>
-                            <p class="text-info label">Gerado: <span class="result"></span></p>
+                            <p class="label">Nome:
+                                <span class="text-normal" id="archive_name">[cod_filial]_update.i1</span>
+                            </p>
+                            <p class="label">Tamanho:
+                                <span class="text-normal" id="size">0MB</span>
+                            </p>
+                            <p class="label">Gerado:
+                                <span class="text-normal" id="created">seg dd/MM/yyyy 00:00:00</span>
+                            </p>
                         </div>
-                    </div>
+                    </section>
+
                     <hr>
-                    <div class="main-status">
-                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon">
+
+                    <section class="status" id="container_status_services">
+                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon icon-status">
                         <div class="content">
                             <p class="title">Serviços</p>
-                            <br>
-                            <p class="text-info label">Nome: <span class="result"></span></p>
-                            <p class="text-info label">Status: <span class="result"></span></p>
-                            <p class="text-info label">Nome: <span class="result"></span></p>
-                            <p class="text-info label">Status: <span class="result"></span></p>
+                            <p class="label">Nome:
+                                <span class="text-normal" id="service_name">Nome do Serviço</span>
+                            </p>
+                            <p class="label">Status:
+                                <span class="text-normal" id="status">Running/error/warning/...</span>
+                            </p>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="main-status container-logs">
-                        <div class="content">
-                            <p class="title">LOGS - UPDATE_PRICER</p>
-                            <br>
-                            <p class="time-start">dd/MM/yyyy 00:00:00</p>
-                            <div class="log-update-pricer">
-                                <p class="title">Atualização de Etiqueta</p>
-                                <p>Verificando se pasta já está mapeada.</p>
+                    </section>
+                    
+                    
 
-                            </div>
-                            <div class="log-pricer-status">
-                                <p class="title">Pricer_Status</p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <hr>
                 </div>
             </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 183</p>
-                    <p class="text-info"><strong>Nome:</strong> Miragem</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 310</p>
-                    <p class="text-info"><strong>Nome:</strong> Horto</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 337</p>
-                    <p class="text-info"><strong>Nome:</strong> Vitória</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 353</p>
-                    <p class="text-info"><strong>Nome:</strong> Amazonas</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 370</p>
-                    <p class="text-info"><strong>Nome:</strong> Ondina</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 434</p>
-                    <p class="text-info"><strong>Nome:</strong> Stella Maris</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 450</p>
-                    <p class="text-info"><strong>Nome:</strong> Chame-Chame</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 582</p>
-                    <p class="text-info"><strong>Nome:</strong> Rio Vermelho</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 639</p>
-                    <p class="text-info"><strong>Nome:</strong> Salvador Shopping</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 35</p>
-                    <p class="text-info"><strong>Nome:</strong> Itaigara</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 60</p>
-                    <p class="text-info"><strong>Nome:</strong> Vila Laura</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 140</p>
-                    <p class="text-info"><strong>Nome:</strong> Nutri Pituba</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 175</p>
-                    <p class="text-info"><strong>Nome:</strong> Nutri Barra</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 345</p>
-                    <p class="text-info"><strong>Nome:</strong> Nutri Shopping</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 442</p>
-                    <p class="text-info"><strong>Nome:</strong> Nurti Alpha</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-            <article class="card-eletronic-tag">
-                <div class="infos">
-                    <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
-                    <p class="title"><strong>Loja</strong></p>
-                    <br>
-                    <p class="text-info"><strong>Cod.:</strong> 531</p>
-                    <p class="text-info"><strong>Nome:</strong> Nutri Horto</p>
-                    <p class="text-info link"><strong>Pricer:</strong> <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </div>
-            </article>
-        </section>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/navjquery.js"></script>
