@@ -1,42 +1,322 @@
 [
-    {
-        "loja": "108",
-        "server_status":
-        {
-            "server_name": "SRVALPHA",
-            "ip": "",
-            "domain": "",
-            "last_update": "",
-            "duration_update": ""
-        },
-        "archive_status": 
-        {
-            "archive_name": "",
-            "size": "",
-            "created": ""
-        },
-        "services_status":
-        [
-            {
-                "service_name": "",
-                "status": ""
-            },
-            {
-                "service_name": "",
-                "status": ""
-            }
-        ],
-        "logs":
-        {
-            "log_update_pricer":
-            {
-                "title": ""
-            }
-        }
+  {
+    "cod": "434",
+    "filial": "STELLA",
+    "server_status": {
+      "name": "SRVETQSTE",
+      "ip": "192.168.37.20",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:10:42",
+      "duration_update": "00:09:11"
     },
-    {
-        "loja": "116"
-    }
-    
+    "archive_status": {
+      "name": "434_update.i1",
+      "size": "5,72MB",
+      "created": "seg 09/02/2026 17:36:38"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "108",
+    "filial": "ALPHAVILLE",
+    "server_status": {
+      "name": "SRVETQALPHA",
+      "ip": "192.168.26.20",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:09:50",
+      "duration_update": "00:08:21"
+    },
+    "archive_status": {
+      "name": "108_update.i1",
+      "size": "6,22MB",
+      "created": "seg 09/02/2026 17:31:54"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "310",
+    "filial": "HORTO",
+    "server_status": {
+      "name": "SRVETQHORT",
+      "ip": "192.168.30.93",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:08:46",
+      "duration_update": "00:07:15"
+    },
+    "archive_status": {
+      "name": "310_update.i1",
+      "size": "5,78MB",
+      "created": "seg 09/02/2026 17:34:12"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "337",
+    "filial": "VITORIA",
+    "server_status": {
+      "name": "SRVETQVIT",
+      "ip": "192.168.30.97",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:08:06",
+      "duration_update": "00:06:36"
+    },
+    "archive_status": {
+      "name": "337_update.i1",
+      "size": "5,44MB",
+      "created": "seg 09/02/2026 17:34:46"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "582",
+    "filial": "RIO VERMELHO",
+    "server_status": {
+      "name": "ETQ-RVERMELHO",
+      "ip": "192.168.30.182",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:07:59",
+      "duration_update": "00:06:23"
+    },
+    "archive_status": {
+      "name": "582_update.i1",
+      "size": "5,08MB",
+      "created": "seg 09/02/2026 17:37:49"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "35",
+    "filial": "ITAIGARA",
+    "server_status": {
+      "name": "LOJAWSETQ02",
+      "ip": "192.168.20.141",
+      "domain": "LOJA",
+      "last_update": "ter 10/02/2026 04:07:43",
+      "duration_update": "00:06:15"
+    },
+    "archive_status": {
+      "name": "35_update.i1",
+      "size": "5,69MB",
+      "created": "seg 09/02/2026 17:30:43"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "442",
+    "filial": "NUTRI ALPHA",
+    "server_status": {
+      "name": "SRVETQNUTRIALP",
+      "ip": "192.168.63.141",
+      "domain": "NUTRIMASTER",
+      "last_update": "ter 10/02/2026 04:06:37",
+      "duration_update": "00:05:05"
+    },
+    "archive_status": {
+      "name": "442_update.i1",
+      "size": "1,92MB",
+      "created": "seg 09/02/2026 17:36:48"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "639",
+    "filial": "SALVADOR SHOPPING",
+    "server_status": {
+      "name": "SRVETQSSASHOP",
+      "ip": "192.168.30.206",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:05:11",
+      "duration_update": "00:03:34"
+    },
+    "archive_status": {
+      "name": "639_update.i1",
+      "size": "5,94MB",
+      "created": "seg 09/02/2026 17:38:18"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "531",
+    "filial": "NUTRI HORTO",
+    "server_status": {
+      "name": "srvetnhor",
+      "ip": "192.168.64.141",
+      "domain": "NUTRIMASTER",
+      "last_update": "ter 10/02/2026 04:05:04",
+      "duration_update": "00:03:28"
+    },
+    "archive_status": {
+      "name": "531_update.i1",
+      "size": "1,93MB",
+      "created": "seg 09/02/2026 17:37:24"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "353",
+    "filial": "AMAZONAS",
+    "server_status": {
+      "name": "SRVETQAMZ",
+      "ip": "192.168.30.105",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:04:32",
+      "duration_update": "00:03:01"
+    },
+    "archive_status": {
+      "name": "353_update.i1",
+      "size": "5,36MB",
+      "created": "seg 09/02/2026 17:35:30"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "450",
+    "filial": "CHAME-CHAME",
+    "server_status": {
+      "name": "SRVETQSABINO",
+      "ip": "192.168.30.106",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:04:30",
+      "duration_update": "00:02:57"
+    },
+    "archive_status": {
+      "name": "450_update.i1",
+      "size": "5,14MB",
+      "created": "seg 09/02/2026 17:37:13"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "370",
+    "filial": "ONDINA",
+    "server_status": {
+      "name": "SRVETQOND",
+      "ip": "192.168.35.20",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:04:28",
+      "duration_update": "00:02:56"
+    },
+    "archive_status": {
+      "name": "370_update.i1",
+      "size": "5,13MB",
+      "created": "seg 09/02/2026 17:36:04"
+    },
+    "services": [
+      { "name": "PricerServer", "status": "Running" },
+      { "name": "PricerMySql", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "345",
+    "filial": "NUTRI SHOPPING",
+    "server_status": {
+      "name": "SRVETQ_NUTSHOP",
+      "ip": "192.168.30.102",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:03:47",
+      "duration_update": "00:02:16"
+    },
+    "archive_status": {
+      "name": "345_update.i1",
+      "size": "1,75MB",
+      "created": "seg 09/02/2026 17:34:56"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "183",
+    "filial": "MIRAGEM",
+    "server_status": {
+      "name": "SRV_ETQMIR",
+      "ip": "192.168.30.101",
+      "domain": "RMIX",
+      "last_update": "ter 10/02/2026 04:03:39",
+      "duration_update": "00:02:09"
+    },
+    "archive_status": {
+      "name": "183_update.i1",
+      "size": "5,47MB",
+      "created": "seg 09/02/2026 17:33:32"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "140",
+    "filial": "NUTRI PITUBA",
+    "server_status": {
+      "name": "nutrietqpit",
+      "ip": "192.168.60.141",
+      "domain": "NUTRI",
+      "last_update": "ter 10/02/2026 04:02:14",
+      "duration_update": "00:00:45"
+    },
+    "archive_status": {
+      "name": "140_update.i1",
+      "size": "1,94MB",
+      "created": "seg 09/02/2026 17:32:42"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  },
+  {
+    "cod": "175",
+    "filial": "NUTRI BARRA",
+    "server_status": {
+      "name": "nutrietqba",
+      "ip": "192.168.61.141",
+      "domain": "NUTRI",
+      "last_update": "ter 10/02/2026 04:02:01",
+      "duration_update": "00:00:31"
+    },
+    "archive_status": {
+      "name": "175_update.i1",
+      "size": "1,92MB",
+      "created": "seg 09/02/2026 17:32:54"
+    },
+    "services": [
+      { "name": "PricerMySql", "status": "Running" },
+      { "name": "PricerServer", "status": "Running" }
+    ]
+  }
 ]
-

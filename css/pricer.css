@@ -41,6 +41,7 @@ section{
     height: max-content;
     box-shadow: var(--shadow-card-eletronic);
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card-pricer[data-isactive="true"]{
@@ -88,7 +89,6 @@ section{
 
 
 /*CONTAINER - STATUS*/
-
 .card-pricer > div{
     width: 100%;
 }
@@ -104,4 +104,22 @@ hr{
 
 .icon-status{
     margin-right: 10px;
+}
+
+
+/*ATTRIBUTE*/
+#container-status{
+    
+}
+
+#container-status[data-isactive = "false"]{
+    display: none;
+}
+
+#container-status[data-isactive = "true"]{
+    display: initial;
+}
+
+@keyframes inout {
+    100% { transition: 2s ease-in-out;}
 }

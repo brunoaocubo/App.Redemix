@@ -19,78 +19,20 @@
         </header>   
         <button id="update-labels">Pricer</button>
         <div id="container-cards">
-            <article class="card-pricer" data-isactive="true">
+
+        </div>
+
+        <template id="template">
+            <article class="card-pricer" id="" data-isactive="false">
                 <section class="section-infos">
                     <img src="../imagens/icons/loja_icon.svg" alt="Loja" class="icon icon-info">
                     <p class="title">Loja</p>
-                    <p class="label">Cod.: <span class="text-normal">108</span></p>
-                    <p class="label">Nome: <span class="text-normal">Alphaville</span></p>
+                    <p class="label">Cod.: <span class="text-normal" id="cod"></span></p>
+                    <p class="label">Nome: <span class="text-normal" id="filial"></span></p>
                     <p class="label">Pricer: <a href="http://192.168.63.141:3333/WebInstoreUI/control/login" rel="next" target="_blank" class="link-painel">Painel</a></p>
-                </section>
-                
-                <div>
-                    <hr>
-
-                    <section class="status" id="container_status_server">
-                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon icon-status">
-                        <div class="content">
-                            <p class="title">Servidor</p>
-                            <p class="label">Nome:
-                                <span class="text-normal" id="server_name">SRVETQ...</span>
-                            </p>
-                            <p class="label">Ip:
-                                <span class="text-normal" id="ip">xxx.xxx.xx.xx</span>
-                            </p>
-                            <p class="label">Domínio:
-                                <span class="text-normal" id="domain">EMPRESA</span>
-                            </p>
-                            <p class="label">Última Atualização:
-                                <span class="text-normal" id="last_update">ter dd/MM/yyyy 00:00:00</span>
-                            </p>
-                            <p class="label">Duração:
-                                <span class="text-normal" id="duration_update">00:00:00</span>
-                            </p>
-                        </div>
-                    </section>
-
-                    <hr>
-
-                    <section class="status" id="container_status_archive">
-                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon icon-status">
-                        <div class="content">
-                            <p class="title">Arquivo</p>
-                            <p class="label">Nome:
-                                <span class="text-normal" id="archive_name">[cod_filial]_update.i1</span>
-                            </p>
-                            <p class="label">Tamanho:
-                                <span class="text-normal" id="size">0MB</span>
-                            </p>
-                            <p class="label">Gerado:
-                                <span class="text-normal" id="created">seg dd/MM/yyyy 00:00:00</span>
-                            </p>
-                        </div>
-                    </section>
-
-                    <hr>
-
-                    <section class="status" id="container_status_services">
-                        <img src="../imagens/icons/ti_icon.png" alt="" class="icon icon-status">
-                        <div class="content">
-                            <p class="title">Serviços</p>
-                            <p class="label">Nome:
-                                <span class="text-normal" id="service_name">Nome do Serviço</span>
-                            </p>
-                            <p class="label">Status:
-                                <span class="text-normal" id="status">Running/error/warning/...</span>
-                            </p>
-                        </div>
-                    </section>
-                    
-                    
-
-                </div>
+                </section>      
             </article>
-        </div>
+        </template>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/navjquery.js"></script>
