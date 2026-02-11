@@ -45,10 +45,11 @@ nav{
     margin: 8px 10px;
 }
 
+/*
 .project-section:hover{
     border-left: 5px solid darkred;
     margin-left: 5px;
-}
+}*/
 
 .project-section img{
     display: block;
@@ -73,7 +74,7 @@ nav{
     transform: translateX(-999%);
     opacity: 0%;
     pointer-events: none;
-    transition: opacity 1s, transform 1s, pointer-events 0s;
+    transition: opacity 1s, transform 0.7s, pointer-events 0s;
 }
 
 hr{
@@ -84,7 +85,7 @@ hr{
     opacity: 100%;
     transform: translateX(28%);
     pointer-events: auto;
-    transition: opacity 1s, transform 0.5s, pointer-events 0s 2s;
+    transition: opacity 1s, transform 0.7s, pointer-events 0s;
 }
 .projects-options[data-isactive='false']{
     transform: translateX(-999%);
