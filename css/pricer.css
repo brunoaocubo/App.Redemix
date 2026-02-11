@@ -29,9 +29,11 @@ section{
     flex-flow: row wrap;
     gap: 10px;
     overflow-y: visible;
+    max-height: 600px;
 }
 
 .card-pricer{
+    flex: 0 1 content;
     display: flex;
     flex-flow: column;
     position: relative;
@@ -42,10 +44,17 @@ section{
     box-shadow: var(--shadow-card-eletronic);
     border-radius: 15px;
     cursor: pointer;
+    transform-origin: left;
+    transition: width 1s, height 1s;
 }
 
 .card-pricer[data-isactive="true"]{
     outline: 3px solid green;
+}
+
+.card-pricer[data-isactive="false"]{
+    
+
 }
 
 .section-infos{
@@ -89,7 +98,7 @@ section{
 
 
 /*CONTAINER - STATUS*/
-.card-pricer > div{
+.card-pricer > #container-status{
     width: 100%;
 }
 
@@ -113,13 +122,9 @@ hr{
 }
 
 #container-status[data-isactive = "false"]{
-    display: none;
+    display: none;   
 }
 
 #container-status[data-isactive = "true"]{
-    display: initial;
-}
-
-@keyframes inout {
-    100% { transition: 2s ease-in-out;}
+    display: initial;  
 }

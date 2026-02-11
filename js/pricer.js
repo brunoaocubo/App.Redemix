@@ -11,13 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     catch(error){
         console.error("Erro ao carregar", error)
     }
-
-    const card_pricer = container_cards.querySelectorAll('.card-pricer')
-    card_pricer.forEach((element) =>{
-        element.addEventListener('click', ()=>{
-            showStatus(element)
-        })
-    })
 })
 
 async function getData(){
@@ -48,15 +41,14 @@ async function getData(){
 
 let loadData = (statusData) => {
     statusData.forEach(data => {
-        updateStatus(data)
         const clone = template.content.cloneNode(true)
         let cod_filial = clone.querySelector('#cod')
-        let filial = clone.querySelector('#filial')
-
-        clone.id = data.cod
+        let filial = clone.querySelector('#filial') 
         cod_filial.textContent = data.cod
         filial.textContent = data.filial
+        clone.querySelector('.card-pricer').setAttribute('data-id', data.cod)
         container_cards.appendChild(clone)
+        updateStatus(data)
     }); 
 }
 
@@ -125,14 +117,11 @@ let updateStatus = function(data){
                 </p>
             </div>
         </section>
-    </div>
-    `
+    </div>`
    
     try {
-        const card_pricer = container_cards.querySelectorAll('.card-pricer')
-
-        card_pricer.forEach((element) => {
-            if(element.id === data.cod){
+        container_cards.querySelectorAll('.card-pricer').forEach((element) => {
+            if(element.getAttribute('data-id') === data.cod){
                 element.insertAdjacentHTML('beforeend', container_status)
             }            
         })
@@ -141,8 +130,9 @@ let updateStatus = function(data){
     }
 }
 
-
-let showStatus = function(card){
+container_cards.addEventListener('click', (e) => {
+    card = e.target.closest('.card-pricer')
+    
     let isactive = false
     let statusCard = card.getAttribute('data-isactive')
     const container_status = card.querySelector('#container-status')
@@ -155,6 +145,6 @@ let showStatus = function(card){
 
     card.setAttribute('data-isactive', isactive)
     container_status.setAttribute('data-isactive', isactive)
-}
+})
 
 btn_update_pricer.addEventListener('click', (() => {confirm('Deseja atualizar todas as etiquetas eletrônicas?')}))
