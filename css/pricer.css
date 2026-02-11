@@ -3,6 +3,9 @@
     --update-tags: #f3d38f;
     --shadow-update-tags: 3px 3px 5px #A85954;
     --shadow-card-eletronic: 2px 2px 5px darkred;
+
+    --green: green;
+    --darkblue: darkblue;
 }
 
 section{
@@ -33,7 +36,7 @@ section{
 }
 
 .card-pricer{
-    flex: 0 1 content;
+    flex: 0 1;
     display: flex;
     flex-flow: column;
     position: relative;
@@ -45,16 +48,44 @@ section{
     border-radius: 15px;
     cursor: pointer;
     transform-origin: left;
-    transition: width 1s, height 1s;
+    line-height: 1.1em;
+    z-index: 9;
+    overflow: hidden;
+    contain: layout;
+    will-change: width, height;
+}
+
+@keyframes in {
+    0%{
+        
+    }
+    100%{
+        min-width: 400px;
+    }
+}
+
+@keyframes out {
+    0%{
+        min-width: 400px;
+        height: 800px;
+    }
+    100%{
+        min-width: 220px;
+        height: 100px;
+    }
 }
 
 .card-pricer[data-isactive="true"]{
-    outline: 3px solid green;
+    animation: in forwards;
+    
+    animation-duration: 1s;
+
+    outline: 3px solid var(--green);
 }
 
 .card-pricer[data-isactive="false"]{
-    
-
+    animation: out forwards;
+    animation-duration: 1s;
 }
 
 .section-infos{
@@ -78,6 +109,8 @@ section{
 }
 
 .text-normal{
+    font-size: 13.5px;
+    color: var(--text-info);
     font-weight: normal;
     text-transform: normal;
 }
@@ -96,14 +129,33 @@ section{
     color: white;
 }
 
-
-/*CONTAINER - STATUS*/
-.card-pricer > #container-status{
-    width: 100%;
-}
-
 hr{
     margin: 10px 0px;
+}
+
+
+/*CONTAINER - STATUS*/
+#container-status{
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes hide {
+    0%{
+        display: initial;
+    }
+    100%{
+        display: none;
+    }
+}
+
+#container-status[data-isactive = "false"]{
+    animation: hide forwards;
+    animation-duration: 1s;
+}
+
+#container-status[data-isactive = "true"]{
+    display: initial;  
 }
 
 .status{
@@ -116,15 +168,42 @@ hr{
 }
 
 
-/*ATTRIBUTE*/
-#container-status{
-    
+/*CONTAINER - LOG*/
+.container-log{
+    display: flex;
+    flex-flow: column;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-#container-status[data-isactive = "false"]{
-    display: none;   
+.container-log::-webkit-scrollbar{
+    background: var(--bg-scrollbar);
+    border-radius: 8px; 
+}
+.container-log::-webkit-scrollbar-thumb{
+    background: darkred;
+    border-radius: 20px;
+}
+.container-log::-webkit-scrollbar-corner{
+    background: rgb(248, 209, 150);
 }
 
-#container-status[data-isactive = "true"]{
-    display: initial;  
+.title-log, .result-sucess, .result-update{
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+.title-log{
+    margin-bottom: 10px;
+    color: var(--text-third);
+}
+
+.result-sucess{
+    color: var(--green);
+}
+
+.result-update{
+    margin-bottom: 10px;
+    color: var(--darkblue);
 }

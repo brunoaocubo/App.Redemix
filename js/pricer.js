@@ -117,6 +117,35 @@ let updateStatus = function(data){
                 </p>
             </div>
         </section>
+        <hr>
+        <section class="container-log">
+            <p class="title">Logs - UPDATE_PRICER</p>
+            <span class="text-normal">11/02/2026 04:01:54</span>
+            <p class="title-log">ATUALIZAÇÃO DE ETIQUETA</p>
+            <p class="text-normal">Verificando se pasta já está mapeada.</p>
+            <p class="text-normal result-sucess">Pasta mapeada.</p>
+            <p class="text-normal">Verificando arquivo.</p>
+            <p class="text-normal">Arquivo: ${archive.name}</p>
+            <p class="text-normal result-update">Atualizado em ${server.last_update}</p>
+            <p class="text-normal result-sucess">Arquivo está atualizado.</p>
+            <p class="text-normal">Enviando arquivos para o SERVIDOR [${server.ip}]...</p>
+            <p class="text-normal result-sucess">Arquivo enviado com sucesso!</p>
+            <p class="text-normal">##############################</p>
+            <p class="title-log">PRICER_STATUS</p>
+            <p class="text-normal">11/02/2026 04:01:54</p>
+            <p class="text-normal">SERVIÇO: ${serviceSQL.name}</p>
+            <p class="text-normal">STATUS: ${serviceSQL.status}</p>
+            <p class="text-normal result-sucess">Serviço rodando...</p>
+            <p class="text-normal">SERVIÇO: ${serviceServer.name}</p>
+            <p class="text-normal">STATUS: ${serviceServer.status}</p>
+            <p class="text-normal result-sucess">Serviço rodando...</p>
+            <p class="text-normal">DURAÇÃO:00:00:17</p>
+            <p class="text-normal">##############################</p>
+            <p class="text-normal result-sucess">Atualização inicializada com sucesso!</p>
+            <p class="text-normal">ROTINA CONCLUÍDA.</p>
+            <p class="text-normal">DURAÇÃO 00:00:29.</p>
+            <p class="text-normal">11/02/2026 06:24:55</p>
+        </section>    
     </div>`
    
     try {
