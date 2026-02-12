@@ -1,7 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(){
-    $("#nav-placeholder").load("../www/nav.html", function(){
+    //$("#nav-placeholder").load("../www/nav.html", function(){
+    fetch("../www/nav.html")
+    .then(response => {
+        if(!response.ok){
+            throw new Error('Erro ao carregar a navbar')
+        }
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector('#nav-placeholder').innerHTML = data
+
         const sections = document.querySelectorAll('.project-section')
-        
+    
         sections.forEach((section) => {
             const option = section.querySelector('.projects-options')
             let closerTimer;
@@ -28,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 clearTimeout(closerTimer)
             })
             option.addEventListener('mouseleave', startCloserTimer)
-            
         })
-    }) 
+    })
+    .catch(error => console.error('Erro:', error))
+    //}) 
 })

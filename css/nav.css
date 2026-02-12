@@ -117,6 +117,6 @@ hr{
     color: var(--text-primary);
 }
 
-#exit{
-    margin-top: 5px;
+#exit{ 
+    margin-top: auto;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Check de Pedidos</title>  
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/checkorders.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=all"/>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <header>
+            <img src="../imagens/icons/cd_icon.png" alt="Check Pedidos" class="icon">
+            <h2 class="main-title">Check de Pedidos</h2>
+        </header>
+        <section>
+            <div class="container-inputs">
+                <p class="container-input">
+                    <input type="date" id="date" class="input" value="2026-02-11" required>
+                    <button id="download"><img src="../imagens/icons/download_icon.svg" alt="Download"> Download</button>
+                </p>
+            </div>
+            <div id="container-loading" data-isloading=''>
+                <span id="loading" class="material-symbols-outlined">cached</span>
+            </div>
+        </section>
+    </main>
+    <script src="../js/checkorders.js"></script>
+    <script src="../js/nav.js"></script>
+    <script type="module" src="../js/logoutObserver.js"></script>
+</body>
+</html>
