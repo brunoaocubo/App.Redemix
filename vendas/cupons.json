@@ -1,0 +1,3026 @@
+[
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "161,66",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:47"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "66,23",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:08"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "188,99",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:47"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "27,18",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:27"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "12,45",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:13"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "55,07",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:12"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "59,15",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:44"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "181,70",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:26"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "146,85",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:57"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "210,49",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:05"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "100,84",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:06"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "38,31",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:56"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "171,35",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:17"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "146,62",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:15"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "245,20",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:21"
+  },
+
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "100,58",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:09"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "64,59",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:48"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "25,57",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:27"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "40,95",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:22"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "165,36",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:51"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "91,63",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:14"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "21,38",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:22"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "226,48",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:22"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "161,37",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:39"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "231,34",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:51"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "42,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "16:58"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "94,52",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:24"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "189,79",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:40"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "111,16",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:46"
+  },
+  {
+    "id": "108",
+    "filial": "ALPHAVILLE",
+    "valor": "62,42",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:37"
+  },
+
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "34,47",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:44"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "83,84",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:56"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "211,50",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:57"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "78,49",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:27"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "83,67",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:35"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "26,02",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:44"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "68,13",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:20"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "195,21",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:54"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "104,90",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:50"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "12,77",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:59"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "159,09",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:43"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "29,44",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:24"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "162,46",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:49"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "118,67",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:51"
+  },
+  {
+    "id": "310",
+    "filial": "HORTO",
+    "valor": "31,35",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:57"
+  },
+
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "22,47",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:38"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "235,05",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:52"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "60,24",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:34"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "102,73",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:18"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "64,65",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:02"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "207,46",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:12"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "10,58",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:23"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "129,39",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:18"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "238,50",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:07"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "90,95",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:24"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "122,67",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "16:16"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "67,86",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:05"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "54,86",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:05"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "129,49",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:46"
+  },
+  {
+    "id": "434",
+    "filial": "STELLA",
+    "valor": "26,51",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:23"
+  },
+
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "64,07",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:21"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "214,93",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:17"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "69,11",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:46"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "192,62",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:38"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "10,60",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:25"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "132,07",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:20"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "92,87",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:42"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "22,71",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:51"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "112,89",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:38"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "200,67",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:44"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "124,76",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:56"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "32,58",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:17"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "174,86",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:14"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "55,77",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:58"
+  },
+  {
+    "id": "116",
+    "filial": "PITUBA",
+    "valor": "66,37",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:50"
+  },
+
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "59,34",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:12"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "24,48",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:37"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "242,95",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:42"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "66,10",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:35"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "224,86",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:42"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "113,41",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:58"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "217,73",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:17"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "199,14",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:10"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "144,10",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:59"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "53,13",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:01"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "137,19",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:51"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "224,10",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:01"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "241,01",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:29"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "36,32",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:17"
+  },
+  {
+    "id": "450",
+    "filial": "CHAME-CHAME",
+    "valor": "152,76",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:48"
+  },
+
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "90,65",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:52"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "214,13",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:45"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "168,06",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:24"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "16,93",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:17"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "162,14",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:14"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "91,73",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:51"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "165,33",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:13"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "66,33",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:39"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "152,11",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:30"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "109,72",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:48"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "184,34",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "16:36"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "118,91",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:40"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "53,10",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:53"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "142,21",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:34"
+  },
+  {
+    "id": "35",
+    "filial": "ITAIGARA",
+    "valor": "56,08",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:57"
+  },
+
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "14,25",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:05"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "193,78",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:50"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "154,48",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:22"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "46,65",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:04"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "50,49",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:04"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "45,32",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:40"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "107,83",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:56"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "121,43",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:46"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "165,09",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:16"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "143,54",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:17"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "40,84",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:32"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "172,67",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:29"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "146,12",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:28"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "11,58",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:25"
+  },
+  {
+    "id": "132",
+    "filial": "IMBUI",
+    "valor": "76,77",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:16"
+  },
+
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "125,13",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:30"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "148,43",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:51"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "20,15",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:21"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "41,25",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:35"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "27,93",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:18"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "77,23",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:35"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "119,86",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:11"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "48,36",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:26"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "191,86",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:38"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "138,03",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:12"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "28,25",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "16:42"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "144,09",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:36"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "68,74",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:27"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "222,40",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:10"
+  },
+  {
+    "id": "19",
+    "filial": "PARIPE",
+    "valor": "29,03",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:07"
+  },
+
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "232,79",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:22"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "155,56",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:26"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "64,99",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:43"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "245,87",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:29"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "47,51",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:05"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "111,70",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:39"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "118,74",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:05"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "97,85",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:03"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "161,09",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:43"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "223,14",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:41"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "35,85",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:12"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "154,69",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:23"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "240,96",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:47"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "173,40",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:10"
+  },
+  {
+    "id": "582",
+    "filial": "RIO VERMELHO",
+    "valor": "63,38",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:37"
+  },
+
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "67,25",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:14"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "110,08",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:27"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "187,43",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:18"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "99,72",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:14"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "70,80",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:38"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "204,53",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:26"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "92,77",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:43"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "136,88",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:11"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "38,57",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:15"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "127,44",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:59"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "116,69",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:50"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "80,03",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:46"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "187,02",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:45"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "113,44",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:25"
+  },
+  {
+    "id": "370",
+    "filial": "ONDINA",
+    "valor": "172,77",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:23"
+  },
+
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "175,51",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:02"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "169,43",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:18"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "106,88",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:08"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "129,19",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:46"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "194,11",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:51"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "18,58",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:24"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "205,74",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:12"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "126,94",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:45"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "111,01",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:04"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "243,14",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:25"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "148,70",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:13"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "133,74",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:10"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "121,83",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:12"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "187,46",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:14"
+  },
+  {
+    "id": "183",
+    "filial": "MIRAGEM",
+    "valor": "127,46",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:25"
+  },
+
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "227,43",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:38"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "29,44",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:10"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "130,39",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:50"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "117,24",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:35"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "139,25",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:10"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "141,17",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:27"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "152,73",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:55"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "209,91",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:24"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "171,74",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:04"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "16,37",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:20"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "149,36",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:06"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "137,79",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:53"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "212,32",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:35"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "35,54",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:08"
+  },
+  {
+    "id": "353",
+    "filial": "AMAZONAS",
+    "valor": "225,63",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:06"
+  },
+
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "136,06",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:58"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "56,37",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:28"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "12,29",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:36"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "32,02",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:11"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "82,34",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:13"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "77,01",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:50"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "179,78",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:52"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "92,33",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:06"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "152,72",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:19"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "12,20",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:32"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "175,97",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:00"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "54,09",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:16"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "176,24",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:01"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "134,77",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:46"
+  },
+  {
+    "id": "94",
+    "filial": "ITAPUA",
+    "valor": "108,62",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:56"
+  },
+
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "34,10",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:58"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "94,21",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:04"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "149,87",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:13"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "215,82",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:24"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "140,91",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:45"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "175,35",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:24"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "93,18",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:47"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "41,16",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:52"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "77,18",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:07"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "17,42",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:35"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "65,20",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:27"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "165,56",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:46"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "14,63",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:02"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "155,91",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:53"
+  },
+  {
+    "id": "60",
+    "filial": "VILA LAURA",
+    "valor": "127,48",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:12"
+  },
+
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "201,30",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:10"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "183,32",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:02"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "229,84",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:02"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "186,80",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:40"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "123,45",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:20"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "218,59",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:50"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "238,41",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:23"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "162,77",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:51"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "106,14",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:49"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "16,86",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:24"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "191,26",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:50"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "131,44",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:25"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "231,26",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:42"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "153,10",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:46"
+  },
+  {
+    "id": "124",
+    "filial": "SIMOES FILHO",
+    "valor": "42,13",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:56"
+  },
+
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "224,17",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:57"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "41,82",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:23"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "232,71",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:08"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "63,43",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:10"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "193,52",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:04"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "38,22",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:05"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "17,12",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:50"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "57,56",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:35"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "147,26",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:34"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "204,87",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:29"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "71,73",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:03"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "214,05",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:40"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "226,25",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:55"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "34,05",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:16"
+  },
+  {
+    "id": "302",
+    "filial": "LITORAL",
+    "valor": "103,12",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:51"
+  },
+
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "113,72",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:03"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "47,17",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:58"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "116,63",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:59"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "39,40",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:39"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "234,11",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:31"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "141,65",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:56"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "146,89",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "12:12"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "131,71",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:45"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "204,05",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:02"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "134,91",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:53"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "215,04",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:13"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "195,59",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:00"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "201,22",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:10"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "135,64",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:33"
+  },
+  {
+    "id": "639",
+    "filial": "SALVADOR SHOPPING",
+    "valor": "82,34",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:02"
+  },
+
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "83,77",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:21"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "140,53",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:08"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "35,56",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:15"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "198,64",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:32"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "50,34",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:31"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "244,10",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:07"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "54,56",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:55"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "92,73",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:11"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "53,18",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:04"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "118,34",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:11"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "208,46",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "16:25"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "30,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:27"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "32,64",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:48"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "193,83",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:43"
+  },
+  {
+    "id": "43",
+    "filial": "SETE PORTAS",
+    "valor": "70,49",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:19"
+  },
+
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "177,12",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:11"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "100,46",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:39"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "78,35",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:40"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "240,89",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:03"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "191,06",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:01"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "154,06",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:41"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "215,30",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:27"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "209,78",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:04"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "189,00",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:19"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "165,51",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:51"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "99,01",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:42"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "134,79",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:12"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "82,02",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:22"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "173,35",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:49"
+  },
+  {
+    "id": "51",
+    "filial": "IAPI",
+    "valor": "80,10",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:36"
+  },
+
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "153,12",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:42"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "78,13",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "07:53"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "50,76",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:48"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "141,68",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:57"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "149,74",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:57"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "24,73",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:54"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "217,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:46"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "91,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:10"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "135,32",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:15"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "13,33",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:05"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "70,67",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:28"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "140,21",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "17:37"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "70,26",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:46"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "102,85",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:39"
+  },
+  {
+    "id": "140",
+    "filial": "NUTRI PITUBA",
+    "valor": "64,66",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:37"
+  },
+
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "195,66",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:20"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "13,67",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:18"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "94,43",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:45"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "129,53",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:02"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "66,53",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:38"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "233,22",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:58"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "231,64",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:24"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "194,81",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:36"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "89,20",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:29"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "43,39",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:27"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "211,55",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "16:18"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "14,79",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:41"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "137,73",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:11"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "194,40",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:24"
+  },
+  {
+    "id": "442",
+    "filial": "NUTRI ALPHA",
+    "valor": "65,70",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:41"
+  },
+
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "111,35",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:57"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "93,43",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:45"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "156,80",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:20"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "119,25",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "09:59"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "55,56",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:15"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "21,83",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:29"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "198,90",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:39"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "135,69",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:09"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "180,25",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:32"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "178,23",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:00"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "147,02",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:29"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "33,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:31"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "133,84",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:55"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "239,66",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "19:10"
+  },
+  {
+    "id": "531",
+    "filial": "NUTRI HORTO",
+    "valor": "97,64",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:03"
+  },
+
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "114,01",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "06:40"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "70,78",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:07"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "134,68",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "08:07"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "48,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:43"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "130,26",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "10:43"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "17,55",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "11:57"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "71,99",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:28"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "41,57",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "13:03"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "12,02",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "14:17"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "13,96",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "15:59"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "196,04",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:03"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "226,83",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:37"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "155,56",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "18:21"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "127,76",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:51"
+  },
+  {
+    "id": "175",
+    "filial": "NUTRI BARRA",
+    "valor": "179,65",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "20:54"
+  },
+
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "205,64",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "06:01"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "85,34",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "07:13"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "137,29",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "08:10"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "151,28",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "09:23"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "36,03",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "10:24"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "247,45",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "11:19"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "245,69",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "12:21"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "222,74",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "13:23"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "189,95",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "14:30"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "69,07",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "15:11"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "196,70",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "16:37"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "71,24",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "17:24"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "201,88",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "18:48"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "233,36",
+    "delivery": false,
+    "data": "2026-02-11",
+    "horario": "19:14"
+  },
+  {
+    "id": "345",
+    "filial": "NUTRI SHOPPING",
+    "valor": "93,64",
+    "delivery": true,
+    "data": "2026-02-11",
+    "horario": "20:31"
+  }
+]
