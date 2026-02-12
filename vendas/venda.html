@@ -13,10 +13,93 @@
 <body>
     <div id="nav-placeholder"></div>
     <main>
-        <header>
-            <img src="../imagens/icons/vendas_icon.png" alt="Pricer - Etiquetas" class="icon">
-            <h2 class="main-title">Vendas</h2>
-        </header>
+            <header>
+                <img src="../imagens/icons/vendas_icon.png" alt="Pricer - Etiquetas" class="icon">
+                <h2 class="main-title">Vendas</h2>
+            </header>
+
+            <section class="summary model-box">
+                <div class="container-summary-infos">
+                    <p class="summary-infos" id="year">2026</p>
+                    <p class="summary-infos" id="mounth">Fevereiro</p>
+                    <p class="summary-infos day-week-number"><span id="day-week">Quinta-feira</span>, <span id="day-number">12</span></p>
+                </div>
+                <div class="continaer-summary-infos">
+                    <p>Total:</p>
+                    <p class="summary-infos" id="total-value">R$ 0.000.000,00</p>
+                </div>
+                <button id="calendar-filter">Calendario</button>   
+            </section>
+            <div class="container-inputs">
+                <p class="container-input model-box">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" class="input" value="2026-02-11" required>
+                    <button id="search"><img src="../imagens/icons/download_icon.svg" alt="Filtrar"></button>
+                </p>
+            </div>
+            <section id="container-details" class="model-box">
+                <h4>VENDAS POR LOJA</h4>
+                <div id="stores">
+                    <details class="store model-box" data-id="">
+                        <summary class="store-summary">
+                            <span class="rank">1</span>
+                            <div>
+                                <p>Loja: <span class="porcentagem">00,00%</span></p>
+                                <p><span class="cod">33.7</span> - <span class="filial">FILIAL</span></p>
+                            </div>
+                            <div>
+                                <p>Cupons:</p>
+                                <p class="total-cupons">0.000</p>
+                            </div>
+                            <div>
+                                <p>Venda:</p>
+                                <p class="vendas">R$ 000.000,00</p>
+                            </div>
+                        </summary>
+                        <br>
+                        <section class="container-vendas-horas">
+                            <h5>VENDAS POR HORA</h5>
+                            <div class="container-horarios">
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                                <div class="horario">
+                                    <p class="info-horario">0h</p>
+                                    <hr>
+                                    <p class="info-valor-horario">0.000,00</p>
+                                </div>
+                            </div>
+                        </section>
+                    </details>
+                </div>
+            </section>
     </main>
     <script src="../js/nav.js"></script>
     <script type="module" src="../js/logoutObserver.js"></script>
