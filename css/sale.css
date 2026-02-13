@@ -3,141 +3,138 @@ header{
 }
 
 .model-box{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 15px;
-    border-radius: 10px;
-    box-shadow: var(--shadow-container-input);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-container-input);
 }
 
-.summary, summary{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
+.summary{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-summary{
-    list-style: none;
-    cursor: pointer;
+.summary-info-group{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.container-summary-infos{
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.summary-infos{
-    color: #2B2A4C;
-    font-weight: bold;
-    line-height: 1.30em;
+.summary-info{
+  color: #2B2A4C;
+  font-weight: bold;
+  line-height: 1.30em;
 }
 
 .day-week-number, #year{
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 #mounth, #total-value{
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
-
-.container-inputs{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.forms{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.container-inputs:not(:first-child){
-    padding-bottom: 30px;
+.forms:not(:first-child){
+  padding-bottom: 30px;
 }
 
-.container-input{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    line-height: 0.5em;
-    padding: 10px 10px;
-    gap: 15px; 
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: var(--shadow-container-input);
+.form-group{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5em;
+  padding: 10px 10px;
+  gap: 15px; 
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-container-input);
 }
 
-.input{
-    padding: 3px;
-    border: none;
-    border-bottom: var(--border-bottom-input);
-    background-color: transparent;
-    outline: none;
-    font-weight: 700;
-    padding-block: 5px 0px;
+.field{
+  padding: 3px;
+  border: none;
+  border-bottom: var(--border-bottom-input);
+  background-color: transparent;
+  outline: none;
+  font-weight: 700;
+  padding-block: 5px 0px;
 }
 
-#search{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-    padding: 2px 10px;
-    background-color: green;
-    color: var(--text-primary);
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+.btn-search{
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  padding: 2px 10px;
+  background-color: green;
+  color: var(--text-primary);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-#search:hover{
-    box-shadow: 3px 3px 5px rgba(61, 139, 68, 0.8);
+.btn-search:hover{
+  box-shadow: 3px 3px 5px rgba(61, 139, 68, 0.8);
 }
 
-#container-details{
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
+.details{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
 }
 
-#stores{
-    display: flex;
-    flex-flow: column;
-    width: 100%;
+.stores{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
 }
 
 .store{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    
+  width: 100%;
+  display: flex;
+  flex-flow: column;
 }
 
 .store-summary{
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
 }
 
-.container-vendas-horas{
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    gap: 15px;
-    background-color: #2B2A4C;
-    color: white;
+.store-metrics{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  gap: 15px;
+  background-color: #2B2A4C;
+  color: white;
 }
 
-.container-vendas-horas > h5{
-    align-self: center;
+.store-metrics > h5{
+  align-self: center;
 }
 
-.container-horarios{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    width: 100%;
-    gap: 15px;
+.store-schedule{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 15px;
 }
