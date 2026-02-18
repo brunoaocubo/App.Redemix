@@ -1,7 +1,4 @@
-header{
-  margin-bottom: 20px;
-}
-
+/*CLASSES REUTILIZAVEIS*/
 .flex-col{
     display: flex;
     flex-flow: column;
@@ -12,17 +9,90 @@ header{
     flex-flow: row wrap;
 }
 
-.summary-grid{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: auto;
-    gap: 10px;
-}
-
 .market-summary-grid{
     display: grid;
     grid-template-columns: auto 1fr auto auto auto;
     grid-template-rows: auto;
+    gap: 10px;
+}
+
+.shadow-box{
+    box-shadow: 5px 5px 10px rgba(139, 0, 0, 0.726);
+}
+
+.border-content{
+    border-radius: 5px;
+}
+
+.small-text{
+    font-size: 14px;
+}
+
+.large-text{
+    font-size: 24px;
+}
+
+
+/*CLASSES ESPECIFICAS*/
+header{
+  margin-bottom: 20px;
+}
+
+h6, h4{
+    text-align: center;
+}
+
+dd{
+    font-weight: 600;
+}
+
+input[type="date"]{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid darkred;
+}
+
+.content{
+    gap: 15px;
+}
+
+.main-summary{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 15px;
+}
+
+.year, .month, .dayweek{
+    font-weight: bold;
+}
+
+.date-filter{
+    justify-content: center;
+    align-self: center;
+    padding: 15px;
+    gap: 10px;
+    width: max-content;
+}
+
+.list-itens{
+    padding: 10px 0px;
+}
+
+.item{
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.item > .list-itens-hour{
+    padding: 10px;
+    gap: 10px;
+    background-color: rgb(147, 141, 195);
+}
+
+.item-hour{
     gap: 10px;
 }
 

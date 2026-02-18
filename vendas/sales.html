@@ -17,28 +17,35 @@
                 <img src="../imagens/icons/vendas_icon.png" alt="Pricer - Etiquetas" class="icon">
                 <h2 class="main-title">Vendas</h2>
             </header>
-            <section class="flex-col">
-                <div class="summary-grid">
+            <section class="content flex-col">
+                <div class="main-summary shadow-box border-content">
                     <div class="flex-col">
-                        <p>2026</p>
-                        <p>Fevereiro</p>
-                        <p>Quinta-feira, 12</p>
+                        <p class="year small-text">2026</p>
+                        <p class="month large-text">Fevereiro</p>
+                        <p class="dayweek small-text">Quinta-feira, 12</p>
                     </div>
-                    <div class="flex-col">
-                        <dl>
-                            <dt>Total:</dt>
-                            <dd>R$ 0.000.000,00</dd>
-                        </dl>
-                    </div>
+                    <dl class="flex-col">
+                        <dt>Total:</dt>
+                        <dd class="large-text">R$ 0.000.000,00</dd>
+                    </dl>
                     <div class="flex-col">
                         <button>
-                            calendar
+                            <img src="../imagens/icons/calendar_icon.svg" alt="Calendário" class="icon">
                         </button>
                     </div>
                 </div>
-                <section class="flex-col">
-                    <h4>VENDAS POR HORA</h4>
-                    <details class="flex-col">
+                <section class="date-filter flex-row shadow-box border-content">
+                    <form action="#" class="flex-col">
+                        <label for="date">Data:</label>
+                        <input type="date" id="date" value="2026-02-18">
+                    </form>
+                    <button>
+                        <img src="#" alt="Procurar">
+                    </button>
+                </section>
+                <section class="list-itens flex-col shadow-box border-content">
+                    <h4>VENDAS POR LOJA</h4>
+                    <details class="item flex-col shadow-box border-content">
                         <summary class="market-summary-grid">
                             <span>
                                 1
@@ -68,18 +75,22 @@
                                 </dl> 
                             </div>
                         </summary>
-                        <div class="flex-col">
-                            <h6>VENDAS POR LOJA</h6>
-                            <div class="flex-row">
+                        <div class="list-itens-hour flex-col border-content">
+                            <h6>VENDAS POR HORA</h6>
+                            <div class="item-hour flex-row">
                                 <div class="flex-col">
-                                    <p>6H</p>
-                                    <hr>
-                                    <p>1.120,16</p>
+                                    <dl>
+                                        <dt>6H</dt>
+                                        <hr>
+                                        <dd>1.120,16</dd>
+                                    </dl>
                                 </div>
                                 <div class="flex-col">
-                                    <p>7H</p>
-                                    <hr>
-                                    <p>1.120,16</p>
+                                    <dl>
+                                        <dt>7H</dt>
+                                        <hr>
+                                        <dd>1.120,16</dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
