@@ -6,22 +6,26 @@ nav{
     display: flex;
     flex-flow: column;
     align-items: center;
+    position: absolute;
     width: max-content;
+    height: 98%;
     min-height: max-content;
-    height: 100%;
     padding: 10px 0px;
     border-radius: 8px;
     background-image: var(--gradient-bg-nav);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+    box-shadow: 1px 1px 5px darkred;
+    z-index: 1000;
+} 
 
 .icon{
     width: max-content;
     height: 26px;
     transition: 0.5s all linear;
 }
+
 .icon-section:hover{
     cursor: pointer;
     transform: scale(120%);
@@ -29,22 +33,29 @@ nav{
 
 #home{
     margin-bottom: 20px;
+    height: 32px;
 }
+
 #home .icon-section{
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
+
 #home .icon-section:hover{
     border: var(--border-home-hover);
+}
+
+#exit{
+    margin-top: auto;
+    height: 26px;
 }
 
 .project-section{
     position: relative;
     width: 100%;
-    margin: 8px 10px;
+    margin: 10px 10px;
 }
-
 
 .project-section:hover{
     border-left: 5px solid darkred;
@@ -57,8 +68,8 @@ nav{
 }
 
 .project-section > .projects-options{
-    position: absolute;
     display: flex;
+    position: absolute;
     flex-flow: column;
     align-items: flex-start;
     gap: 10px;
@@ -71,7 +82,6 @@ nav{
     background-color: var(--bg-project-options);
     box-shadow: 5px 5px 10px darkred;
     z-index: 1000;
-    transform: translateX(-999%);
     opacity: 0%;
     pointer-events: none;
     transition: opacity 1s, transform 0.8s, pointer-events 1s;
@@ -83,12 +93,13 @@ hr{
 
 .projects-options[data-isactive='true']{
     opacity: 100%;
-    transform: translateX(25%);
+    transform: translateX(25%); 
     pointer-events: auto;
     
 }
 .projects-options[data-isactive='false']{
     transform: translateX(-999%);
+    pointer-events: none;
     opacity: 0%;
 }
 
@@ -117,6 +128,16 @@ hr{
     color: var(--text-primary);
 }
 
-#exit{ 
-    margin-top: auto;
+
+@media screen and (min-width: 601px) {
+    nav{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    } 
+
+    .project-section:hover{
+        border-left: 5px solid darkred;
+        margin-left: 5px;
+    }
 }
