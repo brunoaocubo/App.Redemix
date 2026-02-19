@@ -18,45 +18,45 @@
                 <h2 class="main-title">Vendas</h2>
             </header>
             <section class="content flex-col">
-                <div class="main-summary shadow-box border-content">
+                <div class="main-summary shadow-box border-content color-primary">
                     <div class="flex-col">
-                        <p class="year small-text">2026</p>
+                        <p class="year medium-text">2026</p>
                         <p class="month large-text">Fevereiro</p>
-                        <p class="dayweek small-text">Quinta-feira, 12</p>
+                        <p class="dayweek medium-text">Quinta-feira, 12</p>
                     </div>
                     <dl class="flex-col">
                         <dt>Total:</dt>
                         <dd class="large-text">R$ 0.000.000,00</dd>
                     </dl>
                     <div class="flex-col">
-                        <button>
+                        <button class="button_model" id="calendar">
                             <img src="../imagens/icons/calendar_icon.svg" alt="Calendário" class="icon">
                         </button>
                     </div>
                 </div>
                 <section class="date-filter flex-row shadow-box border-content">
                     <form action="#" class="flex-col">
-                        <label for="date">Data:</label>
+                        <label for="date" class="color-primary">Data:</label>
                         <input type="date" id="date" value="2026-02-18">
                     </form>
-                    <button>
-                        <img src="#" alt="Procurar">
+                    <button class="button_model" id="search">
+                        <img src="../imagens/icons/search.icon.svg" alt="Procurar" class="icon">
                     </button>
                 </section>
                 <section class="list-itens flex-col shadow-box border-content">
-                    <h4>VENDAS POR LOJA</h4>
-                    <details class="item flex-col shadow-box border-content">
+                    <h5 class="color-primary">VENDAS POR LOJA</h5>
+                    <details class="item flex-col shadow-box border-content small-text">
                         <summary class="market-summary-grid">
-                            <span>
+                            <span class="rank-number">
                                 1
                             </span>
-                            <div class="flex-col">
+                            <div class="market flex-col">
                                 <dl>
-                                    <dt>Loja: 8.38%</dt>
+                                    <dt>Loja: <span class="percent-sale">8.38%</span></dt>
                                     <dd>13.2 - IMBUI</dd>
                                 </dl> 
                             </div>
-                            <div class="flex-col">
+                            <div class="delivery flex-col">
                                 <dl>
                                     <dt>Delivery:</dt>
                                     <dd>R$ 1.798,03</dd>
@@ -75,26 +75,23 @@
                                 </dl> 
                             </div>
                         </summary>
-                        <div class="list-itens-hour flex-col border-content">
-                            <h6>VENDAS POR HORA</h6>
-                            <div class="item-hour flex-row">
-                                <div class="flex-col">
-                                    <dl>
-                                        <dt>6H</dt>
-                                        <hr>
-                                        <dd>1.120,16</dd>
-                                    </dl>
-                                </div>
-                                <div class="flex-col">
-                                    <dl>
-                                        <dt>7H</dt>
-                                        <hr>
-                                        <dd>1.120,16</dd>
-                                    </dl>
-                                </div>
+                        <div class="container-itens-hour flex-col border-content small-text color-seccondary">
+                            <h3>VENDAS POR HORA</h3>
+                            <div class="list-itens-hour flex-row">
+                                <dl class="item-hour flex-col">
+                                    <dt>6H</dt>
+                                    <hr>
+                                    <dd>1.120,16</dd>
+                                </dl>
+                                <dl class="item-hour flex-col">
+                                    <dt>7H</dt>
+                                    <hr>
+                                    <dd>1.120,16</dd>
+                                </dl>
                             </div>
                         </div>
                     </details>
+                    
                 </section>
             </section>
     </main>
