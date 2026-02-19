@@ -10,6 +10,22 @@
     display: flex;
 }
 
+#nav-onoff[data-isactive='true']{
+    display: flex;
+}
+
+#nav-onoff[data-isactive='false']{
+    display: none;
+}
+
+nav[data-isactive='true']{
+    display: flex;
+}
+
+nav[data-isactive='false']{
+    display: none;
+}
+
 #nav-onoff{
     align-items: center;
     justify-content: center;
@@ -43,7 +59,7 @@ nav{
     background-attachment: fixed;
     background-size: cover;
     box-shadow: 1px 1px 5px darkred;
-    z-index: 1000;
+    z-index: 1000;  
 } 
 
 .icon{
@@ -173,11 +189,5 @@ hr{
 }
 
 @media screen and (max-width: 600px) {
-    #nav-onoff{
-        display: flex;
-    }
 
-    nav{
-        display: none;
-    } 
 }

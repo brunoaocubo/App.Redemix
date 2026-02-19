@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){ 
-    //$("#nav-placeholder").load("../www/nav.html", function(){
     fetch("../www/nav.html")
     .then(response => {
         if(!response.ok){
@@ -45,28 +44,21 @@ document.addEventListener("DOMContentLoaded", function(){
         const main = document.querySelector('main')
 
         btn_nav_hide.addEventListener('click', (() => {
-            nav.classList.add('show')
+            nav.setAttribute('data-isactive', true)
         }))
 
         main.addEventListener('click', (() => {
             if(window.innerWidth <= 600){
-                nav.classList.add('hide')
-                nav.classList.remove('show')
+                nav.setAttribute('data-isactive', false)
+
             }
         }))
 
         window.addEventListener('resize', (evt) => {
             if(evt.target.innerWidth >= 601){
-                nav.classList.remove('show')
-                nav.classList.remove('hide')
+                nav.setAttribute('data-isactive', true)
             }
         })
-
-        if(document.querySelector('html').style.width > '600px'){
-            console.log('passou')
-        }
-
     })
     .catch(error => console.error('Erro:', error))
-    //})  
 })
