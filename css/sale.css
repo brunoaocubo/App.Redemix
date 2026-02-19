@@ -10,7 +10,7 @@
 }
 
 .shadow-box{
-    box-shadow: 5px 2px 5px rgba(139, 0, 0, 0.600);
+    box-shadow: 2px 4px 7px rgba(139, 0, 0, 0.600);
 }
 
 .border-content{
@@ -89,6 +89,8 @@ input[type="date"]{
 }
 
 .date-filter{
+    display: none;
+    flex-flow: row wrap;
     justify-content: center;
     align-self: center;
     padding: 20px;
@@ -101,8 +103,8 @@ input[type="date"]{
 }
 
 .list-itens{
-    padding: 10px;
-    gap: 5px;
+    padding: 20px 10px;
+    gap: 10px;
 }
 
 .list-itens h5{
@@ -111,6 +113,7 @@ input[type="date"]{
 
 .item{
     cursor: pointer;
+    font-size: 10px;
 }
 
 .market-summary-grid{
@@ -148,7 +151,8 @@ input[type="date"]{
     color: darkblue;
 }
 
-.item > .container-itens-hour{
+.container-itens-hour{
+    font-size: 10px;
     padding: 10px;
     gap: 10px;
     background-color: #2B2A4C;
@@ -177,7 +181,26 @@ input[type="date"]{
 }
 
 @media screen and (min-width: 601px) {
-    header{
-      
+    .item{
+        font-size: initial;
+    }
+
+    .container-itens-hour{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .main-summary{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        padding: 15px;
+        
+        justify-items: center;
+    }
+    .main-summary div, .main-summary dl{
+        align-items: center;
     }
 }
