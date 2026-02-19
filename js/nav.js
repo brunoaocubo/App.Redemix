@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){ 
     //$("#nav-placeholder").load("../www/nav.html", function(){
     fetch("../www/nav.html")
     .then(response => {
@@ -39,7 +39,34 @@ document.addEventListener("DOMContentLoaded", function(){
             })
             option.addEventListener('mouseleave', startCloserTimer)
         })
+
+        const btn_nav_hide = document.querySelector('#nav-onoff')
+        const nav = document.querySelector('nav')
+        const main = document.querySelector('main')
+
+        btn_nav_hide.addEventListener('click', (() => {
+            nav.classList.add('show')
+        }))
+
+        main.addEventListener('click', (() => {
+            if(window.innerWidth <= 600){
+                nav.classList.add('hide')
+                nav.classList.remove('show')
+            }
+        }))
+
+        window.addEventListener('resize', (evt) => {
+            if(evt.target.innerWidth >= 601){
+                nav.classList.remove('show')
+                nav.classList.remove('hide')
+            }
+        })
+
+        if(document.querySelector('html').style.width > '600px'){
+            console.log('passou')
+        }
+
     })
     .catch(error => console.error('Erro:', error))
-    //}) 
+    //})  
 })
