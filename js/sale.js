@@ -12,33 +12,48 @@ calendar.addEventListener('click', (() => {
     }
 }))
 
+let checkMonth = (month) =>{
+    const months = [{id: 0,name: 'Janeiro'},{id: 1,name: 'Fevereiro'},{id: 2,name: 'Março'},{id: 3,name: 'Abril'},{id: 4,name: 'Maio'},{id: 5,name: 'Junho'},{id: 6,name: 'Julho'},{id: 7,name: 'Agosto'},{id: 8,name: 'Setembro'},{id: 9,name: 'Outubro'},{id: 10,name: 'Novembro'},{id: 11,name: 'Dezembro'}]
+   
+    months.forEach(element => {
+        if(month === element.id){
+            month = element.name
+        }
+    });
+
+    return month;
+}
+
+let checkDay = (dayWeek) =>{
+    const weekDays = [{id: 0, name: "Domingo"}, {id: 1, name: "Segunda-feira"}, {id: 2, name: "Terça-feira"}, {id: 3, name: "Quarta-feira"}, {id: 4, name: "Quinta-feira"}, {id: 5, name: "Sexta-feira"}, {id: 6, name: "Sábado"}]
+
+    weekDays.forEach((element) => {
+        if(dayWeek === element.id){
+            dayWeek = element.name
+        }
+    })
+    
+    return dayWeek;
+}
 
 document.addEventListener('DOMContentLoaded', (()=>{
     updateMainSummary()
-    fixMonth()
 }))
 
 let updateMainSummary = () => {
     const main_summary = document.querySelector('.main-summary')
-    const year = main_summary.querySelector('.year')
-    const month = main_summary.querySelector('.month')
-    const dayweek = main_summary.querySelector('.dayweek')
+    const s_year = main_summary.querySelector('.year')
+    const s_month = main_summary.querySelector('.month')
+    const s_dayweek = main_summary.querySelector('.dayweek')
+    
+    let dateNow = new Date()
+    let year = dateNow.getFullYear()
+    let month = dateNow.getMonth()
+    let dayweek = dateNow.getDay()
+    let date = dateNow.getDate()
 
-   
-    year.textContent = new Date().getFullYear()
-    month.textContent = new Date().getMonth()
-    dayweek.textContent = new Date().getDate()
-}
-
-let fixMonth = () =>{
-    const months = [{0: 'Janeiro'}, {1: 'Fevereiro'}, {2: 'Março'}]
-    const month = new Date().getMonth()
-
-    months.forEach(element => {
-        if(month === Object.keys(months)[element]){
-            
-        }
-    });
-
-    console.log(Object.keys(months)[2])
+    s_year.textContent = year
+    s_month.textContent = checkMonth(month)
+    s_dayweek.textContent = `${checkDay(dayweek)}, ${date}`
+    
 }
