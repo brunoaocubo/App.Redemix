@@ -81,7 +81,12 @@ function formatedCurrencyBR(value){
 }
 
 function calcPercent(value){
-    let total = 45780.53
+    let cupons = cached_data
+    let total = 0
+    cupons.forEach((element)=>{
+        total += Math.round(parseFloat(element.valor.replace(',','.') * 100))
+    })
+    total = total/100
     let porcentagem = (total * 1)/100
     let resultado = value/porcentagem
     return resultado;
@@ -117,6 +122,7 @@ let loadData = (cupons) => {
     }
 }
 
+
 //CREATE CARD
 let createCard = function(id, cupons){
     const clone = template.content.cloneNode(true)
@@ -129,7 +135,7 @@ let createCard = function(id, cupons){
     let cp_totalValue = 0;
     let cp_deliveryValue = 0;
     let cp_quantity = 0;
-
+    
     cupons.forEach((cupom) => {
         if(id === cupom.id){
             cp_quantity++
@@ -148,29 +154,24 @@ let createCard = function(id, cupons){
     delivery_value.textContent = formatedCurrencyBR(cp_deliveryValue)
     total_cupons.textContent = cp_quantity
     total_value.textContent = formatedCurrencyBR(cp_totalValue)
-
     orderContainer(cp_percentValue, clone)
-    
-    const salesHour = `
-        <div class="container-itens-hour flex-col border-content color-seccondary">
-            <h3>VENDAS POR HORA</h3>
-            <div class="list-itens-hour flex-row">
-                <dl class="item-hour flex-col">
-                    <dt>6H</dt>
-                    <hr>
-                    <dd>${formatedCurrencyBR(cp_totalValue)}</dd>
-                </dl>
-            </div>
-        </div>
-                        </details>`
-    
     try {
-            market.closest('.item').insertAdjacentHTML('beforeend', salesHour)
-   
+        let containerListItens = market.closest('.item').querySelector('.container-itens-hour .list-itens-hour')   
+        createItemHour(containerListItens, element.id, element.horario)
     } 
     catch (error) {
         console.log(error.message)
     }
+}
+
+let createItemHour = function(parent, id, hour, value){
+    const container_sale_hour = `
+        <dl class="item-hour flex-col">
+            <dt>${hour}${'H'}</dt>
+            <hr>
+            <dd>${value}</dd>
+        </dl>`
+    parent.insertAdjacentHTML('beforeend', container_sale_hour)
 }
 
 let arr = []
@@ -188,3 +189,68 @@ let orderContainer = function(percent, clone){
         return "Ainda falta filial";
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let arr2 = []
+
+
+function horarios(id, hour, value){
+    let horarios = ['06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21']
+    let soma  = 0
+
+    hour = hour.replace(/:.*/, "") 
+    
+    if(arr2.length <= 0){
+        arr2.push({id, horario: hour, valor: value})    
+        return;
+    }
+
+    arr2.forEach((data)=>{
+        if(id === data.id && hour === data.horario){
+            data.valor += value
+        }
+        else
+        {
+            arr2.push({id, horario: hour, valor: value})    
+        }
+    })
+}
+
+horarios(337, '09:09', 200)
+horarios(337, '09:49', 20)
+horarios(445, '10:59', 900)
+horarios(445, '10:59', 900)
+
+
+console.log(arr2)

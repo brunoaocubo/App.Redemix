@@ -5,6 +5,14 @@
     "valor": "161,66",
     "delivery": false,
     "data": "2026-02-11",
+    "horario": "06:58"
+  },
+  {
+    "id": "337",
+    "filial": "VITORIA",
+    "valor": "161,66",
+    "delivery": false,
+    "data": "2026-02-11",
     "horario": "06:47"
   },
   {
