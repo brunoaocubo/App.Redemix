@@ -51,58 +51,6 @@ async function getData(){
     }
 }
 
-
-let order = []
-
-let getTotalValueByMarket = (id_market) => {
-    if(cached_data === null){
-        return;
-    }
-
-    let cupons = cached_data
-    let total = 0
-
-    cupons.forEach((element)=>{
-        if(element.id != id_market){
-            return;
-        }   
-
-        const valorLimpo = element.valor.replace(',','.')
-        total += Math.round(parseFloat(valorLimpo * 100))
-    })
-    total = total/100
-    //order.push({id_market, total})
-    //order.sort(function(a, b){return b.total - a.total})
-    //total = total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    return total;
-}
-
-//console.log(order)
-
-let getDeliveryByMarket = (id_market) => {
-    if(cached_data === null){
-        return;
-    }
-
-    let cupons = cached_data
-    let delivery = 0
-
-    cupons.forEach((element)=>{
-        if(element.id != id_market){
-            return;
-        }   
-
-        if(element.delivery){
-            const valorLimpo = element.valor.replace(',','.')
-            delivery += Math.round(parseFloat(valorLimpo * 100))
-        }
-    })
-
-    delivery = delivery/100
-    delivery = delivery.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    return delivery;
-}
-
 let checkMonth = (month) =>{
     const months = [{id: 0,name: 'Janeiro'},{id: 1,name: 'Fevereiro'},{id: 2,name: 'Março'},{id: 3,name: 'Abril'},{id: 4,name: 'Maio'},{id: 5,name: 'Junho'},{id: 6,name: 'Julho'},{id: 7,name: 'Agosto'},{id: 8,name: 'Setembro'},{id: 9,name: 'Outubro'},{id: 10,name: 'Novembro'},{id: 11,name: 'Dezembro'}]
    
@@ -127,31 +75,16 @@ let checkDay = (dayWeek) =>{
     return dayWeek;
 }
 
-/*
-let TotalValueCupons = ()=>{
-    if(cached_data === null){
-        console.log('Os dados dos cupons estão vazios')
-        return;
-    }
-
-    let total = 0;
-    let cupons = cached_data
-
-    cupons.forEach((element)=>{
-        const valorLimpo = element.valor.replace(',','.')
-        total += Math.round(parseFloat(valorLimpo * 100))
-    })
-    total = total/100
-    total = total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-
-    return total
-}
-*/
-
-
 function formatedCurrencyBR(value){
     let valueFormated = value/100
     return valueFormated.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+}
+
+function calcPercent(value){
+    let total = 45780.53
+    let porcentagem = (total * 1)/100
+    let resultado = value/porcentagem
+    return resultado;
 }
 
 //LOAD DATA
@@ -184,11 +117,10 @@ let loadData = (cupons) => {
     }
 }
 
-
 //CREATE CARD
 let createCard = function(id, cupons){
     const clone = template.content.cloneNode(true)
-    clone.querySelector('.market dd').textContent = id
+    const market = clone.querySelector('.market dd')
     const percent_value = clone.querySelector('dt .percent-sale')
     const delivery_value = clone.querySelector('.delivery dd')
     const total_cupons = clone.querySelector('.total-cupons dd')
@@ -209,79 +141,50 @@ let createCard = function(id, cupons){
         }
     })
     let cp_percentValue = calcPercent(cp_totalValue/100).toFixed(2);
+    let cp_percentValueFormated = cp_percentValue + "%"
 
-    percent_value.textContent = cp_percentValue
+    market.textContent = id
+    percent_value.textContent = cp_percentValueFormated
     delivery_value.textContent = formatedCurrencyBR(cp_deliveryValue)
     total_cupons.textContent = cp_quantity
     total_value.textContent = formatedCurrencyBR(cp_totalValue)
 
-    container_list_itens.appendChild(clone)
-
-    //let valueToOrder = cp_totalValue/100
-    //order.push({percent_value, valueToOrder})
-    //order.sort(function(a, b){return b.valueToOrder - a.valueToOrder})
-
-    //orderContainer(cp_percentValue, clone)
-    /*
-    let list_markets_cod = []
-    cupons.forEach((cupom)=>{
-        if(list_markets_cod.includes(cupom.id)){
-            return;
-        }
-        list_markets_cod.push(cupom.id)
-        const clone = template.content.cloneNode(true)
-        let market_name = clone.querySelector('.market dd')
-        let percent_value = clone.querySelector('dt .percent-sale')
-        let delivery = clone.querySelector('.delivery dd')
-        let total_cupons = clone.querySelector('.total-cupons dd')
-        let total_value = clone.querySelector('.total-value-sale dd')
-
-        let valueFormated = getTotalValueByMarket(cupom.id)
-        valueFormated = valueFormated.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-        //let deliveryValue = getDeliveryByMarket(cupom.id)
-        //let totalCp = getQuantityCupons(cupom.id)
-
-        market_name.textContent = cupom.id
-        percent_value.textContent = calcularPorcentagem(getTotalValueByMarket(cupom.id)).toFixed(2) + "%"
-        delivery.textContent = getDeliveryByMarket(cupom.id)
-        total_cupons.textContent = getQuantityCupons(cupom.id)
-        total_value.textContent = valueFormated
-
-        container_list_itens.appendChild(clone)
-    })
+    orderContainer(cp_percentValue, clone)
     
-    const market = `
+    const salesHour = `
         <div class="container-itens-hour flex-col border-content color-seccondary">
             <h3>VENDAS POR HORA</h3>
             <div class="list-itens-hour flex-row">
                 <dl class="item-hour flex-col">
                     <dt>6H</dt>
                     <hr>
-                    <dd>1.120,16</dd>
+                    <dd>${formatedCurrencyBR(cp_totalValue)}</dd>
                 </dl>
             </div>
         </div>
                         </details>`
     
     try {
-            
-    } catch (error) {
-        
-    }*/
+            market.closest('.item').insertAdjacentHTML('beforeend', salesHour)
+   
+    } 
+    catch (error) {
+        console.log(error.message)
+    }
 }
 
-let orderContainer = function(percent, clone){
-    
-    //let arr = Object.values(object)
-    //object.sort(function(a, b){return b - a[0]})
-    console.log(object)
-}
+let arr = []
 
-console.log(order)
+let orderContainer = function(percent, clone){  
+    arr.push({percent, clone})
+    arr.sort(function(a, b){return b.percent - a.percent})
 
-function calcPercent(value){
-    let total = 45780.53
-    let porcentagem = (total * 1)/100
-    let resultado = value/porcentagem
-    return resultado;
+    if(arr.length >= 25){
+        arr.forEach((element)=>{
+            container_list_itens.appendChild(element.clone)
+        })
+    }
+    else{
+        return "Ainda falta filial";
+    }
 }
