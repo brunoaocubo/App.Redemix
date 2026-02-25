@@ -46,35 +46,46 @@ async function getData(){
         
         const cuponsData = await response.json()
         cached_data = cuponsData
+        processSales(cuponsData)
     } catch (error) {
         console.log(error.message)
     }
 }
 
-/*
-let checkMonth = (month) =>{
-    const months = [{id: 0,name: 'Janeiro'},{id: 1,name: 'Fevereiro'},{id: 2,name: 'Março'},{id: 3,name: 'Abril'},{id: 4,name: 'Maio'},{id: 5,name: 'Junho'},{id: 6,name: 'Julho'},{id: 7,name: 'Agosto'},{id: 8,name: 'Setembro'},{id: 9,name: 'Outubro'},{id: 10,name: 'Novembro'},{id: 11,name: 'Dezembro'}]
-   
-    months.forEach(element => {
-        if(month === element.id){
-            month = element.name
-        }
-    });
+const parseValue = (value) => Math.round(parseFloat(value.replace(',','.')*100))
 
-    return month;
+let processSales = (cupons)=>{
+    const resume = {}
+    
+    cupons.forEach((cupom)=>{
+        if(!resume[cupom.id]){
+            resume[cupom.id] = {id: cupom.id, total: 0, qtt: 0, delivery: 0, hours: []}
+        }
+
+        const value = parseValue(cupom.valor)
+        const hour = cupom.horario.split(':')[0]
+
+        resume[cupom.id].total += value
+        resume[cupom.id].qtt += 1
+        //resume[cupom.id].hour.push(hour)
+        
+        if(cupom.delivery){resume[cupom.id].delivery += value}
+
+        resume[cupom.id].hours.push({hour,value})
+    })
+    //console.log(resume)
+
+    return Object.values(resume)
 }
 
-let checkDay = (dayWeek) =>{
-    const weekDays = [{id: 0, name: "Domingo"}, {id: 1, name: "Segunda-feira"}, {id: 2, name: "Terça-feira"}, {id: 3, name: "Quarta-feira"}, {id: 4, name: "Quinta-feira"}, {id: 5, name: "Sexta-feira"}, {id: 6, name: "Sábado"}]
+function teste(){
+    const cupons = processSales(cached_data)
 
-    weekDays.forEach((element) => {
-        if(dayWeek === element.id){
-            dayWeek = element.name
-        }
-    })
-    
-    return dayWeek;
-}*/
+    console.log(cupons)
+}
+
+
+
 
 function formatedCurrencyBR(value){ 
     let valueFormated = value/100
@@ -192,11 +203,9 @@ function orderRank(){
        element.textContent = position
        position++
     })
-    console.log(rank)
 }
 
 let listClones = []
-
 
 let orderContainer = function(percent, clone){  
     listClones.push({percent, clone})
@@ -213,8 +222,6 @@ let orderContainer = function(percent, clone){
 
     orderRank()
 }
-
-
 
 let valuePerHour = []
 
