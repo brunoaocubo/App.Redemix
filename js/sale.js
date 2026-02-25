@@ -51,6 +51,7 @@ async function getData(){
     }
 }
 
+/*
 let checkMonth = (month) =>{
     const months = [{id: 0,name: 'Janeiro'},{id: 1,name: 'Fevereiro'},{id: 2,name: 'Março'},{id: 3,name: 'Abril'},{id: 4,name: 'Maio'},{id: 5,name: 'Junho'},{id: 6,name: 'Julho'},{id: 7,name: 'Agosto'},{id: 8,name: 'Setembro'},{id: 9,name: 'Outubro'},{id: 10,name: 'Novembro'},{id: 11,name: 'Dezembro'}]
    
@@ -73,9 +74,9 @@ let checkDay = (dayWeek) =>{
     })
     
     return dayWeek;
-}
+}*/
 
-function formatedCurrencyBR(value){
+function formatedCurrencyBR(value){ 
     let valueFormated = value/100
     return valueFormated.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 }
@@ -112,9 +113,10 @@ let loadData = (cupons) => {
     const total_values = main_summary.querySelector('.total-value-cupons')
 
     let now = new Date()
+    const monthFormat = now.toLocaleString('pt-BR', {month: "long"})
     s_year.textContent = now.getFullYear()
-    s_month.textContent = checkMonth(now.getMonth())
-    s_dayweek.textContent = `${checkDay(now.getDay())}, ${now.getDate()}`
+    s_month.textContent = monthFormat.charAt(0).toUpperCase() + monthFormat.slice(1)
+    s_dayweek.textContent = `${now.toLocaleString('pt-BR', {day: "2-digit"})}, ${now.toLocaleString('pt-BR', {weekday: "long"})}`
     total_values.textContent = formatedCurrencyBR(totalValues)
 
     for(let i = 0; i < subsidiarys.length; i++){
@@ -144,6 +146,8 @@ let createCard = function(id, cupons){
             if(cupom.delivery){
                 cp_deliveryValue += Math.round(parseFloat(cupom.valor.replace(',', '.') * 100))
             }
+
+            calcSalesHour(id, cupom.horario, cupom.valor)
         }
     })
     let cp_percentValue = calcPercent(cp_totalValue/100).toFixed(2);
@@ -155,102 +159,82 @@ let createCard = function(id, cupons){
     total_cupons.textContent = cp_quantity
     total_value.textContent = formatedCurrencyBR(cp_totalValue)
     orderContainer(cp_percentValue, clone)
+    
     try {
         let containerListItens = market.closest('.item').querySelector('.container-itens-hour .list-itens-hour')   
-        createItemHour(containerListItens, element.id, element.horario)
+        valuePerHour.forEach((element)=>{
+            if(element.id === id){
+                createItemHour(containerListItens, element.hour, element.value)
+            }
+        })
     } 
     catch (error) {
         console.log(error.message)
     }
 }
 
-let createItemHour = function(parent, id, hour, value){
+let createItemHour = function(parent, hour, value){
+    const valueFormat = value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     const container_sale_hour = `
         <dl class="item-hour flex-col">
             <dt>${hour}${'H'}</dt>
             <hr>
-            <dd>${value}</dd>
+            <dd>${valueFormat}</dd>
         </dl>`
     parent.insertAdjacentHTML('beforeend', container_sale_hour)
 }
 
-let arr = []
+function orderRank(){
+    let rank = container_list_itens.querySelectorAll('.rank-number')
+    
+    let position = 1
+    rank.forEach((element)=>{
+       element.textContent = position
+       position++
+    })
+    console.log(rank)
+}
+
+let listClones = []
+
 
 let orderContainer = function(percent, clone){  
-    arr.push({percent, clone})
-    arr.sort(function(a, b){return b.percent - a.percent})
+    listClones.push({percent, clone})
+    listClones.sort(function(a, b){return b.percent - a.percent})
 
-    if(arr.length >= 25){
-        arr.forEach((element)=>{
+    if(listClones.length >= 25){
+        listClones.forEach((element)=>{
             container_list_itens.appendChild(element.clone)
         })
     }
     else{
         return "Ainda falta filial";
     }
+
+    orderRank()
 }
 
 
 
+let valuePerHour = []
 
+function calcSalesHour(id, hour, value){
+    const formatedHour = hour.replace(/:.*/, "") 
+    value = value.replace(',', '.') * 100
+    value = value/100
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let arr2 = []
-
-
-function horarios(id, hour, value){
-    let horarios = ['06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21']
-    let soma  = 0
-
-    hour = hour.replace(/:.*/, "") 
-    
-    if(arr2.length <= 0){
-        arr2.push({id, horario: hour, valor: value})    
+    if(valuePerHour.length <= 0){
+        valuePerHour.push({id,  hour: formatedHour, value: value})    
         return;
     }
 
-    arr2.forEach((data)=>{
-        if(id === data.id && hour === data.horario){
-            data.valor += value
-        }
-        else
-        {
-            arr2.push({id, horario: hour, valor: value})    
-        }
-    })
+    const registerExist = valuePerHour.find(element => element.id === id && element.hour === formatedHour)
+
+    if(registerExist){ 
+        let newValue = registerExist.value + value
+        registerExist.value = newValue
+    }
+    else{
+        valuePerHour.push({id,  hour: formatedHour, value: value})  
+    }
 }
-
-horarios(337, '09:09', 200)
-horarios(337, '09:49', 20)
-horarios(445, '10:59', 900)
-horarios(445, '10:59', 900)
-
-
-console.log(arr2)
