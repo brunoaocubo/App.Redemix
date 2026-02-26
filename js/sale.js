@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("Erro ao carregar", error)
     }
 
-    loadData(cached_data)
+    loadData()
 })
 
 async function getData(){
     if(cached_data){
-        //createCard(cached_data)
+        loadData()
         return;
     }
 
@@ -67,25 +67,13 @@ let processSales = (cupons)=>{
 
         resume[cupom.id].total += value
         resume[cupom.id].qtt += 1
-        //resume[cupom.id].hour.push(hour)
         
         if(cupom.delivery){resume[cupom.id].delivery += value}
 
         resume[cupom.id].hours.push({hour,value})
     })
-    //console.log(resume)
-
     return Object.values(resume)
 }
-
-function teste(){
-    const cupons = processSales(cached_data)
-
-    console.log(cupons)
-}
-
-
-
 
 function formatedCurrencyBR(value){ 
     let valueFormated = value/100
@@ -105,16 +93,14 @@ function calcPercent(value){
 }
 
 //LOAD DATA
-let loadData = (cupons) => {
-    let totalValues = 0;
-    
-    cupons.forEach((cupom) => {
-        const valorLimpo = cupom.valor.replace(',','.')
-        totalValues += Math.round(parseFloat(valorLimpo * 100))      
-        
-        if(!subsidiarys.includes(cupom.id)){
-            subsidiarys.push(cupom.id)
-        }    
+let loadData = () => {
+    const cupons = processSales(cached_data)
+   
+   let totalValues = 0
+    cupons.forEach((cupom)=>{
+        totalValues += cupom.total
+
+        if(!subsidiarys.includes(cupom.id)){subsidiarys.push(cupom.id)}
     })
 
     const main_summary = document.querySelector('.main-summary')
@@ -135,7 +121,6 @@ let loadData = (cupons) => {
     }
 }
 
-
 //CREATE CARD
 let createCard = function(id, cupons){
     const clone = template.content.cloneNode(true)
@@ -151,14 +136,16 @@ let createCard = function(id, cupons){
     
     cupons.forEach((cupom) => {
         if(id === cupom.id){
-            cp_quantity++
-            cp_totalValue += Math.round(parseFloat(cupom.valor.replace(',', '.') * 100))
+            cp_quantity = cupom.qtt
+            cp_totalValue += cupom.total
 
             if(cupom.delivery){
-                cp_deliveryValue += Math.round(parseFloat(cupom.valor.replace(',', '.') * 100))
+                cp_deliveryValue = cupom.delivery
             }
 
-            calcSalesHour(id, cupom.horario, cupom.valor)
+            cupom.hours.forEach((element)=>{
+                calcSalesHour(id, element.hour, element.value/100)
+            })
         }
     })
     let cp_percentValue = calcPercent(cp_totalValue/100).toFixed(2);
@@ -226,22 +213,18 @@ let orderContainer = function(percent, clone){
 let valuePerHour = []
 
 function calcSalesHour(id, hour, value){
-    const formatedHour = hour.replace(/:.*/, "") 
-    value = value.replace(',', '.') * 100
-    value = value/100
-
     if(valuePerHour.length <= 0){
-        valuePerHour.push({id,  hour: formatedHour, value: value})    
+        valuePerHour.push({id,  hour: hour, value: value})    
         return;
     }
 
-    const registerExist = valuePerHour.find(element => element.id === id && element.hour === formatedHour)
+    const registerExist = valuePerHour.find(element => element.id === id && element.hour === hour)
 
     if(registerExist){ 
         let newValue = registerExist.value + value
         registerExist.value = newValue
     }
     else{
-        valuePerHour.push({id,  hour: formatedHour, value: value})  
+        valuePerHour.push({id,  hour: hour, value: value})  
     }
 }
