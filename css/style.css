@@ -5,7 +5,6 @@ body{
     display: flex;
     flex-flow: row;
     padding: 10px;
-    gap: 8px;
     height: 100dvh;
     background-color: darkred;
     background-image: var(--gradient-body);
@@ -66,6 +65,7 @@ main::-webkit-scrollbar-corner{
 
     body{
         flex-flow: row;
+        gap: 8px;
     }
 
     main{
