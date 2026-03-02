@@ -84,12 +84,13 @@ input[type="date"]{
     grid-template-rows: auto;
     align-items: center;
     gap: 10px;
-    padding: 15px;
+    padding-inline: 10px;
     line-height: 1.5em;
 }
 
-.year, .month, .dayweek{
+.dayweek, .fulldate{
     font-weight: bold;
+    color: #2B2A4C;
 }
 
 .container-button-action{
@@ -239,15 +240,56 @@ input[type="date"]{
     color: darkblue;
 }
 
-.container-itens-hour{
+.list-itens-pdv{
+    
+    gap: 15px;
+}
+
+.list-itens-pdv details{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ead196;
+    height: max-content;
+}
+
+.container-itens-pdv{
+    background-color: #2B2A4C;
+    padding: 10px;
+}
+
+.pdv-summary-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    padding-inline: 10px;
+    gap: 15px;
+    row-gap: 10px;
+    padding-block: 5px;
+    align-items: center;
+    justify-content: space-around;
     font-size: 10px;
+    width: 100%;
+}
+
+.pdv{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-itens-hour{
+    border-radius: 5px 5px 5px 5px;
     padding: 10px;
     gap: 10px;
-    background-color: #2B2A4C;
+    background-color: #ead196;
+}
+
+.container-itens-hour h5{
+    color: #2B2A4C;
 }
 
 .list-itens-hour{
-    gap: 10px;
+    gap: 5px;
 }
 
 .item-hour{
@@ -255,7 +297,8 @@ input[type="date"]{
     gap: 5px;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 2px 2px 5px #ead196;
+    color: #2B2A4C;
+    box-shadow: 2px 2px 5px #2B2A4C;
 }
 
 .item-hour dt{
@@ -271,6 +314,21 @@ input[type="date"]{
     .market-summary-grid{
         grid-template-columns: auto auto auto auto auto auto auto auto auto;
         font-size: 10px !important;
+    }
+
+    .list-itens-pdv details{
+        width: min-content;
+    }
+
+    .pdv-summary-grid{
+        width: max-content;
+    }
+
+    .container-itens-hour{
+        border-radius: 5px 5px 5px 5px;
+        padding: 5px;
+        gap: 10px;
+        background-color: #ead196;
     }
 }
 
