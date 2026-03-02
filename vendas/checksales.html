@@ -53,233 +53,121 @@
             </section>
             <section class="list-itens flex-col shadow-box border-content">
                 <h3 class="color-primary">LOJAS</h3>
-                <details class="item flex-col shadow-box border-content">
-                    <summary class="market-summary-grid">
-                        <div class="market">
-                            <span>13.2 - IMBUI</span>
-                            <!--<div class="delivery flex-row">
-                                
-                                <dl class="flex-row">
-                                    <dt>Delivery:</dt>
-                                    <dd>R$ 0.000,00</dd>
-                                    <dt>Vendas:</dt>
-                                    <dd>000</dd>
-                                </dl>
-                            </div>-->
-                        </div>
-                        <dl class="total-cupons flex-col">
-                            <dt>Vendas:</dt>
-                            <dd>0000</dd>
-                        </dl>
-                        <dl class="digit flex-col">
-                            <dt>Digitada:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                        <dl class="total-pdv flex-col">
-                            <dt>Pdv:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                        <dl class="socin flex-col">
-                            <dt>Socin:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                        <dl class="rms flex-col">
-                            <dt>Rms:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                        <dl class="imported flex-col">
-                            <dt>Importada:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                        <dl class="inovar flex-col">
-                            <dt>Inovar:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                        <dl class="gerencial flex-col">
-                            <dt>Gerencial:</dt>
-                            <dd>R$ 000.000,00</dd>
-                        </dl>
-                    </summary>
+                <template id="template-card-market">
+                    <details class="item flex-col shadow-box border-content">
+                        <summary class="market-summary-grid">
+                            <div class="market">
+                                <span>13.2 - IMBUI</span>
+                                <!--<div class="delivery flex-row">
                     
-                    <div class="container-itens-pdv flex-col border-content color-seccondary">
-                        <h5>PDV</h5>
-                        <div class="list-itens-pdv flex-row">
-                            <details>
-                                <summary class="pdv-summary-grid">
-                                    <dl class="pdv flex-row">
-                                        <dt>
-                                            <img src="../imagens/icons/pdv_inoperante_icon.svg" class="icon">
-                                        </dt>
-                                        <dd>33</dd>
+                                    <dl class="flex-row">
+                                        <dt>Delivery:</dt>
+                                        <dd>R$ 0.000,00</dd>
+                                        <dt>Vendas:</dt>
+                                        <dd>000</dd>
                                     </dl>
-                                    <dl>
-                                        <dt>Digitada:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Pdv:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Socin:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                </summary>
-
-                                <div class="container-itens-hour flex-col color-seccondary">
-                                    <h5>VENDAS POR HORA</h5>
-                                    <div class="list-itens-hour flex-row">
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                    </div>
-                                </div>
-                            </details>
-                            <details>
-                                <summary class="pdv-summary-grid">
-                                    <dl class="pdv flex-row">
-                                        <dt>
-                                            <img src="../imagens/icons/pdv_inoperante_icon.svg" class="icon">
-                                        </dt>
-                                        <dd>33</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Digitada:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Pdv:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Socin:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                </summary>
-                                <div class="container-itens-hour flex-col border-content color-seccondary">
-                                    <h5>VENDAS POR HORA</h5>
-                                    <div class="list-itens-hour flex-row">
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                    </div>
-                                </div>
-                            </details>
-                            <details>
-                                <summary class="pdv-summary-grid">
-                                    <dl class="pdv flex-row">
-                                        <dt>
-                                            <img src="../imagens/icons/pdv_inoperante_icon.svg" class="icon">
-                                        </dt>
-                                        <dd>33</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Digitada:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Pdv:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>Socin:</dt>
-                                        <dd>R$ 000.000,00</dd>
-                                    </dl>
-                                </summary>
-                                <div class="container-itens-hour flex-col border-content color-seccondary">
-                                    <h5>VENDAS POR HORA</h5>
-                                    <div class="list-itens-hour flex-row">
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                        <dl class="item-hour flex-col shadow-box border-content">
-                                            <dt>6H</dt>
-                                            <hr>
-                                            <dd>1.120,16</dd>
-                                        </dl>  
-                                    </div>
-                                </div>
-                            </details>
-                            
+                                </div>-->
+                            </div>
+                            <dl class="total-cupons flex-col">
+                                <dt>Vendas:</dt>
+                                <dd>0000</dd>
+                            </dl>
+                            <dl class="digit flex-col">
+                                <dt>Digitada:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                            <dl class="total-pdv flex-col">
+                                <dt>Pdv:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                            <dl class="socin flex-col">
+                                <dt>Socin:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                            <dl class="rms flex-col">
+                                <dt>Rms:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                            <dl class="imported flex-col">
+                                <dt>Importada:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                            <dl class="inovar flex-col">
+                                <dt>Inovar:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                            <dl class="gerencial flex-col">
+                                <dt>Gerencial:</dt>
+                                <dd>R$ 000.000,00</dd>
+                            </dl>
+                        </summary>
+                    
+                        <div class="container-itens-pdv flex-col border-content color-seccondary">
+                            <h5>PDV</h5>
+                            <div class="list-itens-pdv flex-row">
+                                <template id="template-pdv">
+                                    <details>
+                                        <summary class="pdv-summary-grid">
+                                            <dl class="pdv flex-row">
+                                                <dt>
+                                                    <img src="../imagens/icons/pdv_inoperante_icon.svg" class="icon">
+                                                </dt>
+                                                <dd>33</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Digitada:</dt>
+                                                <dd>R$ 000.000,00</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Pdv:</dt>
+                                                <dd>R$ 000.000,00</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Socin:</dt>
+                                                <dd>R$ 000.000,00</dd>
+                                            </dl>
+                                        </summary>
+                                        <div class="container-itens-hour flex-col color-seccondary">
+                                            <h5>VENDAS POR HORA</h5>
+                                            <div class="list-itens-hour flex-row">
+                                                <dl class="item-hour flex-col shadow-box border-content">
+                                                    <dt>6H</dt>
+                                                    <hr>
+                                                    <dd>1.120,16</dd>
+                                                </dl>
+                                                <dl class="item-hour flex-col shadow-box border-content">
+                                                    <dt>6H</dt>
+                                                    <hr>
+                                                    <dd>1.120,16</dd>
+                                                </dl>
+                                                <dl class="item-hour flex-col shadow-box border-content">
+                                                    <dt>6H</dt>
+                                                    <hr>
+                                                    <dd>1.120,16</dd>
+                                                </dl>
+                                                <dl class="item-hour flex-col shadow-box border-content">
+                                                    <dt>6H</dt>
+                                                    <hr>
+                                                    <dd>1.120,16</dd>
+                                                </dl>
+                                                <dl class="item-hour flex-col shadow-box border-content">
+                                                    <dt>6H</dt>
+                                                    <hr>
+                                                    <dd>1.120,16</dd>
+                                                </dl>
+                                                <dl class="item-hour flex-col shadow-box border-content">
+                                                    <dt>6H</dt>
+                                                    <hr>
+                                                    <dd>1.120,16</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </template>
+                            </div>
                         </div>
-                    </div>
-                </details>
+                    </details>
+                </template>
             </section>
         </section>
     </main>
