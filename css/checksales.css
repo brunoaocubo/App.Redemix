@@ -1,0 +1,297 @@
+
+/*CLASSES REUTILIZAVEIS*/
+.flex-col{
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.shadow-box{
+    box-shadow: 2px 4px 7px rgba(139, 0, 0, 0.600);
+}
+
+.border-content{
+    border-radius: 10px;
+}
+
+.small-text{
+    font-size: 10px;
+}
+
+.medium-text{
+    font-size: 14px;
+}
+
+.large-text{
+    font-size: 24px;
+}
+
+.color-primary{
+    color: rgb(49, 42, 73);
+}
+
+.color-seccondary{
+    color: #ead196;
+}
+
+/*Calendar and Search*/
+.button_model{
+    width: 40px;
+    height: 40px; 
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(49, 42, 73);
+    box-shadow: 3px 2px 5px rgba(49, 42, 73, 0.600);
+    cursor: pointer;
+}
+.button_model:hover{
+    background-color: rgb(74, 56, 136);
+}
+
+/*CLASSES ESPECIFICAS*/
+header{
+  margin-bottom: 20px;
+}
+
+h3, h5{
+    text-align: center;
+}
+
+dd{
+    font-weight: 700;
+}
+
+input[type="date"]{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: bold;
+    /*border-bottom: 1px solid darkred;*/
+}
+
+.content{
+    gap: 15px;
+}
+
+.main-summary{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    line-height: 1.5em;
+}
+
+.year, .month, .dayweek{
+    font-weight: bold;
+}
+
+.container-button-action{
+    gap: 10px;
+}
+
+.type-button-action{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    padding: 3px 10px;
+    border: none;
+    background-color: green;
+    border-radius: 3px;
+    font-weight: bolder;
+    color: #ead196;
+    font-size: 11px;
+    font-family: Roboto, Helvetica, sans-serif; 
+    cursor: pointer;
+}
+
+.type-button-action img{
+    height: 24px;
+    width: 24px;
+}
+
+#update{
+    background-color: darkred;
+    box-shadow: 2px 2px 5px darkred;
+}
+
+
+#download{
+    box-shadow: 2px 2px 5px green;
+}
+
+.container-filter{
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    gap: 20px;
+    width: max-content; 
+}
+
+.container-type-search{
+    background-color: #2B2A4C;
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(49, 42, 73, 0.800);
+}
+
+.type-search{
+    color: #ead196;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.type-search:hover{
+    background-color: #e6d1a293;
+}
+
+.type-search[data-isactive="true"]{
+    background-color: #ead196;
+    color: black;
+}
+
+.container-date-filter{
+    gap: 10px;
+}
+
+.container-date-filter form{
+    gap: 10px;
+}
+
+.date{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(49, 42, 73, 0.800);
+}
+
+.date[data-isactive="true"]{
+    display: flex;
+}
+
+.list-itens{
+    padding: 20px 6px;
+    gap: 10px;
+}
+
+.list-itens h5{
+    margin-bottom: 5px;
+}
+
+.item{
+    cursor: pointer;
+    font-size: 9px;
+}
+
+.market-summary-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    padding-inline: 10px;
+    column-gap: 15px;
+    row-gap: 5px;
+    padding-block: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10px;
+}
+
+.market{
+    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: darkred;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.rank-number{
+    align-self: center;
+}
+
+.percent-sale{
+    color: #ead196;
+    background-color: #2B2A4C;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-inline: 5px;
+}
+
+.delivery{
+    color: darkblue;
+}
+
+.container-itens-hour{
+    font-size: 10px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #2B2A4C;
+}
+
+.list-itens-hour{
+    gap: 10px;
+}
+
+.item-hour{
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px #ead196;
+}
+
+.item-hour dt{
+    font-weight: bold;
+}
+
+.item-hour dd{
+    font-weight: normal;
+    padding-inline: 12px;
+}
+
+@media screen and (min-width: 801px){
+    .market-summary-grid{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .market-summary-grid{
+        font-size: 9px;
+    }
+    .main-summary{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        padding: 15px;
+        
+        justify-items: center;
+    }
+    .main-summary div, .main-summary dl{
+        align-items: center;
+    }
+}
+
+main{
+    padding-inline: 5px;
+}
