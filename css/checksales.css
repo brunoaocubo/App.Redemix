@@ -236,8 +236,23 @@ input[type="date"]{
     padding-inline: 5px;
 }
 
-.delivery{
-    color: darkblue;
+.container-delivery{
+    display: flex;
+    flex-flow: row wrap;
+}
+.group-delivery{
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 8px;
+    color: #ead196;
+}
+
+#delivery{
+    background-color: #2B2A4C;
+}
+
+#delivery-sales{
+    background-color: #BF3131;
 }
 
 .list-itens-pdv{
@@ -333,8 +348,13 @@ input[type="date"]{
 }
 
 @media screen and (max-width: 492px) {
+    .market{
+        margin-left: 0px;
+    }
     .market-summary-grid{
-        font-size: 9px;
+        grid-template-columns: 1fr auto auto auto auto;
+        font-size: 8px;
+        column-gap: 5px;
     }
     .main-summary{
         display: grid;
