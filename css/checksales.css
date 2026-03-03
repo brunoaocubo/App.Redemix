@@ -332,6 +332,16 @@ input[type="date"]{
     padding-inline: 12px;
 }
 
+.container-total{
+    width: max-content;
+    padding: 20px 30px;
+    color: #ead196;
+    font-weight: bold;
+    background-color: #2B2A4C;
+    box-shadow: 2px 2px 5px #2B2A4C;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 992px){
     .market-summary-grid{
         font-size: 13px !important;
