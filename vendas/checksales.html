@@ -31,7 +31,7 @@
                     <button class="type-button-action" id="download"><img src="../imagens/icons/download_icon.svg" alt="Download" class="icon"> Exportar</button>
                 </div>
             </div>
-            <section class="container-filter shadow-box border-content flex-col" data-isactive="false" style="display: flex; flex-flow: column; align-items: center;">
+            <section class="container-filter shadow-box border-content flex-col" data-isactive="false">
                 <div class="container-type-search flex-row">
                     <button class="type-search" id="toggle-day" data-isactive="true">Dia</button>
                     <button class="type-search" id="toggle-period" data-isactive="false">Período</button>
@@ -41,7 +41,7 @@
                         <div class="date" data-isactive="true">
                             <input type="date" id="firstdate" value="2026-02-18">
                         </div>
-                        <div class="date shadow-box">
+                        <div class="date shadow-box" data-isactive="false">
                             <input type="date" id="seconddate" value="2026-02-18">
                         </div>
                     </form>

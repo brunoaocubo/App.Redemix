@@ -131,7 +131,7 @@ input[type="date"]{
 
 .container-filter{
     display: none;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-self: center;
     padding: 20px;
@@ -140,6 +140,8 @@ input[type="date"]{
 }
 
 .container-type-search{
+    align-self: center;
+    width: max-content;
     background-color: #2B2A4C;
     padding: 5px 10px;
     gap: 5px;
@@ -183,10 +185,6 @@ input[type="date"]{
     height: max-content;
     padding: 10px;
     box-shadow: 2px 2px 3px rgba(49, 42, 73, 0.800);
-}
-
-.date[data-isactive="true"]{
-    display: flex;
 }
 
 .list-itens{
@@ -297,6 +295,10 @@ input[type="date"]{
     gap: 5px;
 }
 
+[data-isactive='true']{
+    display: flex;
+}
+
 .container-itens-hour{
     border-radius: 5px 5px 5px 5px;
     padding: 10px;
@@ -333,6 +335,9 @@ input[type="date"]{
 @media screen and (min-width: 992px){
     .market-summary-grid{
         font-size: 13px !important;
+    }
+    .container-filter{
+        flex-flow: row wrap;
     }
 }
 
