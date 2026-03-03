@@ -1,0 +1,79 @@
+:root{
+    --purple: #2B2A4C;
+    --beige: #ead196;
+    --beigeVariant: #f8f0de;
+    --darkred: darkred;
+}
+
+.content{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 30px 0px;
+}
+
+.date-filter{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 5px;
+}
+
+select#period{
+    border-radius: 7px;
+    background-color: var(--beigeVariant);
+    color: var(--purple);
+    border-color: var(--darkred);
+}
+
+select#period option{
+    text-align: center;
+}
+
+.search, .download{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 4px 12px;
+    margin-left: 5px;
+    background-color: #2B2A4C;
+    box-shadow: 2px 2px 5px #312e81;
+    border: none;
+    border-radius: 5px;
+    color: #ead196;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.download{
+    background-color: green;
+    box-shadow: 2px 2px 5px green;
+}
+
+.container-result{
+    display: flex;
+    flex-flow: column;
+    width: max-content;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px darkred;
+}
+
+.container-result dl{
+    line-height: 1.1em;
+}
+
+.container-result dt, dd{
+    font-size: small;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+    .content{
+        align-items: flex-start;
+    }
+}
