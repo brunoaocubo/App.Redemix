@@ -194,7 +194,7 @@ input[type="date"]{
     gap: 10px;
 }
 
-.list-itens h5{
+.list-itens h3{
     margin-bottom: 5px;
 }
 
@@ -211,7 +211,7 @@ input[type="date"]{
     row-gap: 5px;
     padding-block: 5px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 10px;
 }
 
@@ -245,6 +245,7 @@ input[type="date"]{
     border-radius: 5px;
     font-size: 8px;
     color: #ead196;
+    width: max-content;
 }
 
 #delivery{
@@ -270,6 +271,10 @@ input[type="date"]{
 .container-itens-pdv{
     background-color: #2B2A4C;
     padding: 10px;
+}
+
+.container-itens-pdv h5, .container-itens-hour h5{
+   font-size: 1em;
 }
 
 .pdv-summary-grid{
@@ -299,7 +304,7 @@ input[type="date"]{
     background-color: #ead196;
 }
 
-.container-itens-hour h5{
+.container-itens-hour h3{
     color: #2B2A4C;
 }
 
@@ -325,10 +330,22 @@ input[type="date"]{
     padding-inline: 12px;
 }
 
+@media screen and (min-width: 992px){
+    .market-summary-grid{
+        font-size: 13px !important;
+    }
+}
+
 @media screen and (min-width: 801px){
     .market-summary-grid{
-        grid-template-columns: auto auto auto auto auto auto auto auto auto;
-        font-size: 10px !important;
+        grid-template-columns: 1fr auto auto auto auto auto auto auto auto;
+        
+        font-size: 10px;
+    }
+
+    .market{
+        font-size: inherit;
+        margin-left: 0px;
     }
 
     .list-itens-pdv details{

@@ -1,5 +1,8 @@
 const list_itens = document.querySelector('.list-itens')
 let subsidiarys = []
+let nameSubsidiarys = [
+    {id:19,name:'PARIPE'},{id:35,name:'ITAIGARA'},{id:43,name:'SETE PORTAS'},{id:51,name:'IAPI'},{id:60,name:'VILA LAURA'},{id:94,name:'ITAPUA'},{id:108,name:'ALPHAVILLE'},{id:116,name:'PITUBA'},{id:124,name:'SIMOES FILHO'},{id:132,name:'IMBUI'},{id:140,name:'NUTRI PITUBA'},{id:175,name:'NUTRI BARRA'},{id:183,name:'MIRAGEM'},{id:302,name:'LITORAL'},{id:310,name:'HORTO'},{id:337,name:'VITORIA'},{id:345,name:'NUTRI SHOPPING'},{id:370,name:'ONDINA'},{id:434,name:'STELLA'},{id:442,name:'NUTRI ALPHA'},{id:450,name:'CHAME-CHAME'},{id:531,name:'NUTRI HORTO'},{id:582,name:'RIO VERMELHO'},{id:639,name:'SALVADOR SHOPPING'}
+]
 let cached_data;
 
 addEventListener('DOMContentLoaded', async()=>{
@@ -62,22 +65,27 @@ let processSales = (cupons)=>{
 let loadData = ()=>{
     const cupons = processSales(cached_data)
 
-    cupons.forEach((element) =>{
-        if(!subsidiarys.includes(element.id)){subsidiarys.push(element.id)}
+    cupons.forEach((cupom) =>{
+        nameSubsidiarys.forEach((subsidiary)=>{
+            if(cupom.id == subsidiary.id)
+            {
+                subsidiarys.push({id:cupom.id, name:subsidiary.name})
+            }
+        })
     })
 
-    subsidiarys.forEach((id)=>{
-        createCardMarket(id, cupons)
+    subsidiarys.forEach((element)=>{
+        createCardMarket(element.id, element.name, cupons)
     })
 
     console.log(subsidiarys)
 }
 
-let createCardMarket = function(id, cupons){
+let createCardMarket = function(id, name, cupons){
     const template = document.querySelector('#template-card-market')
     const clone = template.content.cloneNode(true)
     const market = clone.querySelector('.market span')
-    market.textContent = `${id} - nome filial`
+    market.textContent = `${id} - ${name}`
     list_itens.appendChild(clone)
 
     const parent = market.closest('.item').querySelector('.list-itens-pdv')
