@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Correção de Vendas</title>  
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/fixsales.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <header>
+            <img src="../imagens/icons/vendas_icon.png" alt="Pricer - Etiquetas" class="icon">
+            <h2 class="main-title">Correção de Vendas</h2>
+        </header>
+        <section class="flex-col">
+            <form action="#" method="dialog" class="date-filter flex-row">
+                <label for="period">Período:</label>
+                <select id="period">
+                    <option value="mar">Março/2026</option>
+                    <option value="fev">Fevereiro/2026</option>
+                </select>
+                <button id="search" class="flex-col">
+                    <img src="../imagens/icons/search.icon.svg" alt="buscar" class="icon">
+                    <span>Buscar</span>
+                </button>
+            </form>
+            <article class="container-result flex-col">
+                <h4>Correção:</h4>
+                <dl>
+                    <dt>VENDA;CORIGIDA</dt>
+                    <dd>2026-03-02;03/03/2026 06:53:26</dd>
+                    <dd>2026-03-01;02/03/2026 06:53:26</dd>
+                </dl>
+            </article>
+            <button id="search" class="flex-col">
+                <img src="../imagens/icons/download_icon.svg" alt="download" class="icon">
+                <span>Download</span>
+            </button>
+        </section>
+    </main>
+    <script src="../js/fixsales.js"></script>
+    <script src="../js/nav.js"></script>
+    <script type="module" src="../js/logoutObserver.js"></script>
+</body>
+</html>
