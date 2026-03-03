@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Venda Digitada</title>  
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/reductionz.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <header>
+            <img src="../imagens/icons/vendas_icon.png" alt="Pricer - Etiquetas" class="icon">
+            <h2 class="main-title">Venda Digitada</h2>
+        </header>
+        <section class="content">
+            <div class="filter-sub">
+                <label for="select-subs">Loja:</label>
+                <select id="select-subs">
+                    <option value="19" class="option-subs">1.9 - PARIPE</option>
+                    <template id="template-option-subs">
+                        <option value="19" class="option-subs">1.9 - PARIPE</option>
+                    </template>
+                </select>
+            </div>
+            <div class="form-sale-digit">
+                <section>
+                    <article>
+                        <label for="date">Data:</label>
+                        <input type="date" name="date" id="date">
+                    </article>
+                    <dl>
+                        <dt>Total:</dt>
+                        <dd>R$ 170.865,95</dd>
+                    </dl>
+                </section>
+                <h5>PDV</h5>
+                <section>
+                    <article>
+                        <label for="pdv-select">Número:</label>
+                        <select id="pdv-select">
+                            <option value="31">31</option>
+                            <template id="template-option-subs">
+                                <option value="19" class="option-subs">1.9 - PARIPE</option>
+                            </template>
+                        </select>
+                    </article>
+                    <article>
+                        <label for="value-reduction">Redução Z:</label>
+                        <input type="text" id="value-reduction" value="R$ 0,00">
+                    </article>
+                    <article>
+                        <label for="functional">Funcional?</label>
+                        <select id="functional">
+                            <option value="S">Sim</option>
+                            <option value="N">Não</option>
+                        </select>
+                    </article>
+                </section>
+                <p class="instructions">**Coloque <strong>NÃO</strong>, caso o pdv esteja inoperante por estar com algum problema!</p>
+                <button class="send-sale">
+                    <img src="../imagens/icons/search.icon.svg" alt="lançar" class="icon">
+                    <span>Lançar</span>
+                </button>
+            </div>
+            <div class="list-card-pdv">
+                <article class="card-pdv">
+                    <img src="#" alt="">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-number">1</span>
+                </article>
+                <template id="template-card">
+                    <article class="card-pdv">
+                        <img src="#" alt="">
+                        <span class="pdv-number">31</span>
+                        <span class="pdv-value">R$ 00.000,00</span>
+                        <span class="rank-number">1</span>
+                    </article>
+                </template>
+            </div>
+        </section>
+    </main>
+    <script src="../js/reductionz.js"></script>
+    <script src="../js/nav.js"></script>
+    <script type="module" src="../js/logoutObserver.js"></script>
+</body>
+</html>
