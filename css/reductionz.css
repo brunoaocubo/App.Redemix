@@ -123,6 +123,10 @@ label{
     gap: 10px;
 }
 
+#value-reduction::placeholder{
+    color: black;
+}
+
 .instructions{
     margin-top: -20px;
     color: darkred;
@@ -203,4 +207,22 @@ label{
     height: 20px;
     font-style: italic;
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 499px) {
+    #value-reduction{
+        field-sizing: content;
+    }
+    .card-pdv{
+        justify-content: flex-start;
+        width: 100%;
+        padding-right: 25px;
+        gap: 5px;
+    }
+    .pdv-number{
+        flex: 100;
+    }
+    .pdv-value{
+        flex: 50%;
+    }
 }
