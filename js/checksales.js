@@ -71,7 +71,7 @@ async function getData(){
 
 const parseValue = (value) => Math.round(parseFloat(value.replace(',','.')*100))
 
-let processSales = (cupons)=>{
+let processSales = (cupons = cached_data)=>{
     const resume = {}
     
     cupons.forEach((cupom)=>{
@@ -93,7 +93,7 @@ let processSales = (cupons)=>{
 }
 
 let loadData = ()=>{
-    const cupons = processSales(cached_data)
+    const cupons = processSales()
 
     cupons.forEach((cupom) =>{
         nameSubsidiarys.forEach((subsidiary)=>{
