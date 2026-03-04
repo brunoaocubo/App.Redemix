@@ -18,68 +18,165 @@
             <h2 class="main-title">Venda Digitada</h2>
         </header>
         <section class="content">
-            <div class="filter-sub">
+            <div class="filter box-model">
                 <label for="select-subs">Loja:</label>
-                <select id="select-subs">
+                <select id="select-subs" class="select-model">
                     <option value="19" class="option-subs">1.9 - PARIPE</option>
                     <template id="template-option-subs">
                         <option value="19" class="option-subs">1.9 - PARIPE</option>
                     </template>
                 </select>
             </div>
-            <div class="form-sale-digit">
-                <section>
-                    <article>
+            <div class="form-sale-digit box-model">
+                <section class="summary-date-total">
+                    <article id="filter-date" class="filter">
                         <label for="date">Data:</label>
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="date" class="input-model">
                     </article>
-                    <dl>
+                    <dl class="resume-total">
                         <dt>Total:</dt>
-                        <dd>R$ 170.865,95</dd>
+                        <dd>R$ 000.000,00</dd>
                     </dl>
                 </section>
-                <h5>PDV</h5>
-                <section>
-                    <article>
+                <h4 id="title-middle">PDV</h4>
+                <section class="form-pdv">
+                    <article class="filter">
                         <label for="pdv-select">Número:</label>
-                        <select id="pdv-select">
-                            <option value="31">31</option>
+                        <select id="pdv-select" class="select-model">
+                            <option value="31" class="option-subs">31</option>
                             <template id="template-option-subs">
-                                <option value="19" class="option-subs">1.9 - PARIPE</option>
+                                <option value="31" class="option-subs">31</option>
                             </template>
                         </select>
                     </article>
-                    <article>
+                    <article class="filter">
                         <label for="value-reduction">Redução Z:</label>
-                        <input type="text" id="value-reduction" value="R$ 0,00">
+                        <input type="text" id="value-reduction" value="R$ 0,00" class="input-model">
                     </article>
-                    <article>
+                    <article class="filter">
                         <label for="functional">Funcional?</label>
-                        <select id="functional">
-                            <option value="S">Sim</option>
-                            <option value="N">Não</option>
+                        <select id="functional" class="select-model">
+                            <option value="S" class="option-subs">Sim</option>
+                            <option value="N" class="option-subs">Não</option>
                         </select>
                     </article>
                 </section>
                 <p class="instructions">**Coloque <strong>NÃO</strong>, caso o pdv esteja inoperante por estar com algum problema!</p>
                 <button class="send-sale">
-                    <img src="../imagens/icons/search.icon.svg" alt="lançar" class="icon">
-                    <span>Lançar</span>
+                    <img src="../imagens/icons/plus_icon.svg" class="icon">
+                    Lançar
                 </button>
             </div>
             <div class="list-card-pdv">
-                <article class="card-pdv">
-                    <img src="#" alt="">
+                <article class="card-pdv box-model" data-id="1">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
                     <span class="pdv-number">31</span>
                     <span class="pdv-value">R$ 00.000,00</span>
-                    <span class="rank-number">1</span>
+                    <span class="rank-pdv">1</span>
                 </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                <article class="card-pdv box-model">
+                    <img src="../imagens/icons/ti_icon.png" alt="pdv" class="icon">
+                    <span class="pdv-number">31</span>
+                    <span class="pdv-value">R$ 00.000,00</span>
+                    <span class="rank-pdv">1</span>
+                </article>
+                
                 <template id="template-card">
-                    <article class="card-pdv">
+                    <article class="card-pdv" data-id="1">
                         <img src="#" alt="">
                         <span class="pdv-number">31</span>
                         <span class="pdv-value">R$ 00.000,00</span>
-                        <span class="rank-number">1</span>
+                        <span class="rank-pdv">1</span>
                     </article>
                 </template>
             </div>
