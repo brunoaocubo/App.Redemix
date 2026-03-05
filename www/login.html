@@ -18,12 +18,12 @@
             <p class="container-input">
                 <label for="user" class="label-login">Usuário: </label>
                 <br>
-                <input type="text" id="user" class="input-login">
+                <input type="text" id="user" class="input-login" autocomplete="additional-name" required>
             </p>
             <p class="container-input">
                 <label for="password" class="label-login">Senha:</label>
                 <br>
-                <input type="password" id="password" class="input-login">
+                <input type="password" id="password" class="input-login" autocomplete="current-password" required>
             </p>
             <button type="submit" id="submit"><span class="material-symbols-outlined">lock</span> Login</button>
             <div id="container-loading" data-isloading='false'>
@@ -31,6 +31,7 @@
             </div>
         </form>
     </section>
-    <script src="../js/auth.js"></script>
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/api.js"></script>
 </body>
 </html>

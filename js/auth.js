@@ -1,29 +1,20 @@
+import {Users} from "../js/api.js";
+
 const submit = document.querySelector("#submit")
 const inputs = document.querySelectorAll(".input-login")
 const loading = document.querySelector("#container-loading")
-let cached_data = null;
+let user_data = await Users()
 
-async function getData(){
-    if(cached_data){
-        auth(cached_data)
-        return;
+submit.addEventListener('click', () => {
+    try 
+    {
+        auth(user_data)
+    } 
+    catch (error) 
+    {
+        console.log(`Erro! Não foi possível realizar o login: ${error}`)
     }
-
-    const url = '../users.json'
-    try {
-        const response = await fetch(url)
-        
-        if(!response.ok){
-            throw new Error(`Response status: ${response.status}`)
-        }
-
-        const result = await response.json()
-        cached_data = result
-        auth(result)
-    } catch (error) {
-        console.log(error.message)
-    }
-}
+})
 
 const auth = (result) => {
     const u = inputs[0].value
@@ -34,10 +25,9 @@ const auth = (result) => {
         message.textContent = "Por favor preencha todos os campos."
         return;
     }
+
     StatusLoading(true)
     const user = result.find(element => element.u === u && element.p === p)
-    
-    //const user = Object.values(result.users).filter(element => element.u === u && element.p === p)
 
     setTimeout(() => {
         if(user){
@@ -77,8 +67,4 @@ inputs.forEach((input) => {
     input.addEventListener('keydown', () => {
         StatusLoading(false)
     })
-})
-
-submit.addEventListener('click', () => {
-    getData()
 })
