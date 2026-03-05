@@ -1,9 +1,10 @@
-import {Users} from "../js/api.js";
+//import {Users} from "../js/api.js";
+import { ProcessJson } from "../js/api.js";
+let user_data = await ProcessJson('../users.json', true)
 
 const submit = document.querySelector("#submit")
 const inputs = document.querySelectorAll(".input-login")
 const loading = document.querySelector("#container-loading")
-let user_data = await Users()
 
 submit.addEventListener('click', () => {
     try 

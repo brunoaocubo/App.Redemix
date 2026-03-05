@@ -1,57 +1,17 @@
 import { dataUserLogged } from "./logoutObserver.js";
-const section_icon = document.querySelectorAll('.project-section')
-let cached_data = null;
+import { ProcessJson } from "../js/api.js";
+//const section_icon = document.querySelectorAll('.project-section')
+let department_data = await ProcessJson('../department.json', false);
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded',  () => {
     try{
-        await getData()
         console.log("Página carregada com sucesso!")
+
     }
     catch(error){
         console.error("Erro ao carregar", error)
     }
 })
-
-async function getData(){
-    if(cached_data){
-        loadData(cached_data)
-        return;
-    }
-
-    const url = '../department.json'
-
-    try {
-        const response = await fetch(url)
-        
-        if(!response.ok){
-            throw new Error(`Response1 status: ${response.status}`)
-        }
-        
-        cached_data = response
-        const departmentData = await response.json()
-
-        checkListUsers(departmentData)
-
-    } catch (error) {
-        console.log(error.message)
-    }
-}
-
-const checkListUsers = (departmentsData)=>{
-    let user = dataUserLogged
-
-    departmentsData.forEach((department) => 
-    {
-        department.sections.forEach((section) => 
-        {
-            if(user.department === department.id && user.section === section.id)
-            {
-                updateCardUser(user, department.name, section.name)
-                localStorage.setItem('departmentUser', (section.name + " " + department.name))
-            }
-        })
-    })   
-}
 
 const updateCardUser = (user, departmentData, sectionData) => {
     const fullName = document.querySelector('#full-name')
@@ -72,3 +32,23 @@ const updateCardUser = (user, departmentData, sectionData) => {
 
     user.tel != null?telnumber.textContent = user.tel:telnumber.textContent = ""
 }
+
+const checkListUsers = (departmentsData)=>{
+    const user = dataUserLogged
+    departmentsData.forEach((department) => 
+    {
+        department.sections.forEach((section) => 
+        {
+            if(user.department === department.id && user.section === section.id)
+            {
+                updateCardUser(user, department.name, section.name)
+
+                
+                //Para ser usado posteriormente quando definir visibilidade dos projetos por departamento do usuário
+                localStorage.setItem('departmentUser', (section.name + " " + department.name))
+            }
+        })
+    })   
+}
+
+checkListUsers(department_data)

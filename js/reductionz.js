@@ -1,8 +1,6 @@
 import { ProcessJson } from "../js/api.js";
 
-let teste = await ProcessJson('../users.json')
+//let teste = await ProcessJson('../vendas/cupons.json')
 
 
 
-//console.log(departamentos)
-console.log(teste)

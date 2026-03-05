@@ -1,15 +1,10 @@
-//let cached_user_data = null;
-//let cached_department_data = null;
-//let cached_cupons = null;
-
-let cached = new Map()
-
-export async function ProcessJson(url) {
-    if(cached.has(url)){
-        //console.log('Cached ja possui o seu json!')
-        return cached.get(url);
+export async function ProcessJson(url, saveLocal = false) {
+    if(saveLocal === true && localStorage.getItem(url)){
+        //console.log('Seu json já está no localstorage')
+        let result = localStorage.getItem(url)
+        return JSON.parse(result);
     }
-        //console.log('Cached ainda não possuia o seu json!')
+        //console.log('Seu json ainda não estava no localstorage')
 
     try {
         const response = await fetch(url)
@@ -19,9 +14,15 @@ export async function ProcessJson(url) {
         }
 
         const result = await response.json()
-        cached.set(url, result)
 
-        console.log(cached)
+        if(saveLocal === true){
+            try {
+                localStorage.setItem(url, JSON.stringify(result))
+            } catch (error) {
+                console.log(error)   
+            }
+        }
+
         return result;
 
     } catch (error) {
@@ -29,7 +30,14 @@ export async function ProcessJson(url) {
     }
 }
 
+
+// FETCH ANTIGO - FUNCIONAL, MAS SEM UM CACHÊ LOGIC BEM FEITO //
 /*
+
+let cached_user_data = null;
+let cached_department_data = null;
+let cached_cupons = null;
+
 export async function Users(){
     const url = '../users.json'
 
