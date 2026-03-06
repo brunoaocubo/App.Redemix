@@ -1,13 +1,11 @@
 import { ProcessJson } from "../js/api.js"
-let nameSubsidiarys = await ProcessJson('../json/subsidiarys.json')
+let subsidiarys = await ProcessJson('../json/subsidiarys.json')
 let cupons_data = await ProcessJson('../vendas/cupons.json', false);
 
 const list_itens = document.querySelector('.list-itens')
 const btn_calendar = document.querySelector('#calendar')
 const type_search = document.querySelectorAll('.type-search')
 const secconddate = document.querySelector("#seconddate").closest('div')
-let subsidiarys = []
-
 
 type_search.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
@@ -22,7 +20,6 @@ type_search.forEach((btn)=>{
         }
     })
 })
-
 
 btn_calendar.addEventListener('click', ()=>{
     const container_filter = document.querySelector('.container-filter')
@@ -59,16 +56,6 @@ let processSales = (cupons = cupons_data)=>{
 
 let loadData = ()=>{
     const cupons = processSales()
-
-    cupons.forEach((cupom) =>{
-        nameSubsidiarys.forEach((subsidiary)=>{
-            if(cupom.id == subsidiary.id)
-            {
-                subsidiarys.push({id:cupom.id, name:subsidiary.name})
-            }
-        })
-    })
-
     subsidiarys.forEach((element)=>{
         createCardMarket(element.id, element.name, cupons)
     })
@@ -85,7 +72,7 @@ let createCardMarket = function(id, name, cupons){
 
     try {
         cupons.forEach((cupom)=>{
-            if(id === cupom.id){
+            if(id == cupom.id){
                 for (let index = 0; index < cupom.hours.length; index++) {
                     createCardPdv(parent)
                 }
