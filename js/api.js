@@ -1,10 +1,15 @@
+/**
+ * Instructions:
+ * @param {'/folder/data.json'} url - Indique o caminho completo do arquivo .json.
+ * @param {boolean} saveLocal - (true = cached) / (false = not cached).
+ * @returns 
+ */
 export async function ProcessJson(url, saveLocal = false) {
+
     if(saveLocal === true && localStorage.getItem(url)){
-        //console.log('Seu json já está no localstorage')
         let result = localStorage.getItem(url)
         return JSON.parse(result);
     }
-        //console.log('Seu json ainda não estava no localstorage')
 
     try {
         const response = await fetch(url)
@@ -29,7 +34,7 @@ export async function ProcessJson(url, saveLocal = false) {
         console.log(error)
     }
 }
-
+ 
 
 // FETCH ANTIGO - FUNCIONAL, MAS SEM UM CACHÊ LOGIC BEM FEITO //
 /*
@@ -62,7 +67,6 @@ export async function Cupons() {
 
 //console.log(await Cupons())
 
-/*
 export async function Users(){
     if(cached_user_data){
         return cached_user_data;
@@ -84,9 +88,9 @@ export async function Users(){
     } catch (error) {
         console.log(error)
     }
-}*/
+}
 
-/*
+
 export async function Departments(){
     if(cached_department_data){
         return cached_department_data;

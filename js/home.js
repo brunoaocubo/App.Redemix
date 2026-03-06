@@ -1,17 +1,6 @@
 import { dataUserLogged } from "./logoutObserver.js";
 import { ProcessJson } from "../js/api.js";
-//const section_icon = document.querySelectorAll('.project-section')
 let department_data = await ProcessJson('../department.json', false);
-
-document.addEventListener('DOMContentLoaded',  () => {
-    try{
-        console.log("Página carregada com sucesso!")
-
-    }
-    catch(error){
-        console.error("Erro ao carregar", error)
-    }
-})
 
 const updateCardUser = (user, departmentData, sectionData) => {
     const fullName = document.querySelector('#full-name')
@@ -51,4 +40,5 @@ const checkListUsers = (departmentsData)=>{
     })   
 }
 
+//Devido a ordem de execução, essa chamada necessita ser feita depois da criação dos métodos.
 checkListUsers(department_data)

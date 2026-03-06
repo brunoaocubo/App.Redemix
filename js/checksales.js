@@ -1,7 +1,12 @@
+import { ProcessJson } from "../js/api.js"
+let nameSubsidiarys = await ProcessJson('../json/subsidiarys.json')
+let cupons_data = await ProcessJson('../vendas/cupons.json', false);
+
 const list_itens = document.querySelector('.list-itens')
 const btn_calendar = document.querySelector('#calendar')
 const type_search = document.querySelectorAll('.type-search')
 const secconddate = document.querySelector("#seconddate").closest('div')
+let subsidiarys = []
 
 
 type_search.forEach((btn)=>{
@@ -29,49 +34,9 @@ btn_calendar.addEventListener('click', ()=>{
     }
 })
 
-let subsidiarys = []
-let nameSubsidiarys = [
-    {id:19,name:'PARIPE'},{id:35,name:'ITAIGARA'},{id:43,name:'SETE PORTAS'},{id:51,name:'IAPI'},{id:60,name:'VILA LAURA'},{id:94,name:'ITAPUA'},{id:108,name:'ALPHAVILLE'},{id:116,name:'PITUBA'},{id:124,name:'SIMOES FILHO'},{id:132,name:'IMBUI'},{id:140,name:'NUTRI PITUBA'},{id:175,name:'NUTRI BARRA'},{id:183,name:'MIRAGEM'},{id:302,name:'LITORAL'},{id:310,name:'HORTO'},{id:337,name:'VITORIA'},{id:345,name:'NUTRI SHOPPING'},{id:370,name:'ONDINA'},{id:434,name:'STELLA'},{id:442,name:'NUTRI ALPHA'},{id:450,name:'CHAME-CHAME'},{id:531,name:'NUTRI HORTO'},{id:582,name:'RIO VERMELHO'},{id:639,name:'SALVADOR SHOPPING'}
-]
-let cached_data;
-
-addEventListener('DOMContentLoaded', async()=>{
-    try{
-        await getData()
-        console.log('Página carregada com sucesso!')
-    }
-    catch(error){
-        console.log(error)
-    }
-    loadData()
-})
-
-async function getData(){
-    if(cached_data){
-        loadData()
-        return;
-    }
-
-    const url = '../vendas/cupons.json'
-
-    try {
-        const response = await fetch(url)
-        
-        if(!response.ok){
-            throw new Error(`Response1 status: ${response.status}`)
-        }
-        
-        const cuponsData = await response.json()
-        cached_data = cuponsData
-        processSales(cuponsData)
-    } catch (error) {
-        console.log(error.message)
-    }
-}
-
 const parseValue = (value) => Math.round(parseFloat(value.replace(',','.')*100))
 
-let processSales = (cupons = cached_data)=>{
+let processSales = (cupons = cupons_data)=>{
     const resume = {}
     
     cupons.forEach((cupom)=>{
@@ -107,8 +72,6 @@ let loadData = ()=>{
     subsidiarys.forEach((element)=>{
         createCardMarket(element.id, element.name, cupons)
     })
-
-    console.log(subsidiarys)
 }
 
 let createCardMarket = function(id, name, cupons){
@@ -139,3 +102,5 @@ let createCardPdv = function(parent){
     
     parent.appendChild(clone)
 }
+
+loadData()

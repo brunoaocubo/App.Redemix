@@ -1,8 +1,11 @@
+import { ProcessJson } from "../js/api.js"
+let pricer_data = await ProcessJson('../ti/pricerstatus.json', false)
+
 const btn_update_pricer = document.querySelector('#update-labels')
 const container_cards = document.querySelector('#container-cards')
 const template = document.querySelector('#template')
-let cached_data = null
 
+/*
 document.addEventListener('DOMContentLoaded', async () => {
     try{
         await getData()
@@ -12,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("Erro ao carregar", error)
     }
 })
+
 
 async function getData(){
     if(cached_data){
@@ -32,15 +36,15 @@ async function getData(){
         cached_data = statusData
 
         //createCardPricer(statusData, container_cards)
-        loadData(statusData)
+        processData(statusData)
 
     } catch (error) {
         console.log(error.message)
     }
-}
+}*/
 
-let loadData = (statusData) => {
-    statusData.forEach(data => {
+let processData = (pricer_data) => {
+    pricer_data.forEach(data => {
         const clone = template.content.cloneNode(true)
         let cod_filial = clone.querySelector('#cod')
         let filial = clone.querySelector('#filial') 
@@ -152,7 +156,7 @@ let updateStatus = function(data){
         container_cards.querySelectorAll('.card-pricer').forEach((element) => {
             if(element.getAttribute('data-id') === data.cod){
                 element.insertAdjacentHTML('beforeend', container_status)
-            }            
+            }       
         })
     } catch (error) {
         console.log(error)
@@ -160,16 +164,17 @@ let updateStatus = function(data){
 }
 
 container_cards.addEventListener('click', (e) => {
-    card = e.target.closest('.card-pricer')
-    
-    let isactive = false
+    let card = e.target.closest('.card-pricer')
     let statusCard = card.getAttribute('data-isactive')
     const container_status = card.querySelector('#container-status')
-
+    let isactive = false
+    
     if(!container_status){
         console.log('Não encontrou o container_status')
         return;
     }
+    console.log('O container_status existe')
+
     statusCard === "false"?isactive = true:isactive = false
 
     card.setAttribute('data-isactive', isactive)
@@ -177,3 +182,5 @@ container_cards.addEventListener('click', (e) => {
 })
 
 btn_update_pricer.addEventListener('click', (() => {confirm('Deseja atualizar todas as etiquetas eletrônicas?')}))
+
+processData(pricer_data)

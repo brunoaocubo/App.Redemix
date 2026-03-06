@@ -1,9 +1,10 @@
+import { ProcessJson } from "../js/api.js"
+let cupons_data = await ProcessJson('../vendas/cupons.json', false);
+
 const calendar = document.querySelector('#calendar')
 const container_list_itens = document.querySelector('.list-itens')
-const market_summary = container_list_itens.querySelector('.market-summary-grid')
 const template = document.querySelector('#template')
 let subsidiarys = []
-let cached_data;
 
 calendar.addEventListener('click', (() => {
     const date_filter = document.querySelector('.date-filter')
@@ -16,41 +17,6 @@ calendar.addEventListener('click', (() => {
         date_filter.setAttribute('data-isactive', false)
     }
 }))
-
-document.addEventListener('DOMContentLoaded', async () => {
-    try{
-        await getData()
-        console.log("Página carregada com sucesso!")
-    }
-    catch(error){
-        console.error("Erro ao carregar", error)
-    }
-
-    loadData()
-})
-
-async function getData(){
-    if(cached_data){
-        loadData()
-        return;
-    }
-
-    const url = '../vendas/cupons.json'
-
-    try {
-        const response = await fetch(url)
-        
-        if(!response.ok){
-            throw new Error(`Response1 status: ${response.status}`)
-        }
-        
-        const cuponsData = await response.json()
-        cached_data = cuponsData
-        processSales(cuponsData)
-    } catch (error) {
-        console.log(error.message)
-    }
-}
 
 const parseValue = (value) => Math.round(parseFloat(value.replace(',','.')*100))
 
@@ -81,7 +47,7 @@ function formatedCurrencyBR(value){
 }
 
 function calcPercent(value){
-    let cupons = cached_data
+    let cupons = cupons_data
     let total = 0
     cupons.forEach((element)=>{
         total += Math.round(parseFloat(element.valor.replace(',','.') * 100))
@@ -92,9 +58,8 @@ function calcPercent(value){
     return resultado;
 }
 
-//LOAD DATA
-let loadData = () => {
-    const cupons = processSales(cached_data)
+let updateSummary = () => {
+    const cupons = processSales(cupons_data)
    
    let totalValues = 0
     cupons.forEach((cupom)=>{
@@ -121,7 +86,6 @@ let loadData = () => {
     }
 }
 
-//CREATE CARD
 let createCard = function(id, cupons){
     const clone = template.content.cloneNode(true)
     const market = clone.querySelector('.market dd')
@@ -228,3 +192,5 @@ function calcSalesHour(id, hour, value){
         valuePerHour.push({id,  hour: hour, value: value})  
     }
 }
+
+updateSummary()
