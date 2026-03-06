@@ -76,6 +76,12 @@ label{
     font-weight: bold;
 }
 
+.options{
+    background-color: var(--text-alternative);
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
 .form-sale-digit{
     display: flex;
     flex-flow: column;
