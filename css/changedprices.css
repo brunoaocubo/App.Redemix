@@ -1,0 +1,133 @@
+:root{
+    --purple: #2B2A4C;
+    --beige: #ead196;
+    --grey: #7D766F;
+}
+
+[data-isactive = 'false']{
+    display: none;
+}
+
+[data-isactive = 'true']{
+    display: flex;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+}
+
+.summary{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.subsidiary{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.btn-actions{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    gap: 10px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px var(--purple);
+    background-color: var(--purple);
+    color: var(--beige);
+    font-weight: bolder;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.btn-actions:hover{
+    background-color: #353069;
+}
+
+.window-filter{
+    position: absolute;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+    width: max-content;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 4px 4px 10px darkred;
+    z-index: 9999;
+    transform: translateY(20%);
+    background-image: var(--gradient-bg-main);
+}
+
+.filter{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 4px 4px 10px darkred;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+label{
+    color: #2B2A4C;
+    font-weight: bold;
+}
+
+select{
+    min-width: 300px;
+    text-align: start;
+    padding: 5px 7px;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-color: darkred; 
+    background-color: transparent;
+}
+
+option{
+    background-color: var(--purple);
+    color: var(--beige);
+    font-weight: bold;
+}
+
+form .btn-actions{
+    align-self: flex-end;
+}
+
+th{
+    padding-block: 2px;
+    border-radius: 3px;
+}
+
+tr.row-header{
+    background-color: var(--purple);
+    color: var(--beige);
+    
+}
+
+tr:nth-child(even){
+    background-color: #7D766F;
+}
+
+tr:hover{
+    background-color: #504c48;
+}
+
+td{
+    padding: 5px;
+}
