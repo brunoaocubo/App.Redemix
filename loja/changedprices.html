@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Pricer Etiquetas</title>  
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <header>
+            <img src="../imagens/icons/vendas_icon.png" alt="Preços Alterados" class="icon">
+            <h2 class="main-title">Alterados</h2>
+        </header>
+        <section class="content">
+            <div class="filter">
+                <p class="subs">3.5 - ITAIGARA</p>
+                <div class="buttons">
+                    <button class="btn-filter"><img src="../imagens/icons/search.icon.svg" alt="Filtrar" class="icon">Filtrar</button>
+                    <button class="btn-print"><img src="../imagens/icons/search.icon.svg" alt="Imprimir" class="icon">Imprimir</button>
+                </div>
+            </div>
+            <div class="window-filter">
+                <form action="#" method="dialog" class="date-filter">
+                    <label for="date">Data:</label>
+                    <select id="date">
+                        <option value="2026-03-10">2026-03-10</option>
+                    </select>
+                    <label for="subs">Loja:</label>
+                    <select id="subs">
+                        <option value="35">3.5 - ITAIGARA</option>
+                    </select>
+                    <button class="btn-filter"><img src="../imagens/icons/search.icon.svg" alt="Buscar" class="icon">Buscar</button>
+                </form>
+                <form action="#" method="dialog" class="general-filter">
+                    <label for="promotion">Promoção:</label>
+                    <select id="promotion">
+                        <option value="all">*Todos*</option>
+                        <option value="meu-redemix">MEU_REDEMIX</option>
+                    </select>
+                    <label for="section">Seção:</label>
+                    <select id="section">
+                        <option value="all">*Todos*</option>
+                        <option value="aves">Aves</option>
+                    </select>
+                    <label for="group">Grupo:</label>
+                    <select id="group">
+                        <option value="all">*Todos*</option>
+                        <option value="aves">Aves Inteiras</option>
+                        <option value="corte-aves">Cortes de Aves</option>
+                    </select>
+                    <button class="btn-filter"><img src="../imagens/icons/search.icon.svg" alt="Filtrar" class="icon">Filtrar</button>
+                </form>
+            </div>
+            <table>
+                <tr class="row-header">
+                    <th>EAN:</th>
+                    <th>DESCRIÇÃO:</th>
+                    <th>PREÇO:</th>
+                    <th>PREÇO 2:</th>
+                    <th>PROMOÇÃO:</th>
+                    <th>SEÇÃO:</th>
+                    <th>GRUPO:</th>
+                    <th>SUBGRUPO:</th>
+                    <th>ÍNICIO:</th>
+                    <th>FIM:</th>
+                </tr>
+                <tr class="row">
+                    <td>00000-0</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                    <td>000000</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script type="module" src="../js/logoutObserver.js"></script>
+</body>
+</html>
