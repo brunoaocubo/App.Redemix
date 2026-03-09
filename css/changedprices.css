@@ -22,12 +22,14 @@
 .summary{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 30px;
+    gap: 10px;
 }
 
 .subsidiary{
+    font-size: 1.2em;
     color: var(--purple);
     font-weight: bold;
 }
@@ -90,7 +92,7 @@ label{
 }
 
 select{
-    min-width: 300px;
+    min-width: 200px;
     text-align: start;
     padding: 5px 7px;
     border-width: 0px;
@@ -107,6 +109,11 @@ option{
 
 form .btn-actions{
     align-self: flex-end;
+}
+
+table{
+    width: 100%;
+    font-size: 0.7em;
 }
 
 th{
@@ -130,4 +137,19 @@ tr:hover{
 
 td{
     padding: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    .summary{
+        justify-content: space-between;
+    }
+
+    select{
+        min-width: 300px;
+    }
+
+    table{
+        width: 100%;
+        font-size: 1em;
+    }
 }
