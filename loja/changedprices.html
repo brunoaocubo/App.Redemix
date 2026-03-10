@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Center - Pricer Etiquetas</title>  
+    <title>App Center - Alterados</title>  
     <link rel="shortcut icon" href="../imagens/favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/changedprices.css">
     <link rel="stylesheet" href="../css/root.css">
@@ -29,11 +29,15 @@
                 <form action="#" method="dialog" class="date-filter filter">
                     <label for="date">Data:</label>
                     <select id="date">
-                        <option value="2026-03-10">2026-03-10</option>
+                        <template id="template-opt-date">
+                            <option value="2026-03-10">2026-03-10</option>
+                        </template>
                     </select>
                     <label for="subs">Loja:</label>
                     <select id="subs">
-                        <option value="35">3.5 - ITAIGARA</option>
+                        <template id="template-opt-subs">
+                            <option value="35">3.5 - ITAIGARA</option>
+                        </template>
                     </select>
                     <button class="btn-actions btn-filter" id="search-filter"><img src="../imagens/icons/search.icon.svg" alt="Buscar" class="icon">Buscar</button>
                 </form>
@@ -41,18 +45,23 @@
                     <label for="promotion">Promoção:</label>
                     <select id="promotion">
                         <option value="all">*Todos*</option>
-                        <option value="meu-redemix">MEU_REDEMIX</option>
+                        <template id="template-opt-promotion">
+                            <option value="meu-redemix">MEU_REDEMIX</option>
+                        </template>
                     </select>
                     <label for="section">Seção:</label>
                     <select id="section">
                         <option value="all">*Todos*</option>
-                        <option value="aves">Aves</option>
+                        <template id="template-opt-section">
+                            <option value="aves">Aves</option>
+                        </template>
                     </select>
                     <label for="group">Grupo:</label>
                     <select id="group">
                         <option value="all">*Todos*</option>
-                        <option value="aves">Aves Inteiras</option>
-                        <option value="corte-aves">Cortes de Aves</option>
+                        <template id="template-opt-group">
+                            <option value="aves">Aves Inteiras</option>
+                        </template>
                     </select>
                     <button class="btn-actions btn-filter"><img src="../imagens/icons/search.icon.svg" alt="Filtrar" class="icon">Filtrar</button>
                 </form>
@@ -71,16 +80,9 @@
                 <th>FIM:</th>
                 </tr>
                 <tr class="row">
-                <td>00000-0</td>
-                <td>000000000000000000000</td>
-                <td>000000</td>
-                <td>000000</td>
-                <td>000000</td>
-                <td>000000</td>
-                <td>000000</td>
-                <td>000000</td>
-                <td>000000</td>
-                <td>000000</td>
+                <template id="template-td">
+                    <td>00000-0</td>
+                </template>
                 </tr>
             </table>
         </section>
@@ -88,5 +90,6 @@
     <script src="../js/nav.js"></script>
     <script type="module" src="../js/logoutObserver.js"></script>
     <script type="module" src="../js/changedprices.js"></script>
+    <script type="module" src="../js/api.js"></script>
 </body>
 </html>
