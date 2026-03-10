@@ -1,0 +1,191 @@
+:root{
+    --beige: #ead196;
+    --purple: #2B2A4C;
+}
+
+.content{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3{
+    color: var(--purple);
+}
+
+#btn-add-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: green;
+    padding-block: 7px;
+    padding-left: 13px;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px green;
+    cursor: pointer;
+}
+
+#btn-add-email:hover{
+    background-color: rgb(0, 158, 0);
+}
+
+#btn-add-email img{
+    height: 26px;
+    width: 26px;
+}
+
+#container-new-email{
+    position: absolute;
+    display: flex;
+    left: 55%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px darkred;
+    padding: 10px 20px;
+    border-radius: 10px;
+    gap: 15px;
+    background-image: var(--gradient-bg-main);
+}
+
+label{
+    font-weight: bold;
+    color: var(--purple);
+}
+
+input{
+    min-width: 300px;
+    text-align: start;
+    padding: 5px 7px;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-color: darkred;
+    background-color: transparent;
+}
+
+.save-new-email{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px darkgreen;
+    gap: 5px;
+    font-weight: bold;
+    color: var(--beige);
+    cursor: pointer;
+}
+
+.save-new-email:hover{
+    background-color: rgb(0, 158, 0);
+}
+
+.close-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(30%, -50%);
+    font-weight: bolder;
+    background-color: darkred;
+    box-shadow: 2px 2px 5px darkred;
+    padding: 7px 10px;
+    color: var(--beige);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-container:hover{
+    background-color: rgb(196, 7, 7);
+}
+
+.container-list-emails{
+    box-shadow: 2px 2px 5px darkred;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.email-user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: max-content;
+    box-shadow: 2px 2px 5px darkred;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.email-user img, .delete-email{
+    height: 24px;
+    width: 24px;
+}
+
+.delete-email{
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container-actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.delete-notes{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--beige);
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 7px;
+    background-color: darkred;
+    padding: 8px 10px;
+    box-shadow: 4px 4px 8px rgb(117, 7, 7);
+    cursor: pointer;
+}
+
+.start-process{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--beige);
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--purple);
+    padding: 8px 15px;
+    box-shadow: 4px 4px 8px var(--purple);
+    cursor: pointer;
+}
+
+.delete-notes:hover{
+    background-color: rgb(196, 7, 7);
+}
+
+.start-process:hover{
+    background-color: #37357c;
+}

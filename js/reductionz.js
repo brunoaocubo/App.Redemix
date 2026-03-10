@@ -58,7 +58,13 @@ subsidiaries.forEach(element => {
 select_subs.addEventListener('change', ()=>{
     pdvs_registred.forEach((element)=>{
         if(select_subs.value == element.id){
-            updateFilterPdv(select_subs.value, element.id, element.list_pdv)
+            updateFilterPdv(element.list_pdv)
         }
     })
+})
+
+pdvs_registred.forEach((element)=>{
+    if(select_subs.value == element.id){
+        updateFilterPdv(element.list_pdv)
+    }
 })
