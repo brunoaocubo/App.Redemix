@@ -1,6 +1,6 @@
 import {ProcessJson} from '../js/api.js'
 const prices_data = await ProcessJson('../json/changedprices.json')
-console.log(prices_data)
+const subsidiaries = await ProcessJson('../json/subsidiarys.json')
 
 const window_filter = document.querySelector('.window-filter')
 const btn_open_filter = document.querySelector('#open-filter')
@@ -32,8 +32,29 @@ main.addEventListener('click', (evt)=>{
     }
 })
 
-let updateTable = function(){
-   
+let select_subs = window_filter.querySelector('#subs')
+let template_opt_subs = window_filter.querySelector('#template-opt-subs')
+
+let updateFilterSub = function(id, name){
+    let option;
+    select_subs.querySelectorAll('.option-subs').forEach((element)=>{
+        if(element.value == id){
+            option = element.value
+            return;
+        }
+    })
+
+    if(option == id){ return; }
+
+    let data_to_clone = 
+    [
+        {name:"value",value:`${id}`},
+        {name:"textContent",value:`${id} - ${name}`}
+    ]
+
+    let clone = createClone(template_opt_subs, '.option-subs', data_to_clone)
+
+    select_subs.appendChild(clone)
 }
 
 const createClone = (template, selector, attributes)=>{
@@ -51,17 +72,43 @@ const createClone = (template, selector, attributes)=>{
     return new_clone;
 }
 
-let updateFilterSubss = function(id, name){
+//let select_date = window_filter.querySelector('#date')
+//let template_date = select_date.querySelector('#template-opt-date')
+
+let updateFilters = function(parent_selector, template_selector, data){
+    let parent = window_filter.querySelector(parent_selector)
+    let template = window_filter.querySelector(template_selector)
+    let child = template.querySelector('option')
+    let option;
+
+    parent.querySelectorAll(template).forEach((element)=>{
+        if(element.value == data){
+            option = element.value
+            return;
+        }
+    })
+
+    if(option == data){ return; }
+
     let data_to_clone = 
     [
-        {name: "value", value: `${id}`}, 
-        {name: "textContent", value: `${id} - ${name}`}
+        {name:"value",value:`${data}`},
+        {name:"textContent",value:`${data}`}
     ]
-    let clone = createClone(template_opt_subs, '.option-subs', data_to_clone)
 
-    select_subs.appendChild(clone)
+    let clone = createClone(template, template_selector, data_to_clone)
+
+    parent.appendChild(clone)
 }
 
+let select_promotion = window_filter.querySelector('#promotion')
+let template_promotion = select_promotion.querySelector('#template-opt-promotion')
+
 prices_data.forEach((element) => {
-    updateTable(element.id, element)
+    subsidiaries.forEach((sub)=>{
+        if(element.id == sub.id){
+            updateFilterSub(element.id, sub.name)
+        }
+    })
+    updateFilters('#date','#template-opt-date', element.date_to_change)
 })
