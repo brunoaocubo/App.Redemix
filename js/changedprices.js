@@ -7,6 +7,14 @@ const btn_open_filter = document.querySelector('#open-filter')
 const btn_search_filter = window_filter.querySelector('#search-filter')
 const main = document.querySelector('main')
 
+let select_subs = window_filter.querySelector('#subs')
+
+main.addEventListener('click', (evt)=>{
+    if(evt.target === main){
+        window_filter.setAttribute('data-isactive', 'false')
+    }
+})
+
 btn_open_filter.addEventListener('click', ()=>{
     const act_attr = window_filter.getAttribute('data-isactive')
     let value_attr = 'false'
@@ -24,15 +32,13 @@ btn_search_filter.addEventListener('click', ()=>{
         value_attr = 'true'
     }
     general_filter.setAttribute('data-isactive', value_attr)
+
+    const date = window_filter.querySelector('select#date').value
+    const sub = select_subs.value
+
+    showDataTable(sub, date, prices_data)
 })
 
-main.addEventListener('click', (evt)=>{
-    if(evt.target === main){
-        window_filter.setAttribute('data-isactive', 'false')
-    }
-})
-
-let select_subs = window_filter.querySelector('#subs')
 let template_opt_subs = window_filter.querySelector('#template-opt-subs')
 
 let updateFilterSub = function(id, name){
@@ -72,16 +78,12 @@ const createClone = (template, selector, attributes)=>{
     return new_clone;
 }
 
-//let select_date = window_filter.querySelector('#date')
-//let template_date = select_date.querySelector('#template-opt-date')
-
-let updateFilters = function(parent_selector, template_selector, data){
+let updateFilters = function(parent_selector, template, selector, data){
     let parent = window_filter.querySelector(parent_selector)
-    let template = window_filter.querySelector(template_selector)
-    let child = template.querySelector('option')
+    let newtemplate = window_filter.querySelector(template)
     let option;
 
-    parent.querySelectorAll(template).forEach((element)=>{
+    parent.querySelectorAll(selector).forEach((element)=>{
         if(element.value == data){
             option = element.value
             return;
@@ -96,13 +98,36 @@ let updateFilters = function(parent_selector, template_selector, data){
         {name:"textContent",value:`${data}`}
     ]
 
-    let clone = createClone(template, template_selector, data_to_clone)
+    let clone = createClone(newtemplate, selector, data_to_clone)
 
     parent.appendChild(clone)
 }
 
-let select_promotion = window_filter.querySelector('#promotion')
-let template_promotion = select_promotion.querySelector('#template-opt-promotion')
+let showDataTable = (id, date, data)=>{
+    let tbody = document.querySelector('tbody.row')
+    tbody.innerHTML = ''
+    
+    data.forEach((element)=>{
+        if(date == element.date_to_change && element.id == id){
+            let createCard = `
+                <tr class="row">  
+                <td>${element.ean}</td>
+                <td>${element.description}</td>
+                <td>${element.price}</td>
+                <td>${element.price2}</td>
+                <td>${element.promotion}</td>
+                <td>${element.section}</td>
+                <td>${element.group}</td>
+                <td>${element.subgroup}</td>
+                <td>${element.date_start}</td>
+                <td>${element.date_final}</td>
+                </tr>
+            `;
+            
+            tbody.insertAdjacentHTML('beforeend',createCard)
+        }
+    })
+}
 
 prices_data.forEach((element) => {
     subsidiaries.forEach((sub)=>{
@@ -110,5 +135,9 @@ prices_data.forEach((element) => {
             updateFilterSub(element.id, sub.name)
         }
     })
-    updateFilters('#date','#template-opt-date', element.date_to_change)
+    updateFilters('#date','#template-opt-date', '.option-date', element.date_to_change)
+    updateFilters('#promotion','#template-opt-promotion','.option-promotion',element.promotion)
+    updateFilters('#section', '#template-opt-section','.option-section', element.section)
+    updateFilters('#group', '#template-opt-group','.option-group', element.group)
+
 })
