@@ -11,8 +11,15 @@
     <link rel="stylesheet" href="/app/shared/navigation/nav.css">
 </head>
 <body>
-    <div id="nav-placeholder"></div>
-    <main>
+    <div id="container-new-email" data-isactive="true">
+        <img src="/assets/imagens/icons/email_icon.svg" alt="">
+        <label for="newemail">Email:</label>
+        <input type="email" id="newemail">
+        <button class="save-new-email"><img src="/assets/imagens/icons/disk_icon.svg" alt="" class="icon"> Salvar</button>
+        <button class="close-container">X</button>
+    </div>
+    <div id="nav-placeholder" data-inactive></div>
+    <main data-inactive>
         <header>
             <img src="/assets/imagens/icons/note_icon.png" alt="Extra Fornecedor" class="icon">
             <h2 class="main-title">Extra Fornecedor</h2>
@@ -21,17 +28,10 @@
             <div class="header">
                 <h3>Lista de Emails:</h3>
                 <button id="btn-add-email"><img src="/assets/imagens/icons/email_check_icon.svg" alt="Lista de Emails" class="icon"></button>
-                <div id="container-new-email" data-isactive="true">
-                    <img src="/assets/imagens/icons/email_icon.svg" alt="">
-                    <label for="newemail">Email:</label>
-                    <input type="email" id="newemail">
-                    <button class="save-new-email"><img src="/assets/imagens/icons/disk_icon.svg" alt="" class="icon"> Salvar</button>
-                    <button class="close-container">X</button>
-                </div>
             </div>
             <section class="container-list-emails">
                 <template id="template-email-user">
-                    <div class="container-email-user">
+                    <div class="email-user">
                         <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
                         <div>
                             <h5>Admin</h5>
@@ -48,6 +48,118 @@
                         </div>
                         <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
                     </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
+                    <div class="email-user">
+                        <img src="/assets/imagens/icons/email_icon_beige.svg" alt="Email" class="icon">
+                        <div>
+                            <h5>Admin</h5>
+                            <p>admin@redemix.com.br</p>
+                        </div>
+                        <button class="delete-email"><img src="/assets/imagens/icons/trash_icon_red.svg" alt="Remover E-mail da Lista" class="icon"></button>
+                    </div>
             </section>
             <div class="container-actions">
                 <button class="delete-notes"><img src="/assets/imagens/icons/trash_icon.svg" alt="Remover Notas" class="icon">Remover Notas</button>
@@ -55,6 +167,7 @@
             </div>
         </section>
     </main>
+    <script type="module" src="/app/features/financeiro/devolution.js"></script>
     <script type="module" src="/app/shared/navigation/nav.js"></script>
     <script type="module" src="/app/core/logoutObserver.js"></script>
 </body>

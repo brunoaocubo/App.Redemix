@@ -3,6 +3,15 @@
     --purple: #2B2A4C;
 }
 
+[data-inactive]{
+    filter: brightness(80%);
+    pointer-events: none;
+}
+
+#nav-placeholder{
+    z-index: 9998;
+}
+
 .content{
     display: flex;
     flex-flow: column;
@@ -40,14 +49,15 @@
 }
 
 #btn-add-email img{
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
 }
 
 #container-new-email{
     position: absolute;
     display: flex;
-    left: 55%;
+    top: 40%;
+    left: 50%;
     transform: translateX(-50%);
     justify-content: center;
     align-items: center;
@@ -56,6 +66,11 @@
     border-radius: 10px;
     gap: 15px;
     background-image: var(--gradient-bg-main);
+    z-index: 9999;
+}
+
+#container-new-email[data-isactive='false']{
+    display: none;
 }
 
 label{
@@ -64,7 +79,7 @@ label{
 }
 
 input{
-    min-width: 300px;
+    max-width: max-content;
     text-align: start;
     padding: 5px 7px;
     border-width: 0px;
@@ -113,6 +128,10 @@ input{
 }
 
 .container-list-emails{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
     box-shadow: 2px 2px 5px darkred;
     padding: 15px;
     border-radius: 10px;
@@ -120,23 +139,24 @@ input{
 
 .email-user{
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    width: max-content;
+    width: 100%;
     box-shadow: 2px 2px 5px darkred;
     padding: 10px 20px;
     border-radius: 10px;
 }
 
-
 .email-user img, .delete-email{
     height: 24px;
     width: 24px;
 }
-
+.email-user div{
+    flex: 1;
+}
 .delete-email{
-    margin-left: 30px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -188,4 +208,23 @@ input{
 
 .start-process:hover{
     background-color: #37357c;
+}
+
+@media screen and (min-width: 570px){
+    input{
+        min-width: 280px;
+    }
+    .delete-email{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 770px){
+    .email-user{
+        width: max-content;
+        justify-content: flex-start;
+    }
+    .container-list-emails{
+        justify-content: flex-start;
+    }
 }
