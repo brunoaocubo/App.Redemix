@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Menu</title>
+    <link rel="shortcut icon" href="/assets/imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/app/shared/navigation/nav.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <h2 id="full-name" class="main-title">Nome Completo do Usuário</h2>
+        <section id="card">
+            <p class="info-user">Seção: <span id="section">EXEMPLO</span></p>
+            <p class="info-user">Departamento: <span id="department">EXEMPLO</span></p>
+            <p class="info-user">Local: <span id="location">EXEMPLO</span></p>
+            <p class="info-user">Usuário: <span id="user">Exemplo</span></p>
+            <p class="info-user">E-mail: <span id="email">exemplo.exemplo@redemix.com.br</span></p>
+            <p class="info-user">Telefone: <span id="telnumber">(DD)-xxxxx-xxxx</span></p>
+        </section>
+    </main>
+    <script type="module" src="/app/core/api.js"></script>
+    <script type="module" src="/app/shared/navigation/nav.js"></script>
+    <script type="module" src="/app/core/logoutObserver.js"></script>
+    <script type="module" src="./home.js"></script>
+</body>
+</html>

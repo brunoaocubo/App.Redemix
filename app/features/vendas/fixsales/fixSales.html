@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Correção de Vendas</title>  
+    <link rel="shortcut icon" href="/assets/imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./fixsales.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/app/shared/navigation/nav.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <header>
+            <img src="/assets/imagens/icons/vendas_icon.png" alt="Pricer - Etiquetas" class="icon">
+            <h2 class="main-title">Correção de Vendas</h2>
+        </header>
+        <section class="content flex-col">
+            <form action="#" method="dialog" class="date-filter flex-row">
+                <label for="period">Período:</label>
+                <select id="period">
+                    <option value="mar">Março/2026</option>
+                    <option value="fev">Fevereiro/2026</option>
+                </select>
+                <button class="search flex-col">
+                    <img src="/assets/imagens/icons/search.icon.svg" alt="buscar" class="icon">
+                    <span>Buscar</span>
+                </button>
+            </form>
+            <article class="container-result flex-col">
+                <h4>Correção:</h4>
+                <dl>
+                    <dt class="description">VENDA;CORIGIDA</dt>
+                    <dd class="block-date-fix">
+                        <span class="sale-date">2026-03-02</span>;
+                        <span class="datetime-fix">03/03/2026 06:53:26</span>
+                    </dd>
+                    <dd class="block-date-fix">
+                        <span class="sale-date">2026-03-01</span>;
+                        <span class="datetime-fix">02/03/2026 07:23:25</span>
+                    </dd>
+                </dl>
+            </article>
+            <button class="download flex-col">
+                <img src="/assets/imagens/icons/download_icon.svg" alt="download" class="icon">
+                <span>Download</span>
+            </button>
+        </section>
+    </main>
+    <script type="module" src="/app/shared/navigation/nav.js"></script>
+    <script type="module" src="/app/core/logoutObserver.js"></script>
+</body>
+</html>

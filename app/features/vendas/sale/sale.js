@@ -1,0 +1,196 @@
+import { ProcessJson } from "/app/core/api.js";
+let cupons_data = await ProcessJson('/data/cupons.json', false);
+
+const calendar = document.querySelector('#calendar')
+const container_list_itens = document.querySelector('.list-itens')
+const template = document.querySelector('#template')
+let subsidiarys = []
+
+calendar.addEventListener('click', (() => {
+    const date_filter = document.querySelector('.date-filter')
+    if(date_filter.getAttribute('data-isactive') === "false"){
+        date_filter.style.display = "flex"
+        date_filter.setAttribute('data-isactive', true)
+    }
+    else{
+        date_filter.style.display = "none"
+        date_filter.setAttribute('data-isactive', false)
+    }
+}))
+
+const parseValue = (value) => Math.round(parseFloat(value.replace(',','.')*100))
+
+let processSales = (cupons)=>{
+    const resume = {}
+    
+    cupons.forEach((cupom)=>{
+        if(!resume[cupom.id]){
+            resume[cupom.id] = {id: cupom.id, total: 0, qtt: 0, delivery: 0, hours: []}
+        }
+
+        const value = parseValue(cupom.valor)
+        const hour = cupom.horario.split(':')[0]
+
+        resume[cupom.id].total += value
+        resume[cupom.id].qtt += 1
+        
+        if(cupom.delivery){resume[cupom.id].delivery += value}
+
+        resume[cupom.id].hours.push({hour,value})
+    })
+    return Object.values(resume)
+}
+
+function formatedCurrencyBR(value){ 
+    let valueFormated = value/100
+    return valueFormated.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+}
+
+function calcPercent(value){
+    let cupons = cupons_data
+    let total = 0
+    cupons.forEach((element)=>{
+        total += Math.round(parseFloat(element.valor.replace(',','.') * 100))
+    })
+    total = total/100
+    let porcentagem = (total * 1)/100
+    let resultado = value/porcentagem
+    return resultado;
+}
+
+let updateSummary = () => {
+    const cupons = processSales(cupons_data)
+   
+   let totalValues = 0
+    cupons.forEach((cupom)=>{
+        totalValues += cupom.total
+
+        if(!subsidiarys.includes(cupom.id)){subsidiarys.push(cupom.id)}
+    })
+
+    const main_summary = document.querySelector('.main-summary')
+    const s_year = main_summary.querySelector('.year')
+    const s_month = main_summary.querySelector('.month')
+    const s_dayweek = main_summary.querySelector('.dayweek')
+    const total_values = main_summary.querySelector('.total-value-cupons')
+
+    let now = new Date()
+    const monthFormat = now.toLocaleString('pt-BR', {month: "long"})
+    s_year.textContent = now.getFullYear()
+    s_month.textContent = monthFormat.charAt(0).toUpperCase() + monthFormat.slice(1)
+    s_dayweek.textContent = `${now.toLocaleString('pt-BR', {day: "2-digit"})}, ${now.toLocaleString('pt-BR', {weekday: "long"})}`
+    total_values.textContent = formatedCurrencyBR(totalValues)
+
+    for(let i = 0; i < subsidiarys.length; i++){
+        createCard(subsidiarys[i], cupons)
+    }
+}
+
+let createCard = function(id, cupons){
+    const clone = template.content.cloneNode(true)
+    const market = clone.querySelector('.market dd')
+    const percent_value = clone.querySelector('dt .percent-sale')
+    const delivery_value = clone.querySelector('.delivery dd')
+    const total_cupons = clone.querySelector('.total-cupons dd')
+    const total_value = clone.querySelector('.total-value-sale dd')
+
+    let cp_totalValue = 0;
+    let cp_deliveryValue = 0;
+    let cp_quantity = 0;
+    
+    cupons.forEach((cupom) => {
+        if(id === cupom.id){
+            cp_quantity = cupom.qtt
+            cp_totalValue += cupom.total
+
+            if(cupom.delivery){
+                cp_deliveryValue = cupom.delivery
+            }
+
+            cupom.hours.forEach((element)=>{
+                calcSalesHour(id, element.hour, element.value/100)
+            })
+        }
+    })
+    let cp_percentValue = calcPercent(cp_totalValue/100).toFixed(2);
+    let cp_percentValueFormated = cp_percentValue + "%"
+
+    market.textContent = id
+    percent_value.textContent = cp_percentValueFormated
+    delivery_value.textContent = formatedCurrencyBR(cp_deliveryValue)
+    total_cupons.textContent = cp_quantity
+    total_value.textContent = formatedCurrencyBR(cp_totalValue)
+    orderContainer(cp_percentValue, clone)
+    
+    try {
+        let containerListItens = market.closest('.item').querySelector('.container-itens-hour .list-itens-hour')   
+        valuePerHour.forEach((element)=>{
+            if(element.id === id){
+                createItemHour(containerListItens, element.hour, element.value)
+            }
+        })
+    } 
+    catch (error) {
+        console.log(error.message)
+    }
+}
+
+let createItemHour = function(parent, hour, value){
+    const valueFormat = value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    const container_sale_hour = `
+        <dl class="item-hour flex-col">
+            <dt>${hour}${'H'}</dt>
+            <hr>
+            <dd>${valueFormat}</dd>
+        </dl>`
+    parent.insertAdjacentHTML('beforeend', container_sale_hour)
+}
+
+function orderRank(){
+    let rank = container_list_itens.querySelectorAll('.rank-number')
+    
+    let position = 1
+    rank.forEach((element)=>{
+       element.textContent = position
+       position++
+    })
+}
+
+let listClones = []
+
+let orderContainer = function(percent, clone){  
+    listClones.push({percent, clone})
+    listClones.sort(function(a, b){return b.percent - a.percent})
+
+    if(listClones.length >= 25){
+        listClones.forEach((element)=>{
+            container_list_itens.appendChild(element.clone)
+        })
+    }
+    else{
+        return "Ainda falta filial";
+    }
+
+    orderRank()
+}
+
+let valuePerHour = []
+
+function calcSalesHour(id, hour, value){
+    if(valuePerHour.length <= 0){
+        valuePerHour.push({id,  hour: hour, value: value})    
+        return;
+    }
+
+    const registerExist = valuePerHour.find(element => element.id === id && element.hour === hour)
+
+    if(registerExist){ 
+        let newValue = registerExist.value + value
+        registerExist.value = newValue
+    }
+    else{
+        valuePerHour.push({id,  hour: hour, value: value})  
+    }
+}
+
+updateSummary()

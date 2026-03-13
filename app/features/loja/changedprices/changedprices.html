@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Center - Alterados</title>  
+    <link rel="shortcut icon" href="/assets/imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./changedprices.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/app/shared/navigation/nav.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <header>
+            <img src="/assets/imagens/icons/vendas_icon.png" alt="Preços Alterados" class="icon">
+            <h2 class="main-title">Alterados</h2>
+        </header>
+        <section class="content">
+            <div class="summary">
+                <h2 class="subsidiary">3.5 - ITAIGARA</h2>
+                <div class="buttons">
+                    <button class="btn-actions" id="open-filter"><img src="/assets/imagens/icons/search_database_icon.svg" alt="Filtrar" class="icon">Filtrar</button>
+                    <button class="btn-actions" id="print" data-isactive = 'true'><img src="/assets/imagens/icons/print_icon.svg" alt="Imprimir" class="icon">Imprimir</button>
+                </div>
+            </div>
+            <div class="window-filter" data-isactive='false'>
+                <form action="#" method="dialog" class="date-filter filter">
+                    <label for="date">Data:</label>
+                    <select id="date">
+                        <template id="template-opt-date">
+                            <option value="2026-03-10" class="option-date">2026-03-10</option>
+                        </template>
+                    </select>
+                    <label for="subs">Loja:</label>
+                    <select id="subs">
+                        <template id="template-opt-subs">
+                            <option value="35" class="option-subs">3.5 - ITAIGARA</option>
+                        </template>
+                        <option value="35" class="option-subs">3.5 - ITAIGARA</option>
+                    </select>
+                    <button class="btn-actions btn-filter" id="search-filter"><img src="/assets/imagens/icons/search.icon.svg" alt="Buscar" class="icon">Buscar</button>
+                </form>
+                <form action="#" method="dialog" class="general-filter filter" data-isactive="false">
+                    <label for="promotion">Promoção:</label>
+                    <select id="promotion">
+                        <option value="all">*Todos*</option>
+                        <template id="template-opt-promotion">
+                            <option value="meu-redemix" class="option-promotion">MEU_REDEMIX</option>
+                        </template>
+                    </select>
+                    <label for="section">Seção:</label>
+                    <select id="section">
+                        <option value="all">*Todos*</option>
+                        <template id="template-opt-section">
+                            <option value="aves" class="option-section">Aves</option>
+                        </template>
+                    </select>
+                    <label for="group">Grupo:</label>
+                    <select id="group">
+                        <option value="all">*Todos*</option>
+                        <template id="template-opt-group">
+                            <option value="aves" class="option-group">Aves Inteiras</option>
+                        </template>
+                    </select>
+                    <button class="btn-actions btn-filter"><img src="/assets/imagens/icons/search.icon.svg" alt="Filtrar" class="icon">Filtrar</button>
+                </form>
+            </div>
+            <table>
+                <theader>
+                    <tr class="row-header">
+                    <th>EAN:</th>
+                    <th>DESCRIÇÃO:</th>
+                    <th>PREÇO:</th>
+                    <th>PREÇO 2:</th>
+                    <th>PROMOÇÃO:</th>
+                    <th>SEÇÃO:</th>
+                    <th>GRUPO:</th>
+                    <th>SUBGRUPO:</th>
+                    <th>ÍNICIO:</th>
+                    <th>FIM:</th>
+                    </tr>
+                </theader>
+                <tbody class="row"></tbody>
+            </table>
+        </section>
+    </main>
+    <script type="module" src="/app/shared/navigation/nav.js"></script>
+    <script type="module" src="/app/core/logoutObserver.js"></script>
+    <script type="module" src="/app/core/api.js"></script>
+    <script type="module" src="./changedprices.js"></script>
+</body>
+</html>
